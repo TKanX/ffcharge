@@ -39,3 +39,29 @@ impl DnaScheme {
         ]
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn default() {
+        assert_eq!(DnaScheme::default(), DnaScheme::AmberOL15);
+    }
+
+    #[test]
+    fn count() {
+        assert_eq!(DnaScheme::all().len(), 5);
+    }
+
+    #[test]
+    fn key_format() {
+        for s in DnaScheme::all() {
+            let k = s.key();
+            assert!(
+                k.chars()
+                    .all(|c| c.is_ascii_lowercase() || c == '-' || c.is_ascii_digit())
+            );
+        }
+    }
+}
