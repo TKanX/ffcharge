@@ -39,3 +39,29 @@ impl WaterScheme {
         ]
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn default() {
+        assert_eq!(WaterScheme::default(), WaterScheme::Tip3p);
+    }
+
+    #[test]
+    fn count() {
+        assert_eq!(WaterScheme::all().len(), 5);
+    }
+
+    #[test]
+    fn key_format() {
+        for s in WaterScheme::all() {
+            let k = s.key();
+            assert!(
+                k.chars()
+                    .all(|c| c.is_ascii_lowercase() || c == '-' || c.is_ascii_digit())
+            );
+        }
+    }
+}
