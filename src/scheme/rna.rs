@@ -27,3 +27,29 @@ impl RnaScheme {
         &[Self::AmberOL3, Self::CharmmC36, Self::CharmmC27]
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn default() {
+        assert_eq!(RnaScheme::default(), RnaScheme::AmberOL3);
+    }
+
+    #[test]
+    fn count() {
+        assert_eq!(RnaScheme::all().len(), 3);
+    }
+
+    #[test]
+    fn key_format() {
+        for s in RnaScheme::all() {
+            let k = s.key();
+            assert!(
+                k.chars()
+                    .all(|c| c.is_ascii_lowercase() || c == '-' || c.is_ascii_digit())
+            );
+        }
+    }
+}
