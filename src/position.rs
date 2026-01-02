@@ -30,3 +30,22 @@ impl Position {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn keys() {
+        assert_eq!(Position::NTerminal.key(), "n");
+        assert_eq!(Position::CTerminal.key(), "c");
+        assert_eq!(Position::FivePrime.key(), "5");
+        assert_eq!(Position::ThreePrime.key(), "3");
+        assert_eq!(Position::Middle.key(), "m");
+    }
+
+    #[test]
+    fn default_is_middle() {
+        assert_eq!(Position::default(), Position::Middle);
+    }
+}
