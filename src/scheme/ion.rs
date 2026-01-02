@@ -21,3 +21,29 @@ impl IonScheme {
         &[Self::Classic]
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn default() {
+        assert_eq!(IonScheme::default(), IonScheme::Classic);
+    }
+
+    #[test]
+    fn count() {
+        assert_eq!(IonScheme::all().len(), 1);
+    }
+
+    #[test]
+    fn key_format() {
+        for s in IonScheme::all() {
+            let k = s.key();
+            assert!(
+                k.chars()
+                    .all(|c| c.is_ascii_lowercase() || c == '-' || c.is_ascii_digit())
+            );
+        }
+    }
+}
