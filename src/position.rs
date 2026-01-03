@@ -7,8 +7,12 @@
 pub enum Position {
     /// N-terminal (protein).
     NTerminal,
+    /// N-terminal deprotonated (protein).
+    NTerminalDeprotonated,
     /// C-terminal (protein).
     CTerminal,
+    /// C-terminal protonated (protein).
+    CTerminalProtonated,
     /// 5'-terminal (nucleic acid).
     FivePrime,
     /// 3'-terminal (nucleic acid).
@@ -23,7 +27,9 @@ impl Position {
     pub const fn key(self) -> &'static str {
         match self {
             Self::NTerminal => "n",
+            Self::NTerminalDeprotonated => "n-",
             Self::CTerminal => "c",
+            Self::CTerminalProtonated => "c+",
             Self::FivePrime => "5",
             Self::ThreePrime => "3",
             Self::Middle => "m",
