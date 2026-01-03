@@ -56,7 +56,7 @@ amber-ff14sb,c,ALA,O,-0.8055
 amber-ff14sb,c,ALA,OXT,-0.8055
 
 # ALA - n-terminal deprotonated
-amber-ff14sb,n-,ALA,N,0.1414
+amber-ff14sb,n-,ALA,N,-0.6589
 amber-ff14sb,n-,ALA,H1,0.1997
 amber-ff14sb,n-,ALA,H2,0.1997
 amber-ff14sb,n-,ALA,CA,0.0962
@@ -78,9 +78,9 @@ amber-ff14sb,c+,ALA,HB1,0.0764
 amber-ff14sb,c+,ALA,HB2,0.0764
 amber-ff14sb,c+,ALA,HB3,0.0764
 amber-ff14sb,c+,ALA,C,0.7731
-amber-ff14sb,c+,ALA,O,-0.8055
-amber-ff14sb,c+,ALA,OXT,-0.8055
-amber-ff14sb,c+,ALA,HOXT,0.45
+amber-ff14sb,c+,ALA,O,-0.538
+amber-ff14sb,c+,ALA,OXT,-0.538
+amber-ff14sb,c+,ALA,HOXT,0.465
 
 # ARG - middle
 amber-ff14sb,m,ARG,N,-0.3479
@@ -164,7 +164,7 @@ amber-ff14sb,c,ARG,O,-0.8266
 amber-ff14sb,c,ARG,OXT,-0.8266
 
 # ARG - n-terminal deprotonated
-amber-ff14sb,n-,ARG,N,0.1305
+amber-ff14sb,n-,ARG,N,-0.6612
 amber-ff14sb,n-,ARG,H1,0.2083
 amber-ff14sb,n-,ARG,H2,0.2083
 amber-ff14sb,n-,ARG,CA,-0.0223
@@ -214,8 +214,8 @@ amber-ff14sb,c+,ARG,NH2,-0.8737
 amber-ff14sb,c+,ARG,HH21,0.4493
 amber-ff14sb,c+,ARG,HH22,0.4493
 amber-ff14sb,c+,ARG,C,0.8557
-amber-ff14sb,c+,ARG,O,-0.8266
-amber-ff14sb,c+,ARG,OXT,-0.8266
+amber-ff14sb,c+,ARG,O,-0.5591
+amber-ff14sb,c+,ARG,OXT,-0.5591
 amber-ff14sb,c+,ARG,HOXT,0.465
 
 # ARN - middle
