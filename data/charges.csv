@@ -1082,3 +1082,54 @@ amber-ff14sb,c+,GLH,C,0.742
 amber-ff14sb,c+,GLH,O,-0.5255
 amber-ff14sb,c+,GLH,OXT,-0.5255
 amber-ff14sb,c+,GLH,HOXT,0.465
+
+# GLY - middle
+amber-ff14sb,m,GLY,N,-0.4157
+amber-ff14sb,m,GLY,H,0.2719
+amber-ff14sb,m,GLY,CA,-0.0252
+amber-ff14sb,m,GLY,HA2,0.0698
+amber-ff14sb,m,GLY,HA3,0.0698
+amber-ff14sb,m,GLY,C,0.5973
+amber-ff14sb,m,GLY,O,-0.5679
+
+# GLY - n-terminal
+amber-ff14sb,n,GLY,N,0.2943
+amber-ff14sb,n,GLY,H1,0.1642
+amber-ff14sb,n,GLY,H2,0.1642
+amber-ff14sb,n,GLY,H3,0.1642
+amber-ff14sb,n,GLY,CA,-0.01
+amber-ff14sb,n,GLY,HA2,0.0895
+amber-ff14sb,n,GLY,HA3,0.0895
+amber-ff14sb,n,GLY,C,0.6163
+amber-ff14sb,n,GLY,O,-0.5722
+
+# GLY - c-terminal
+amber-ff14sb,c,GLY,N,-0.3821
+amber-ff14sb,c,GLY,H,0.2681
+amber-ff14sb,c,GLY,CA,-0.2493
+amber-ff14sb,c,GLY,HA2,0.1056
+amber-ff14sb,c,GLY,HA3,0.1056
+amber-ff14sb,c,GLY,C,0.7231
+amber-ff14sb,c,GLY,O,-0.7855
+amber-ff14sb,c,GLY,OXT,-0.7855
+
+# GLY - n-terminal deprotonated
+amber-ff14sb,n-,GLY,N,-0.5415
+amber-ff14sb,n-,GLY,H1,0.1642
+amber-ff14sb,n-,GLY,H2,0.1642
+amber-ff14sb,n-,GLY,CA,-0.01
+amber-ff14sb,n-,GLY,HA2,0.0895
+amber-ff14sb,n-,GLY,HA3,0.0895
+amber-ff14sb,n-,GLY,C,0.6163
+amber-ff14sb,n-,GLY,O,-0.5722
+
+# GLY - c-terminal protonated
+amber-ff14sb,c+,GLY,N,-0.3821
+amber-ff14sb,c+,GLY,H,0.2681
+amber-ff14sb,c+,GLY,CA,-0.2493
+amber-ff14sb,c+,GLY,HA2,0.1056
+amber-ff14sb,c+,GLY,HA3,0.1056
+amber-ff14sb,c+,GLY,C,0.7231
+amber-ff14sb,c+,GLY,O,-0.518
+amber-ff14sb,c+,GLY,OXT,-0.518
+amber-ff14sb,c+,GLY,HOXT,0.465
