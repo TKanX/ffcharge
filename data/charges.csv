@@ -1,0 +1,15 @@
+# FFCharge Data File
+#
+# Format: scheme,position,residue,atom,charge
+#
+# Position: n (n-terminal), n- (n-terminal deprotonated), c (c-terminal), c+ (c-terminal protonated), 5 (5'), 3 (3'), m (middle), (empty for none - water/ion)
+#
+# Scheme Keys:
+#   Protein: amber-ff14sb, amber-ff19sb, amber-ff99sb, amber-ff99sb-ildn, amber-ff03,
+#            charmm-c36, charmm-c36m, charmm-c27, charmm-c22, charmm-c22-cmap
+#   DNA:     amber-ol15, amber-bsc1, amber-ol21, charmm-c36, charmm-c27
+#   RNA:     amber-ol3, charmm-c36, charmm-c27
+#   Water:   tip3p, tip3p-fb, spc, spc-e, opc3
+#   Ion:     classic
+
+scheme,position,residue,atom,charge
