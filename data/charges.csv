@@ -13,3 +13,71 @@
 #   Ion:     classic
 
 scheme,position,residue,atom,charge
+
+# Protein: amber-ff14sb
+
+# ALA - middle
+amber-ff14sb,m,ALA,N,-0.4157
+amber-ff14sb,m,ALA,H,0.2719
+amber-ff14sb,m,ALA,CA,0.0337
+amber-ff14sb,m,ALA,HA,0.0823
+amber-ff14sb,m,ALA,CB,-0.1825
+amber-ff14sb,m,ALA,HB1,0.0603
+amber-ff14sb,m,ALA,HB2,0.0603
+amber-ff14sb,m,ALA,HB3,0.0603
+amber-ff14sb,m,ALA,C,0.5973
+amber-ff14sb,m,ALA,O,-0.5679
+
+# ALA - n-terminal
+amber-ff14sb,n,ALA,N,0.1414
+amber-ff14sb,n,ALA,H1,0.1997
+amber-ff14sb,n,ALA,H2,0.1997
+amber-ff14sb,n,ALA,H3,0.1997
+amber-ff14sb,n,ALA,CA,0.0962
+amber-ff14sb,n,ALA,HA,0.0889
+amber-ff14sb,n,ALA,CB,-0.0597
+amber-ff14sb,n,ALA,HB1,0.03
+amber-ff14sb,n,ALA,HB2,0.03
+amber-ff14sb,n,ALA,HB3,0.03
+amber-ff14sb,n,ALA,C,0.6163
+amber-ff14sb,n,ALA,O,-0.5722
+
+# ALA - c-terminal
+amber-ff14sb,c,ALA,N,-0.3821
+amber-ff14sb,c,ALA,H,0.2681
+amber-ff14sb,c,ALA,CA,-0.1747
+amber-ff14sb,c,ALA,HA,0.1067
+amber-ff14sb,c,ALA,CB,-0.2093
+amber-ff14sb,c,ALA,HB1,0.0764
+amber-ff14sb,c,ALA,HB2,0.0764
+amber-ff14sb,c,ALA,HB3,0.0764
+amber-ff14sb,c,ALA,C,0.7731
+amber-ff14sb,c,ALA,O,-0.8055
+amber-ff14sb,c,ALA,OXT,-0.8055
+
+# ALA - n-terminal deprotonated
+amber-ff14sb,n-,ALA,N,0.1414
+amber-ff14sb,n-,ALA,H1,0.1997
+amber-ff14sb,n-,ALA,H2,0.1997
+amber-ff14sb,n-,ALA,CA,0.0962
+amber-ff14sb,n-,ALA,HA,0.0889
+amber-ff14sb,n-,ALA,CB,-0.0597
+amber-ff14sb,n-,ALA,HB1,0.03
+amber-ff14sb,n-,ALA,HB2,0.03
+amber-ff14sb,n-,ALA,HB3,0.03
+amber-ff14sb,n-,ALA,C,0.6163
+amber-ff14sb,n-,ALA,O,-0.5722
+
+# ALA - c-terminal protonated
+amber-ff14sb,c+,ALA,N,-0.3821
+amber-ff14sb,c+,ALA,H,0.2681
+amber-ff14sb,c+,ALA,CA,-0.1747
+amber-ff14sb,c+,ALA,HA,0.1067
+amber-ff14sb,c+,ALA,CB,-0.2093
+amber-ff14sb,c+,ALA,HB1,0.0764
+amber-ff14sb,c+,ALA,HB2,0.0764
+amber-ff14sb,c+,ALA,HB3,0.0764
+amber-ff14sb,c+,ALA,C,0.7731
+amber-ff14sb,c+,ALA,O,-0.8055
+amber-ff14sb,c+,ALA,OXT,-0.8055
+amber-ff14sb,c+,ALA,HOXT,0.45
