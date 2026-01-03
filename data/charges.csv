@@ -11317,3 +11317,71 @@ amber-ff99sb-ildn,c+,VAL,C,0.835
 amber-ff99sb-ildn,c+,VAL,O,-0.5498
 amber-ff99sb-ildn,c+,VAL,OXT,-0.5498
 amber-ff99sb-ildn,c+,VAL,HOXT,0.465
+
+# Protein: amber-ff03
+
+# ALA - middle
+amber-ff03,m,ALA,N,-0.404773
+amber-ff03,m,ALA,H,0.294276
+amber-ff03,m,ALA,CA,-0.027733
+amber-ff03,m,ALA,HA,0.120802
+amber-ff03,m,ALA,CB,-0.229951
+amber-ff03,m,ALA,HB1,0.077428
+amber-ff03,m,ALA,HB2,0.077428
+amber-ff03,m,ALA,HB3,0.077428
+amber-ff03,m,ALA,C,0.570224
+amber-ff03,m,ALA,O,-0.555129
+
+# ALA - n-terminal
+amber-ff03,n,ALA,N,-0.589266
+amber-ff03,n,ALA,H1,0.446422
+amber-ff03,n,ALA,H2,0.446422
+amber-ff03,n,ALA,H3,0.446422
+amber-ff03,n,ALA,CA,0.113871
+amber-ff03,n,ALA,HA,0.06715
+amber-ff03,n,ALA,CB,-0.204113
+amber-ff03,n,ALA,HB1,0.063056
+amber-ff03,n,ALA,HB2,0.063056
+amber-ff03,n,ALA,HB3,0.063056
+amber-ff03,n,ALA,C,0.676687
+amber-ff03,n,ALA,O,-0.592764
+
+# ALA - c-terminal
+amber-ff03,c,ALA,N,-0.622202
+amber-ff03,c,ALA,H,0.359784
+amber-ff03,c,ALA,CA,-0.054102
+amber-ff03,c,ALA,HA,0.123283
+amber-ff03,c,ALA,CB,-0.185718
+amber-ff03,c,ALA,HB1,0.069652
+amber-ff03,c,ALA,HB2,0.069652
+amber-ff03,c,ALA,HB3,0.069652
+amber-ff03,c,ALA,C,0.664014
+amber-ff03,c,ALA,O,-0.747007
+amber-ff03,c,ALA,OXT,-0.747007
+
+# ALA - n-terminal deprotonated
+amber-ff03,n-,ALA,N,-1.142844
+amber-ff03,n-,ALA,H1,0.446422
+amber-ff03,n-,ALA,H2,0.446422
+amber-ff03,n-,ALA,CA,0.113871
+amber-ff03,n-,ALA,HA,0.06715
+amber-ff03,n-,ALA,CB,-0.204113
+amber-ff03,n-,ALA,HB1,0.063056
+amber-ff03,n-,ALA,HB2,0.063056
+amber-ff03,n-,ALA,HB3,0.063056
+amber-ff03,n-,ALA,C,0.676687
+amber-ff03,n-,ALA,O,-0.592764
+
+# ALA - c-terminal protonated
+amber-ff03,c+,ALA,N,-0.622202
+amber-ff03,c+,ALA,H,0.359784
+amber-ff03,c+,ALA,CA,-0.054102
+amber-ff03,c+,ALA,HA,0.123283
+amber-ff03,c+,ALA,CB,-0.185718
+amber-ff03,c+,ALA,HB1,0.069652
+amber-ff03,c+,ALA,HB2,0.069652
+amber-ff03,c+,ALA,HB3,0.069652
+amber-ff03,c+,ALA,C,0.664014
+amber-ff03,c+,ALA,O,-0.470837
+amber-ff03,c+,ALA,OXT,-0.470837
+amber-ff03,c+,ALA,HOXT,0.447661
