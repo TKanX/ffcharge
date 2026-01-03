@@ -14143,3 +14143,71 @@ amber-ff03,c+,VAL,C,0.525616
 amber-ff03,c+,VAL,O,-0.4016385
 amber-ff03,c+,VAL,OXT,-0.4016385
 amber-ff03,c+,VAL,HOXT,0.447661
+
+# Protein: charmm-c36
+
+# ALA - middle
+charmm-c36,m,ALA,N,-0.47
+charmm-c36,m,ALA,H,0.31
+charmm-c36,m,ALA,CA,0.07
+charmm-c36,m,ALA,HA,0.09
+charmm-c36,m,ALA,CB,-0.27
+charmm-c36,m,ALA,HB1,0.09
+charmm-c36,m,ALA,HB2,0.09
+charmm-c36,m,ALA,HB3,0.09
+charmm-c36,m,ALA,C,0.51
+charmm-c36,m,ALA,O,-0.51
+
+# ALA - n-terminal
+charmm-c36,n,ALA,N,-0.3
+charmm-c36,n,ALA,H1,0.33
+charmm-c36,n,ALA,H2,0.33
+charmm-c36,n,ALA,H3,0.33
+charmm-c36,n,ALA,CA,0.21
+charmm-c36,n,ALA,HA,0.1
+charmm-c36,n,ALA,CB,-0.27
+charmm-c36,n,ALA,HB1,0.09
+charmm-c36,n,ALA,HB2,0.09
+charmm-c36,n,ALA,HB3,0.09
+charmm-c36,n,ALA,C,0.51
+charmm-c36,n,ALA,O,-0.51
+
+# ALA - c-terminal
+charmm-c36,c,ALA,N,-0.47
+charmm-c36,c,ALA,H,0.31
+charmm-c36,c,ALA,CA,0.07
+charmm-c36,c,ALA,HA,0.09
+charmm-c36,c,ALA,CB,-0.27
+charmm-c36,c,ALA,HB1,0.09
+charmm-c36,c,ALA,HB2,0.09
+charmm-c36,c,ALA,HB3,0.09
+charmm-c36,c,ALA,C,0.34
+charmm-c36,c,ALA,O,-0.67
+charmm-c36,c,ALA,OXT,-0.67
+
+# ALA - n-terminal deprotonated
+charmm-c36,n-,ALA,N,-0.96
+charmm-c36,n-,ALA,H1,0.34
+charmm-c36,n-,ALA,H2,0.34
+charmm-c36,n-,ALA,CA,0.19
+charmm-c36,n-,ALA,HA,0.09
+charmm-c36,n-,ALA,CB,-0.27
+charmm-c36,n-,ALA,HB1,0.09
+charmm-c36,n-,ALA,HB2,0.09
+charmm-c36,n-,ALA,HB3,0.09
+charmm-c36,n-,ALA,C,0.51
+charmm-c36,n-,ALA,O,-0.51
+
+# ALA - c-terminal protonated
+charmm-c36,c+,ALA,N,-0.47
+charmm-c36,c+,ALA,H,0.31
+charmm-c36,c+,ALA,CA,0.07
+charmm-c36,c+,ALA,HA,0.09
+charmm-c36,c+,ALA,CB,-0.27
+charmm-c36,c+,ALA,HB1,0.09
+charmm-c36,c+,ALA,HB2,0.09
+charmm-c36,c+,ALA,HB3,0.09
+charmm-c36,c+,ALA,C,0.72
+charmm-c36,c+,ALA,O,-0.55
+charmm-c36,c+,ALA,OXT,-0.61
+charmm-c36,c+,ALA,HOXT,0.44
