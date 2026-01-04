@@ -3,40 +3,25 @@
 /// DNA charge scheme.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
 pub enum DnaScheme {
-    /// AMBER OL15.
+    /// AMBER (AMBER OL15, OL21, OL24, bsc1).
     #[default]
-    AmberOL15,
-    /// AMBER bsc1.
-    AmberBSC1,
-    /// AMBER OL21.
-    AmberOL21,
-    /// CHARMM36.
-    CharmmC36,
-    /// CHARMM27.
-    CharmmC27,
+    Amber,
+    /// CHARMM (CHARMM C27, C36).
+    Charmm,
 }
 
 impl DnaScheme {
     /// Returns the key for this scheme.
     pub const fn key(self) -> &'static str {
         match self {
-            Self::AmberOL15 => "amber-ol15",
-            Self::AmberBSC1 => "amber-bsc1",
-            Self::AmberOL21 => "amber-ol21",
-            Self::CharmmC36 => "charmm-c36",
-            Self::CharmmC27 => "charmm-c27",
+            Self::Amber => "amber",
+            Self::Charmm => "charmm",
         }
     }
 
     /// Returns all available schemes.
     pub const fn all() -> &'static [Self] {
-        &[
-            Self::AmberOL15,
-            Self::AmberBSC1,
-            Self::AmberOL21,
-            Self::CharmmC36,
-            Self::CharmmC27,
-        ]
+        &[Self::Amber, Self::Charmm]
     }
 }
 
