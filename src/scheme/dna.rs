@@ -31,12 +31,12 @@ mod tests {
 
     #[test]
     fn default() {
-        assert_eq!(DnaScheme::default(), DnaScheme::AmberOL15);
+        assert_eq!(DnaScheme::default(), DnaScheme::Amber);
     }
 
     #[test]
     fn count() {
-        assert_eq!(DnaScheme::all().len(), 5);
+        assert_eq!(DnaScheme::all().len(), 2);
     }
 
     #[test]
