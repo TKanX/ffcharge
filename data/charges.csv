@@ -6,8 +6,8 @@
 #
 # Scheme Keys:
 #   Protein: amber-ffsb, amber-ff03, charmm
-#   DNA:     amber-ol15, amber-bsc1, amber-ol21, charmm-c36, charmm-c27
-#   RNA:     amber-ol3, charmm-c36, charmm-c27
+#   DNA:     amber, charmm
+#   RNA:     amber, charmm
 #   Water:   tip3p, tip3p-fb, spc, spc-e, opc3
 #   Ion:     classic
 
