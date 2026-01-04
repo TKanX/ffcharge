@@ -39,7 +39,7 @@ mod tests {
 
     #[test]
     fn count() {
-        assert_eq!(ProteinScheme::all().len(), 2);
+        assert_eq!(ProteinScheme::all().len(), 3);
     }
 
     #[test]
