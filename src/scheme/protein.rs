@@ -34,12 +34,12 @@ mod tests {
 
     #[test]
     fn default() {
-        assert_eq!(ProteinScheme::default(), ProteinScheme::AmberFF14SB);
+        assert_eq!(ProteinScheme::default(), ProteinScheme::AmberFFSB);
     }
 
     #[test]
     fn count() {
-        assert_eq!(ProteinScheme::all().len(), 10);
+        assert_eq!(ProteinScheme::all().len(), 2);
     }
 
     #[test]
