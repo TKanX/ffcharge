@@ -31,12 +31,12 @@ mod tests {
 
     #[test]
     fn default() {
-        assert_eq!(RnaScheme::default(), RnaScheme::AmberOL3);
+        assert_eq!(RnaScheme::default(), RnaScheme::Amber);
     }
 
     #[test]
     fn count() {
-        assert_eq!(RnaScheme::all().len(), 3);
+        assert_eq!(RnaScheme::all().len(), 2);
     }
 
     #[test]
