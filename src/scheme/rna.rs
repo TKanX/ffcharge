@@ -23,6 +23,21 @@ impl RnaScheme {
     pub const fn all() -> &'static [Self] {
         &[Self::Amber, Self::Charmm]
     }
+
+    /// Returns the partial charge for an atom in an RNA residue.
+    ///
+    /// # Arguments
+    ///
+    /// * `pos` - Position of the residue in the chain.
+    /// * `residue` - Residue name (e.g., "A", "G").
+    /// * `atom` - Atom name (e.g., "C1'", "H2'").
+    ///
+    /// # Returns
+    ///
+    /// `Option<f32>` - Partial charge if found, otherwise `None`.
+    pub fn charge(self, pos: crate::Position, residue: &str, atom: &str) -> Option<f32> {
+        crate::generated::get_atom_charge(self.key(), pos.key(), residue, atom)
+    }
 }
 
 #[cfg(test)]
