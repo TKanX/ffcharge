@@ -38,6 +38,15 @@ impl WaterScheme {
             Self::Opc3,
         ]
     }
+
+    /// Returns the partial charges for a water molecule.
+    ///
+    /// # Returns
+    ///
+    /// `Option<crate::WaterCharges>` - Partial charges if found, otherwise `None`.
+    pub fn charges(self) -> Option<crate::WaterCharges> {
+        crate::generated::get_water_charges(self.key())
+    }
 }
 
 #[cfg(test)]
