@@ -20,6 +20,19 @@ impl IonScheme {
     pub const fn all() -> &'static [Self] {
         &[Self::Classic]
     }
+
+    /// Returns the partial charge for an ion residue.
+    ///
+    /// # Arguments
+    ///
+    /// * `residue` - Residue name (e.g., "NA", "CL").
+    ///
+    /// # Returns
+    ///
+    /// `Option<f32>` - Partial charge if found, otherwise `None`.
+    pub fn charge(self, residue: &str) -> Option<f32> {
+        crate::generated::get_ion_charge(self.key(), residue)
+    }
 }
 
 #[cfg(test)]
