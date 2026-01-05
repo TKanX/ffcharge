@@ -38,8 +38,8 @@ fn main() {
         .from_path(path)
         .expect("Failed to open data/charges.csv");
 
-    let mut atom_data: HashMap<String, HashMap<String, HashMap<String, Vec<(String, f32)>>>> =
-        HashMap::new();
+    type AtomData = HashMap<String, HashMap<String, HashMap<String, Vec<(String, f32)>>>>;
+    let mut atom_data: AtomData = HashMap::new();
     let mut ion_data: HashMap<String, HashMap<String, f32>> = HashMap::new();
     let mut water_data: HashMap<String, WaterData> = HashMap::new();
 
@@ -87,7 +87,7 @@ fn main() {
             for (res, atoms) in res_map {
                 let atoms_lit = atoms
                     .iter()
-                    .map(|(a, c)| format!("(\"{}\", {:.7})", a, c))
+                    .map(|(a, c)| format!("(\"{}\", {}_f32)", a, c))
                     .collect::<Vec<_>>()
                     .join(", ");
                 let val = format!("&[{}]", atoms_lit);
@@ -127,7 +127,7 @@ fn main() {
 
         let mut entries = Vec::new();
         for (res, charge) in res_map {
-            entries.push((res.clone(), format!("{:.7}", charge)));
+            entries.push((res.clone(), format!("{}_f32", charge)));
         }
 
         let mut phf_map = phf_codegen::Map::new();
@@ -152,7 +152,7 @@ fn main() {
         let h1 = data.h1.expect("Missing H1");
         let h2 = data.h2.expect("Missing H2");
         let val = format!(
-            "crate::WaterCharges {{ o: {:.7}, h1: {:.7}, h2: {:.7} }}",
+            "crate::WaterCharges {{ o: {}_f32, h1: {}_f32, h2: {}_f32 }}",
             o, h1, h2
         );
         water_entries.push((scheme.clone(), val));
@@ -179,7 +179,7 @@ fn main() {
             let mut pos_arms = Vec::new();
             let mut has_valid_pos = false;
 
-            for (pos, _) in pos_map {
+            for pos in pos_map.keys() {
                 if allowed_pos.contains(&pos.as_str()) {
                     let pos_ident = if pos.is_empty() {
                         "empty".to_string()
