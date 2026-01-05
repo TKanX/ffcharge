@@ -333,3 +333,112 @@ mod water {
     test_water_model!(SpcE);
     test_water_model!(Opc3);
 }
+
+// =============================================================================
+// Ion Tests
+// =============================================================================
+
+mod ion {
+    use super::*;
+
+    macro_rules! test_ion {
+        ($residue:ident, $expected:expr) => {
+            pastey::paste! {
+                #[test]
+                fn [<classic_ $residue:lower>]() {
+                    let charge = IonScheme::Classic.charge(stringify!($residue))
+                        .expect(concat!("Missing: ", stringify!($residue)));
+                    assert_charge_is_int(charge, $expected, stringify!($residue));
+                }
+            }
+        };
+        ($residue:literal, $expected:expr) => {
+            pastey::paste! {
+                #[test]
+                fn [<classic_ $residue:lower>]() {
+                    let charge = IonScheme::Classic.charge($residue)
+                        .expect(concat!("Missing: ", $residue));
+                    assert_charge_is_int(charge, $expected, $residue);
+                }
+            }
+        };
+    }
+
+    // +1 Cations
+    test_ion!(LI, 1);
+    test_ion!(NA, 1);
+    test_ion!(K, 1);
+    test_ion!(RB, 1);
+    test_ion!(CS, 1);
+    test_ion!(AG, 1);
+    test_ion!(AU, 1);
+    test_ion!(CU1, 1);
+    test_ion!(TL, 1);
+
+    // +2 Cations
+    test_ion!(MG, 2);
+    test_ion!(CA, 2);
+    test_ion!(SR, 2);
+    test_ion!(BA, 2);
+    test_ion!(FE2, 2);
+    test_ion!(ZN, 2);
+    test_ion!(CD, 2);
+    test_ion!(HG, 2);
+    test_ion!(CU, 2);
+    test_ion!(NI, 2);
+    test_ion!(CO, 2);
+    test_ion!(MN, 2);
+    test_ion!(PB, 2);
+    test_ion!(PD, 2);
+    test_ion!(PT, 2);
+    test_ion!(EU, 2);
+
+    // +3 Cations
+    test_ion!(FE, 3);
+    test_ion!(AL, 3);
+    test_ion!(CR, 3);
+    test_ion!(IN, 3);
+    test_ion!(GA, 3);
+    test_ion!(LA, 3);
+    test_ion!(CE, 3);
+    test_ion!(PR, 3);
+    test_ion!(ND, 3);
+    test_ion!(SM, 3);
+    test_ion!(GD3, 3);
+    test_ion!(TB, 3);
+    test_ion!(DY, 3);
+    test_ion!(ER3, 3);
+    test_ion!(YB, 3);
+    test_ion!(LU, 3);
+    test_ion!(EU3, 3);
+    test_ion!(HO3, 3);
+    test_ion!(YT3, 3);
+    test_ion!(RH3, 3);
+    test_ion!(IR3, 3);
+    test_ion!(AU3, 3);
+    test_ion!(MN3, 3);
+    test_ion!(SB, 3);
+    test_ion!(V, 3);
+    test_ion!(RU, 3);
+    test_ion!(OS, 3);
+    test_ion!("3CO", 3);
+    test_ion!("3NI", 3);
+
+    // +4 Cations
+    test_ion!(ZR, 4);
+    test_ion!(IR, 4);
+    test_ion!(OS4, 4);
+    test_ion!(PT4, 4);
+    test_ion!(TH, 4);
+    test_ion!("4MO", 4);
+
+    // +6 Cations
+    test_ion!(W, 6);
+    test_ion!("6MO", 6);
+
+    // -1 Anions
+    test_ion!(F, -1);
+    test_ion!(CL, -1);
+    test_ion!(BR, -1);
+    test_ion!(IOD, -1);
+}
