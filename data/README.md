@@ -18,8 +18,8 @@ The `charges.csv` file uses CSV format with the following columns:
 
 | Category     | Entries | Residues | Schemes |
 | ------------ | ------- | -------- | ------- |
-| Protein      | 7,602   | 29       | 3       |
-| Nucleic Acid | 1,888   | 10       | 2       |
+| Protein      | 8,169   | 29       | 3       |
+| Nucleic Acid | 1,321   | 10       | 2       |
 | Water        | 15      | 1        | 5       |
 | Ion          | 66      | 66       | 1       |
 

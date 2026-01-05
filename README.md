@@ -2,13 +2,13 @@
 
 **FFCharge** is a lightweight, pure Rust library for fast, residue-based force field partial charge assignment in molecular modeling pipelines. It provides pre-computed atomic partial charges from AMBER and CHARMM force fields for proteins, nucleic acids, water, and ions.
 
-Designed with **`no_std`** support and zero runtime dependencies, FFCharge is ideal for high-performance molecular dynamics preprocessing, biomolecular structure analysis, and integration into existing simulation workflows.
+Designed with **`no_std`** support and **zero runtime dependencies**, FFCharge is ideal for high-performance molecular dynamics preprocessing, biomolecular structure analysis, and integration into existing simulation workflows.
 
 ## Features
 
 - **Zero Runtime Dependencies**: Uses compile-time code generation with [PHF](https://crates.io/crates/phf) for O(1) lookups.
 - **`no_std` Compatible**: Suitable for embedded systems and WebAssembly targets.
-- **Comprehensive Coverage**: Supports 29 protein residues, 10 nucleic acid residues, 5 water models, and 66 ion types.
+- **Comprehensive Coverage**: Supports **29 protein residues**, **10 nucleic acid residues**, **5 water models**, and **66 ion types**.
 - **Multiple Force Fields**: AMBER (ff99SB/ff14SB/ff19SB, ff03) and CHARMM (C22/C27/C36/C36m) for proteins; AMBER and CHARMM for nucleic acids.
 - **Terminal-Aware**: Handles N-terminal, C-terminal, and their protonation variants for proteins; 5' and 3' termini for nucleic acids.
 - **Type-Safe API**: Strongly-typed enums for schemes and positions prevent runtime errors.
@@ -68,10 +68,10 @@ For complete residue and atom listings, see [data/README.md](data/README.md).
 
 **Summary:**
 
-- **Proteins**: 29 residues × 5 positions × 3 schemes = 7,602 charge entries
-- **Nucleic Acids**: 10 residues × 3 positions × 2 schemes = 1,888 charge entries
-- **Water**: 5 models × 3 atoms = 15 charge entries
-- **Ions**: 66 ion types (formal charges)
+- **Proteins**: **8,169** charge entries (29 residues × 5 positions × 3 schemes, varying atoms per residue)
+- **Nucleic Acids**: **1,321** charge entries (10 residues × 3 positions × 2 schemes, varying atoms per residue)
+- **Water**: **15** charge entries (5 models × 3 atoms)
+- **Ions**: **66** ion types (formal charges)
 
 ## License
 
