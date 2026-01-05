@@ -4,7 +4,7 @@ mod position;
 mod scheme;
 
 pub use position::Position;
-pub use scheme::{DnaScheme, IonScheme, ProteinScheme, RnaScheme, WaterScheme};
+pub use scheme::{IonScheme, NucleicScheme, ProteinScheme, WaterScheme};
 
 /// Water charge distribution.
 #[derive(Debug, Clone, Copy, PartialEq)]

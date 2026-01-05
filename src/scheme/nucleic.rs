@@ -1,16 +1,16 @@
-//! DNA charge schemes.
+//! Nucleic acid (DNA/RNA) charge schemes.
 
-/// DNA charge scheme.
+/// Nucleic acid charge scheme.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
-pub enum DnaScheme {
-    /// AMBER (AMBER OL15, OL21, OL24, bsc1).
+pub enum NucleicScheme {
+    /// AMBER (DNA: OL15, OL21, OL24, bsc1; RNA: OL3).
     #[default]
     Amber,
-    /// CHARMM (CHARMM C27, C36).
+    /// CHARMM (C27, C36).
     Charmm,
 }
 
-impl DnaScheme {
+impl NucleicScheme {
     /// Returns the key for this scheme.
     pub const fn key(self) -> &'static str {
         match self {
@@ -24,13 +24,13 @@ impl DnaScheme {
         &[Self::Amber, Self::Charmm]
     }
 
-    /// Returns the partial charge for an atom in a DNA residue.
+    /// Returns the partial charge for an atom in a nucleic acid residue.
     ///
     /// # Arguments
     ///
     /// * `pos` - Position of the residue in the chain.
-    /// * `residue` - Residue name (e.g., "DA", "DG").
-    /// * `atom` - Atom name (e.g., "C1'", "H2''").
+    /// * `residue` - Residue name (e.g., "DA", "DG", "A", "G").
+    /// * `atom` - Atom name (e.g., "C1'", "H2'").
     ///
     /// # Returns
     ///
@@ -46,17 +46,17 @@ mod tests {
 
     #[test]
     fn default() {
-        assert_eq!(DnaScheme::default(), DnaScheme::Amber);
+        assert_eq!(NucleicScheme::default(), NucleicScheme::Amber);
     }
 
     #[test]
     fn count() {
-        assert_eq!(DnaScheme::all().len(), 2);
+        assert_eq!(NucleicScheme::all().len(), 2);
     }
 
     #[test]
     fn key_format() {
-        for s in DnaScheme::all() {
+        for s in NucleicScheme::all() {
             let k = s.key();
             assert!(
                 k.chars()
