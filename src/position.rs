@@ -24,7 +24,7 @@ pub enum Position {
 
 impl Position {
     /// Returns the key for this position.
-    pub const fn key(self) -> &'static str {
+    pub(crate) const fn key(self) -> &'static str {
         match self {
             Self::NTerminal => "n",
             Self::NTerminalDeprotonated => "n-",
