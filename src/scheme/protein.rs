@@ -26,6 +26,21 @@ impl ProteinScheme {
     pub const fn all() -> &'static [Self] {
         &[Self::AmberFFSB, Self::AmberFF03, Self::Charmm]
     }
+
+    /// Returns the partial charge for an atom in a protein residue.
+    ///
+    /// # Arguments
+    ///
+    /// * `pos` - Position of the residue in the chain.
+    /// * `residue` - Residue name (e.g., "ALA", "ARG").
+    /// * `atom` - Atom name (e.g., "CA", "HB1").
+    ///
+    /// # Returns
+    ///
+    /// `Option<f32>` - Partial charge if found, otherwise `None`.
+    pub fn charge(self, pos: crate::Position, residue: &str, atom: &str) -> Option<f32> {
+        crate::generated::get_atom_charge(self.key(), pos.key(), residue, atom)
+    }
 }
 
 #[cfg(test)]
