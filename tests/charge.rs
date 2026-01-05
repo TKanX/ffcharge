@@ -39,12 +39,39 @@ fn assert_charge_is_int(actual: f32, expected: i32, context: &str) {
 }
 
 fn protein_total_charge(scheme: ProteinScheme, pos: Position, residue: &str) -> Option<f32> {
-    let atoms = generated::get_protein_atoms(scheme.key(), pos.key(), residue)?;
+    let scheme_key = match scheme {
+        ProteinScheme::AmberFFSB => "amber-ffsb",
+        ProteinScheme::AmberFF03 => "amber-ff03",
+        ProteinScheme::Charmm => "charmm",
+    };
+    let pos_key = match pos {
+        Position::NTerminal => "n",
+        Position::NTerminalDeprotonated => "n-",
+        Position::CTerminal => "c",
+        Position::CTerminalProtonated => "c+",
+        Position::FivePrime => "5",
+        Position::ThreePrime => "3",
+        Position::Middle => "m",
+    };
+    let atoms = generated::get_protein_atoms(scheme_key, pos_key, residue)?;
     Some(atoms.iter().map(|(_, c)| c).sum())
 }
 
 fn nucleic_total_charge(scheme: NucleicScheme, pos: Position, residue: &str) -> Option<f32> {
-    let atoms = generated::get_nucleic_atoms(scheme.key(), pos.key(), residue)?;
+    let scheme_key = match scheme {
+        NucleicScheme::Amber => "amber",
+        NucleicScheme::Charmm => "charmm",
+    };
+    let pos_key = match pos {
+        Position::NTerminal => "n",
+        Position::NTerminalDeprotonated => "n-",
+        Position::CTerminal => "c",
+        Position::CTerminalProtonated => "c+",
+        Position::FivePrime => "5",
+        Position::ThreePrime => "3",
+        Position::Middle => "m",
+    };
+    let atoms = generated::get_nucleic_atoms(scheme_key, pos_key, residue)?;
     Some(atoms.iter().map(|(_, c)| c).sum())
 }
 
