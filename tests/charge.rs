@@ -219,3 +219,85 @@ mod protein {
         test_protein_residue!(Charmm, TYM, -1);
     }
 }
+
+// =============================================================================
+// Nucleic Acid Tests
+// =============================================================================
+
+mod nucleic {
+    use super::*;
+
+    macro_rules! test_nucleic_middle {
+        ($scheme:ident, $residue:ident, $expected:expr) => {
+            pastey::paste! {
+                #[test]
+                fn [<$scheme:lower _ $residue:lower _middle>]() {
+                    let charge = nucleic_total_charge(
+                        NucleicScheme::$scheme,
+                        Position::Middle,
+                        stringify!($residue),
+                    ).expect(concat!("Missing: ", stringify!($scheme), "/m/", stringify!($residue)));
+                    assert_charge_is_int(charge, $expected, concat!(stringify!($scheme), "/m/", stringify!($residue)));
+                }
+            }
+        };
+    }
+
+    macro_rules! test_nucleic_terminal_sum {
+        ($scheme:ident, $residue:ident, $expected:expr) => {
+            pastey::paste! {
+                #[test]
+                fn [<$scheme:lower _ $residue:lower _terminal_sum>]() {
+                    let five = nucleic_total_charge(NucleicScheme::$scheme, Position::FivePrime, stringify!($residue))
+                        .expect(concat!("Missing: ", stringify!($scheme), "/5/", stringify!($residue)));
+                    let three = nucleic_total_charge(NucleicScheme::$scheme, Position::ThreePrime, stringify!($residue))
+                        .expect(concat!("Missing: ", stringify!($scheme), "/3/", stringify!($residue)));
+                    assert_charge_is_int(five + three, $expected, concat!(stringify!($scheme), " 5'+3' ", stringify!($residue)));
+                }
+            }
+        };
+    }
+
+    macro_rules! test_nucleic_residue {
+        ($scheme:ident, $residue:ident, $expected:expr) => {
+            test_nucleic_middle!($scheme, $residue, $expected);
+            test_nucleic_terminal_sum!($scheme, $residue, $expected);
+        };
+    }
+
+    mod amber_dna {
+        use super::*;
+        test_nucleic_residue!(Amber, DA, -1);
+        test_nucleic_residue!(Amber, DC, -1);
+        test_nucleic_residue!(Amber, DG, -1);
+        test_nucleic_residue!(Amber, DT, -1);
+        test_nucleic_residue!(Amber, DI, -1);
+    }
+
+    mod amber_rna {
+        use super::*;
+        test_nucleic_residue!(Amber, A, -1);
+        test_nucleic_residue!(Amber, C, -1);
+        test_nucleic_residue!(Amber, G, -1);
+        test_nucleic_residue!(Amber, U, -1);
+        test_nucleic_residue!(Amber, I, -1);
+    }
+
+    mod charmm_dna {
+        use super::*;
+        test_nucleic_residue!(Charmm, DA, -1);
+        test_nucleic_residue!(Charmm, DC, -1);
+        test_nucleic_residue!(Charmm, DG, -1);
+        test_nucleic_residue!(Charmm, DT, -1);
+        test_nucleic_residue!(Charmm, DI, -1);
+    }
+
+    mod charmm_rna {
+        use super::*;
+        test_nucleic_residue!(Charmm, A, -1);
+        test_nucleic_residue!(Charmm, C, -1);
+        test_nucleic_residue!(Charmm, G, -1);
+        test_nucleic_residue!(Charmm, U, -1);
+        test_nucleic_residue!(Charmm, I, -1);
+    }
+}
