@@ -4,6 +4,10 @@ use std::fs::File;
 use std::io::{BufWriter, Write};
 use std::path::Path;
 
+// =============================================================================
+// Data Structures
+// =============================================================================
+
 #[derive(Debug, serde::Deserialize)]
 struct Record {
     scheme: String,
@@ -20,183 +24,317 @@ struct WaterData {
     h2: Option<f32>,
 }
 
+/// Parsed charge data organized by scheme → position → residue → atoms.
+type AtomData = HashMap<String, HashMap<String, HashMap<String, Vec<(String, f32)>>>>;
+/// Ion data organized by scheme → residue → charge.
+type IonData = HashMap<String, HashMap<String, f32>>;
+/// Water data organized by scheme → WaterData.
+type WaterMap = HashMap<String, WaterData>;
+
+// =============================================================================
+// Helper Functions
+// =============================================================================
+
+/// Sanitizes a string for use as a Rust identifier.
 fn sanitize(s: &str) -> String {
     s.replace('-', "_").replace('+', "_plus")
 }
 
-fn main() {
-    let path = Path::new("data/charges.csv");
-    println!("cargo:rerun-if-changed={}", path.display());
+/// Generates a PHF map name from scheme and position.
+fn map_name(scheme: &str, pos: &str) -> String {
+    let scheme_ident = sanitize(scheme).to_uppercase();
+    let pos_ident = if pos.is_empty() {
+        "EMPTY".to_string()
+    } else {
+        sanitize(pos).to_uppercase()
+    };
+    format!("MAP_{}_{}", scheme_ident, pos_ident)
+}
 
-    let out_dir = env::var("OUT_DIR").unwrap();
-    let dest_path = Path::new(&out_dir).join("codegen.rs");
-    let mut file = BufWriter::new(File::create(&dest_path).unwrap());
+// =============================================================================
+// Code Generation
+// =============================================================================
 
-    let mut rdr = csv::ReaderBuilder::new()
-        .comment(Some(b'#'))
-        .trim(csv::Trim::All)
-        .from_path(path)
-        .expect("Failed to open data/charges.csv");
+struct CodeGenerator {
+    atom_data: AtomData,
+    ion_data: IonData,
+    water_data: WaterMap,
+}
 
-    type AtomData = HashMap<String, HashMap<String, HashMap<String, Vec<(String, f32)>>>>;
-    let mut atom_data: AtomData = HashMap::new();
-    let mut ion_data: HashMap<String, HashMap<String, f32>> = HashMap::new();
-    let mut water_data: HashMap<String, WaterData> = HashMap::new();
-
-    for result in rdr.deserialize() {
-        let record: Record = result.expect("Failed to parse CSV record");
-
-        if record.residue == "HOH" {
-            let entry = water_data.entry(record.scheme.clone()).or_default();
-            match record.atom.as_str() {
-                "O" => entry.o = Some(record.charge),
-                "H1" => entry.h1 = Some(record.charge),
-                "H2" => entry.h2 = Some(record.charge),
-                _ => panic!("Unknown water atom: {}", record.atom),
-            }
-        } else if record.scheme == "classic" {
-            let scheme_map = ion_data.entry(record.scheme.clone()).or_default();
-            scheme_map.insert(record.residue, record.charge);
-        } else {
-            let scheme_map = atom_data.entry(record.scheme.clone()).or_default();
-            let pos_map = scheme_map.entry(record.position.clone()).or_default();
-            let res_vec = pos_map.entry(record.residue.clone()).or_default();
-            res_vec.push((record.atom, record.charge));
+impl CodeGenerator {
+    fn new() -> Self {
+        Self {
+            atom_data: HashMap::new(),
+            ion_data: HashMap::new(),
+            water_data: HashMap::new(),
         }
     }
 
-    let mut match_arms_scheme = Vec::new();
+    fn load(&mut self, path: &Path) {
+        let mut rdr = csv::ReaderBuilder::new()
+            .comment(Some(b'#'))
+            .trim(csv::Trim::All)
+            .from_path(path)
+            .expect("Failed to open data/charges.csv");
 
-    for (scheme, pos_map) in &atom_data {
-        let scheme_ident = sanitize(scheme);
-        let mut match_arms_pos = Vec::new();
+        for result in rdr.deserialize() {
+            let record: Record = result.expect("Failed to parse CSV record");
+            self.process_record(record);
+        }
+    }
 
-        for (pos, res_map) in pos_map {
-            let pos_ident = if pos.is_empty() {
-                "empty".to_string()
-            } else {
-                sanitize(pos)
-            };
-            let map_name = format!(
-                "MAP_{}_{}",
-                scheme_ident.to_uppercase(),
-                pos_ident.to_uppercase()
-            );
+    fn process_record(&mut self, record: Record) {
+        match (record.residue.as_str(), record.scheme.as_str()) {
+            ("HOH", _) => self.add_water(&record),
+            (_, "classic") => self.add_ion(&record),
+            _ => self.add_atom(&record),
+        }
+    }
 
-            let mut entries = Vec::new();
-            for (res, atoms) in res_map {
-                let atoms_lit = atoms
+    fn add_water(&mut self, record: &Record) {
+        let entry = self.water_data.entry(record.scheme.clone()).or_default();
+        match record.atom.as_str() {
+            "O" => entry.o = Some(record.charge),
+            "H1" => entry.h1 = Some(record.charge),
+            "H2" => entry.h2 = Some(record.charge),
+            other => panic!("Unknown water atom: {}", other),
+        }
+    }
+
+    fn add_ion(&mut self, record: &Record) {
+        self.ion_data
+            .entry(record.scheme.clone())
+            .or_default()
+            .insert(record.residue.clone(), record.charge);
+    }
+
+    fn add_atom(&mut self, record: &Record) {
+        self.atom_data
+            .entry(record.scheme.clone())
+            .or_default()
+            .entry(record.position.clone())
+            .or_default()
+            .entry(record.residue.clone())
+            .or_default()
+            .push((record.atom.clone(), record.charge));
+    }
+
+    fn generate_lib(&self, path: &Path) {
+        let mut f = BufWriter::new(File::create(path).unwrap());
+
+        writeln!(f, "// Auto-generated by build.rs - DO NOT EDIT").unwrap();
+        writeln!(f).unwrap();
+
+        self.write_atom_maps(&mut f);
+        self.write_ion_map(&mut f);
+        self.write_water_map(&mut f);
+
+        writeln!(f).unwrap();
+        writeln!(
+            f,
+            "// ============================================================================="
+        )
+        .unwrap();
+        writeln!(f, "// Lookup Functions").unwrap();
+        writeln!(
+            f,
+            "// ============================================================================="
+        )
+        .unwrap();
+
+        self.write_lookup_fn(&mut f, "get_protein_charge", &["n", "n-", "c", "c+", "m"]);
+        self.write_lookup_fn(&mut f, "get_nucleic_charge", &["5", "3", "m"]);
+        self.write_ion_lookup_fn(&mut f);
+        self.write_water_lookup_fn(&mut f);
+    }
+
+    fn generate_test(&self, path: &Path) {
+        let mut f = BufWriter::new(File::create(path).unwrap());
+
+        writeln!(f, "// Auto-generated by build.rs - DO NOT EDIT").unwrap();
+        writeln!(
+            f,
+            "// This file provides test utilities for charge validation."
+        )
+        .unwrap();
+        writeln!(f).unwrap();
+
+        self.write_atom_maps(&mut f);
+
+        writeln!(f).unwrap();
+        writeln!(
+            f,
+            "// ============================================================================="
+        )
+        .unwrap();
+        writeln!(f, "// Test Utility Functions").unwrap();
+        writeln!(
+            f,
+            "// ============================================================================="
+        )
+        .unwrap();
+
+        self.write_atoms_lookup_fn(&mut f, "get_protein_atoms", &["n", "n-", "c", "c+", "m"]);
+        self.write_atoms_lookup_fn(&mut f, "get_nucleic_atoms", &["5", "3", "m"]);
+    }
+
+    fn write_atom_maps(&self, f: &mut BufWriter<File>) {
+        for (scheme, pos_map) in &self.atom_data {
+            for (pos, res_map) in pos_map {
+                let name = map_name(scheme, pos);
+                self.write_atom_phf_map(f, &name, res_map);
+            }
+        }
+    }
+
+    fn write_atom_phf_map(
+        &self,
+        f: &mut BufWriter<File>,
+        name: &str,
+        res_map: &HashMap<String, Vec<(String, f32)>>,
+    ) {
+        let entries: Vec<_> = res_map
+            .iter()
+            .map(|(res, atoms)| {
+                let atoms_str = atoms
                     .iter()
                     .map(|(a, c)| format!("(\"{}\", {}_f32)", a, c))
                     .collect::<Vec<_>>()
                     .join(", ");
-                let val = format!("&[{}]", atoms_lit);
-                entries.push((res.clone(), val));
-            }
+                (res.clone(), format!("&[{}]", atoms_str))
+            })
+            .collect();
 
-            let mut phf_map = phf_codegen::Map::new();
-            for (res, val) in &entries {
-                phf_map.entry(res.as_str(), val.as_str());
-            }
-
-            writeln!(
-                &mut file,
-                "static {}: phf::Map<&'static str, &'static [(&'static str, f32)]> = {};",
-                map_name,
-                phf_map.build()
-            )
-            .unwrap();
-
-            match_arms_pos.push(format!("\"{}\" => {}.get(res),", pos, map_name));
-        }
-
-        let pos_match = format!(
-            "match pos {{\n            {}\n            _ => None,\n        }}",
-            match_arms_pos.join("\n            ")
-        );
-        match_arms_scheme.push(format!(
-            "\"{}\" => {{\n            {}\n        }}",
-            scheme, pos_match
-        ));
-    }
-
-    let mut match_arms_ion = Vec::new();
-    for (scheme, res_map) in &ion_data {
-        let scheme_ident = sanitize(scheme);
-        let map_name = format!("ION_MAP_{}", scheme_ident.to_uppercase());
-
-        let mut entries = Vec::new();
-        for (res, charge) in res_map {
-            entries.push((res.clone(), format!("{}_f32", charge)));
-        }
-
-        let mut phf_map = phf_codegen::Map::new();
+        let mut phf = phf_codegen::Map::new();
         for (res, val) in &entries {
-            phf_map.entry(res.as_str(), val.as_str());
+            phf.entry(res.as_str(), val.as_str());
         }
 
         writeln!(
-            &mut file,
-            "static {}: phf::Map<&'static str, f32> = {};",
-            map_name,
-            phf_map.build()
+            f,
+            "static {}: phf::Map<&'static str, &'static [(&'static str, f32)]> = {};",
+            name,
+            phf.build()
         )
         .unwrap();
-
-        match_arms_ion.push(format!("\"{}\" => {}.get(res).copied(),", scheme, map_name));
     }
 
-    let mut water_entries = Vec::new();
-    for (scheme, data) in &water_data {
-        let o = data.o.expect("Missing O");
-        let h1 = data.h1.expect("Missing H1");
-        let h2 = data.h2.expect("Missing H2");
-        let val = format!(
-            "crate::WaterCharges {{ o: {}_f32, h1: {}_f32, h2: {}_f32 }}",
-            o, h1, h2
-        );
-        water_entries.push((scheme.clone(), val));
-    }
+    fn write_ion_map(&self, f: &mut BufWriter<File>) {
+        for (scheme, res_map) in &self.ion_data {
+            let name = format!("ION_MAP_{}", sanitize(scheme).to_uppercase());
 
-    let mut water_phf = phf_codegen::Map::new();
-    for (scheme, val) in &water_entries {
-        water_phf.entry(scheme.as_str(), val.as_str());
-    }
+            let entries: Vec<_> = res_map
+                .iter()
+                .map(|(res, charge)| (res.clone(), format!("{}_f32", charge)))
+                .collect();
 
-    writeln!(
-        &mut file,
-        "static WATER_CHARGES: phf::Map<&'static str, crate::WaterCharges> = {};",
-        water_phf.build()
-    )
-    .unwrap();
-
-    writeln!(&mut file, "\n// Generated Lookup Functions").unwrap();
-
-    let generate_lookup = |file: &mut BufWriter<File>, func_name: &str, allowed_pos: &[&str]| {
-        let mut arms = Vec::new();
-        for (scheme, pos_map) in &atom_data {
-            let scheme_ident = sanitize(scheme);
-            let mut pos_arms = Vec::new();
-            let mut has_valid_pos = false;
-
-            for pos in pos_map.keys() {
-                if allowed_pos.contains(&pos.as_str()) {
-                    let pos_ident = if pos.is_empty() {
-                        "empty".to_string()
-                    } else {
-                        sanitize(pos)
-                    };
-                    let map_name = format!(
-                        "MAP_{}_{}",
-                        scheme_ident.to_uppercase(),
-                        pos_ident.to_uppercase()
-                    );
-                    pos_arms.push(format!("\"{}\" => {}.get(res),", pos, map_name));
-                    has_valid_pos = true;
-                }
+            let mut phf = phf_codegen::Map::new();
+            for (res, val) in &entries {
+                phf.entry(res.as_str(), val.as_str());
             }
 
-            if has_valid_pos {
+            writeln!(
+                f,
+                "static {}: phf::Map<&'static str, f32> = {};",
+                name,
+                phf.build()
+            )
+            .unwrap();
+        }
+    }
+
+    fn write_water_map(&self, f: &mut BufWriter<File>) {
+        let entries: Vec<_> = self
+            .water_data
+            .iter()
+            .map(|(scheme, data)| {
+                let val = format!(
+                    "crate::WaterCharges {{ o: {}_f32, h1: {}_f32, h2: {}_f32 }}",
+                    data.o.expect("Missing O"),
+                    data.h1.expect("Missing H1"),
+                    data.h2.expect("Missing H2")
+                );
+                (scheme.clone(), val)
+            })
+            .collect();
+
+        let mut phf = phf_codegen::Map::new();
+        for (scheme, val) in &entries {
+            phf.entry(scheme.as_str(), val.as_str());
+        }
+
+        writeln!(
+            f,
+            "static WATER_CHARGES: phf::Map<&'static str, crate::WaterCharges> = {};",
+            phf.build()
+        )
+        .unwrap();
+    }
+
+    fn write_lookup_fn(&self, f: &mut BufWriter<File>, fn_name: &str, positions: &[&str]) {
+        let arms = self.build_scheme_match_arms(positions, |name| format!("{}.get(res),", name));
+
+        writeln!(f).unwrap();
+        writeln!(f, "#[inline(always)]").unwrap();
+        writeln!(
+            f,
+            "pub fn {}(scheme: &str, pos: &str, res: &str, atom: &str) -> Option<f32> {{",
+            fn_name
+        )
+        .unwrap();
+        writeln!(f, "    let atoms = match scheme {{").unwrap();
+        for arm in &arms {
+            writeln!(f, "        {}", arm).unwrap();
+        }
+        writeln!(f, "        _ => None,").unwrap();
+        writeln!(f, "    }}?;").unwrap();
+        writeln!(f).unwrap();
+        writeln!(
+            f,
+            "    atoms.iter().find(|(a, _)| *a == atom).map(|(_, c)| *c)"
+        )
+        .unwrap();
+        writeln!(f, "}}").unwrap();
+    }
+
+    fn write_atoms_lookup_fn(&self, f: &mut BufWriter<File>, fn_name: &str, positions: &[&str]) {
+        let arms =
+            self.build_scheme_match_arms(positions, |name| format!("{}.get(res).copied(),", name));
+
+        writeln!(f).unwrap();
+        writeln!(f, "#[inline(always)]").unwrap();
+        writeln!(
+            f,
+            "pub fn {}(scheme: &str, pos: &str, res: &str) -> Option<&'static [(&'static str, f32)]> {{",
+            fn_name
+        )
+        .unwrap();
+        writeln!(f, "    match scheme {{").unwrap();
+        for arm in &arms {
+            writeln!(f, "        {}", arm).unwrap();
+        }
+        writeln!(f, "        _ => None,").unwrap();
+        writeln!(f, "    }}").unwrap();
+        writeln!(f, "}}").unwrap();
+    }
+
+    fn build_scheme_match_arms<F>(&self, positions: &[&str], map_access: F) -> Vec<String>
+    where
+        F: Fn(&str) -> String,
+    {
+        let mut arms = Vec::new();
+
+        for (scheme, pos_map) in &self.atom_data {
+            let pos_arms: Vec<_> = pos_map
+                .keys()
+                .filter(|p| positions.contains(&p.as_str()))
+                .map(|pos| {
+                    let name = map_name(scheme, pos);
+                    format!("\"{}\" => {}", pos, map_access(&name))
+                })
+                .collect();
+
+            if !pos_arms.is_empty() {
                 let pos_match = format!(
                     "match pos {{\n            {}\n            _ => None,\n        }}",
                     pos_arms.join("\n            ")
@@ -208,52 +346,61 @@ fn main() {
             }
         }
 
-        writeln!(file, "#[inline(always)]").unwrap();
+        arms
+    }
+
+    fn write_ion_lookup_fn(&self, f: &mut BufWriter<File>) {
+        let arms: Vec<_> = self
+            .ion_data
+            .keys()
+            .map(|scheme| {
+                let name = format!("ION_MAP_{}", sanitize(scheme).to_uppercase());
+                format!("\"{}\" => {}.get(res).copied(),", scheme, name)
+            })
+            .collect();
+
+        writeln!(f).unwrap();
+        writeln!(f, "#[inline(always)]").unwrap();
         writeln!(
-            file,
-            "pub(crate) fn {}(scheme: &str, pos: &str, res: &str, atom: &str) -> Option<f32> {{",
-            func_name
+            f,
+            "pub fn get_ion_charge(scheme: &str, res: &str) -> Option<f32> {{"
         )
         .unwrap();
-        writeln!(file, "    let atoms = match scheme {{").unwrap();
-        writeln!(file, "        {}", arms.join("\n        ")).unwrap();
-        writeln!(file, "        _ => None,").unwrap();
-        writeln!(file, "    }}?;").unwrap();
-        writeln!(file, "    ").unwrap();
+        writeln!(f, "    match scheme {{").unwrap();
+        for arm in &arms {
+            writeln!(f, "        {}", arm).unwrap();
+        }
+        writeln!(f, "        _ => None,").unwrap();
+        writeln!(f, "    }}").unwrap();
+        writeln!(f, "}}").unwrap();
+    }
+
+    fn write_water_lookup_fn(&self, f: &mut BufWriter<File>) {
+        writeln!(f).unwrap();
+        writeln!(f, "#[inline(always)]").unwrap();
         writeln!(
-            file,
-            "    atoms.iter().find(|(a, _)| *a == atom).map(|(_, c)| *c)"
+            f,
+            "pub fn get_water_charges(scheme: &str) -> Option<crate::WaterCharges> {{"
         )
         .unwrap();
-        writeln!(file, "}}").unwrap();
-    };
+        writeln!(f, "    WATER_CHARGES.get(scheme).copied()").unwrap();
+        writeln!(f, "}}").unwrap();
+    }
+}
 
-    generate_lookup(
-        &mut file,
-        "get_protein_charge",
-        &["n", "n-", "c", "c+", "m"],
-    );
+// =============================================================================
+// Main Entry Point
+// =============================================================================
 
-    generate_lookup(&mut file, "get_nucleic_charge", &["5", "3", "m"]);
+fn main() {
+    let csv_path = Path::new("data/charges.csv");
+    println!("cargo:rerun-if-changed={}", csv_path.display());
 
-    writeln!(&mut file, "#[inline(always)]").unwrap();
-    writeln!(
-        &mut file,
-        "pub(crate) fn get_ion_charge(scheme: &str, res: &str) -> Option<f32> {{"
-    )
-    .unwrap();
-    writeln!(&mut file, "    match scheme {{").unwrap();
-    writeln!(&mut file, "        {}", match_arms_ion.join("\n        ")).unwrap();
-    writeln!(&mut file, "        _ => None,").unwrap();
-    writeln!(&mut file, "    }}").unwrap();
-    writeln!(&mut file, "}}").unwrap();
+    let out_dir = env::var("OUT_DIR").unwrap();
+    let out_path = Path::new(&out_dir);
 
-    writeln!(&mut file, "#[inline(always)]").unwrap();
-    writeln!(
-        &mut file,
-        "pub(crate) fn get_water_charges(scheme: &str) -> Option<crate::WaterCharges> {{"
-    )
-    .unwrap();
-    writeln!(&mut file, "    WATER_CHARGES.get(scheme).copied()").unwrap();
-    writeln!(&mut file, "}}").unwrap();
+    let mut generator = CodeGenerator::new();
+    generator.load(csv_path);
+    generator.generate_lib(&out_path.join("codegen.rs"));
+    generator.generate_test(&out_path.join("codegen_test.rs"));
 }
