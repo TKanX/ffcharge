@@ -10533,3 +10533,93 @@ spc-e,,HOH,H2,0.4238000
 opc3,,HOH,O,-0.8951700
 opc3,,HOH,H1,0.4475850
 opc3,,HOH,H2,0.4475850
+
+# Ion: classic
+
+# +1 Cations - Alkali Metals
+classic,,LI,LI,1.0000000
+classic,,NA,NA,1.0000000
+classic,,K,K,1.0000000
+classic,,RB,RB,1.0000000
+classic,,CS,CS,1.0000000
+
+# +1 Cations - Other
+classic,,AG,AG,1.0000000
+classic,,AU,AU,1.0000000
+classic,,CU1,CU,1.0000000
+classic,,TL,TL,1.0000000
+
+# +2 Cations - Alkaline Earth Metals
+classic,,MG,MG,2.0000000
+classic,,CA,CA,2.0000000
+classic,,SR,SR,2.0000000
+classic,,BA,BA,2.0000000
+
+# +2 Cations - Transition Metals
+classic,,MN,MN,2.0000000
+classic,,FE2,FE,2.0000000
+classic,,CO,CO,2.0000000
+classic,,NI,NI,2.0000000
+classic,,CU,CU,2.0000000
+classic,,ZN,ZN,2.0000000
+classic,,PD,PD,2.0000000
+classic,,PT,PT,2.0000000
+
+# +2 Cations - Other
+classic,,CD,CD,2.0000000
+classic,,HG,HG,2.0000000
+classic,,PB,PB,2.0000000
+classic,,EU,EU,2.0000000
+
+# +3 Cations - Main Group
+classic,,AL,AL,3.0000000
+classic,,GA,GA,3.0000000
+classic,,IN,IN,3.0000000
+classic,,SB,SB,3.0000000
+
+# +3 Cations - Transition Metals
+classic,,V,V,3.0000000
+classic,,CR,CR,3.0000000
+classic,,MN3,MN,3.0000000
+classic,,FE,FE,3.0000000
+classic,,3CO,CO,3.0000000
+classic,,3NI,NI,3.0000000
+classic,,RU,RU,3.0000000
+classic,,RH3,RH,3.0000000
+classic,,OS,OS,3.0000000
+classic,,IR3,IR,3.0000000
+classic,,AU3,AU,3.0000000
+
+# +3 Cations - Lanthanides
+classic,,LA,LA,3.0000000
+classic,,CE,CE,3.0000000
+classic,,PR,PR,3.0000000
+classic,,ND,ND,3.0000000
+classic,,SM,SM,3.0000000
+classic,,EU3,EU,3.0000000
+classic,,GD3,GD,3.0000000
+classic,,TB,TB,3.0000000
+classic,,DY,DY,3.0000000
+classic,,HO3,HO,3.0000000
+classic,,ER3,ER,3.0000000
+classic,,LU,LU,3.0000000
+classic,,YB,YB,3.0000000
+classic,,YT3,Y,3.0000000
+
+# +4 Cations
+classic,,ZR,ZR,4.0000000
+classic,,PT4,PT,4.0000000
+classic,,IR,IR,4.0000000
+classic,,OS4,OS,4.0000000
+classic,,TH,TH,4.0000000
+classic,,4MO,MO,4.0000000
+
+# +6 Cations
+classic,,W,W,6.0000000
+classic,,6MO,MO,6.0000000
+
+# -1 Anions - Halides
+classic,,F,F,-1.0000000
+classic,,CL,CL,-1.0000000
+classic,,BR,BR,-1.0000000
+classic,,IOD,I,-1.0000000
