@@ -301,3 +301,35 @@ mod nucleic {
         test_nucleic_residue!(Charmm, I, -1);
     }
 }
+
+// =============================================================================
+// Water Tests
+// =============================================================================
+
+mod water {
+    use super::*;
+
+    macro_rules! test_water_model {
+        ($scheme:ident) => {
+            pastey::paste! {
+                #[test]
+                fn [<$scheme:lower _hydrogen_symmetry>]() {
+                    let c = WaterScheme::$scheme.charges().expect(concat!("Missing: ", stringify!($scheme)));
+                    assert_charge_eq(c.h1, c.h2, concat!(stringify!($scheme), " H1 == H2"));
+                }
+
+                #[test]
+                fn [<$scheme:lower _total_charge>]() {
+                    let c = WaterScheme::$scheme.charges().expect(concat!("Missing: ", stringify!($scheme)));
+                    assert_charge_is_int(c.o + c.h1 + c.h2, 0, concat!(stringify!($scheme), " total"));
+                }
+            }
+        };
+    }
+
+    test_water_model!(Tip3p);
+    test_water_model!(Tip3pFb);
+    test_water_model!(Spc);
+    test_water_model!(SpcE);
+    test_water_model!(Opc3);
+}
