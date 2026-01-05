@@ -10506,3 +10506,30 @@ charmm,3,I,HO3',0.4300000
 charmm,3,I,H8,0.1500000
 charmm,3,I,H1,0.2500000
 charmm,3,I,H2,0.1000000
+
+# Water: tip3p, tip3p-fb, spc, spc-e, opc3
+
+# HOH - tip3p
+tip3p,,HOH,O,-0.8340000
+tip3p,,HOH,H1,0.4170000
+tip3p,,HOH,H2,0.4170000
+
+# HOH - tip3p-fb
+tip3p-fb,,HOH,O,-0.848448690103
+tip3p-fb,,HOH,H1,0.4242243450515
+tip3p-fb,,HOH,H2,0.4242243450515
+
+# HOH - spc
+spc,,HOH,O,-0.8200000
+spc,,HOH,H1,0.4100000
+spc,,HOH,H2,0.4100000
+
+# HOH - spc-e
+spc-e,,HOH,O,-0.8476000
+spc-e,,HOH,H1,0.4238000
+spc-e,,HOH,H2,0.4238000
+
+# HOH - opc3
+opc3,,HOH,O,-0.8951700
+opc3,,HOH,H1,0.4475850
+opc3,,HOH,H2,0.4475850
