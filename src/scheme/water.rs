@@ -17,8 +17,8 @@ pub enum WaterScheme {
 }
 
 impl WaterScheme {
-    /// Returns the key for this scheme.
-    pub const fn key(self) -> &'static str {
+    /// Returns the internal key for this scheme.
+    pub(crate) const fn key(self) -> &'static str {
         match self {
             Self::Tip3p => "tip3p",
             Self::Tip3pFb => "tip3p-fb",

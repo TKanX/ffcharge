@@ -13,8 +13,8 @@ pub enum ProteinScheme {
 }
 
 impl ProteinScheme {
-    /// Returns the key for this scheme.
-    pub const fn key(self) -> &'static str {
+    /// Returns the internal key for this scheme.
+    pub(crate) const fn key(self) -> &'static str {
         match self {
             Self::AmberFFSB => "amber-ffsb",
             Self::AmberFF03 => "amber-ff03",

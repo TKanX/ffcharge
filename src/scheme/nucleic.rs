@@ -11,8 +11,8 @@ pub enum NucleicScheme {
 }
 
 impl NucleicScheme {
-    /// Returns the key for this scheme.
-    pub const fn key(self) -> &'static str {
+    /// Returns the internal key for this scheme.
+    pub(crate) const fn key(self) -> &'static str {
         match self {
             Self::Amber => "amber",
             Self::Charmm => "charmm",
