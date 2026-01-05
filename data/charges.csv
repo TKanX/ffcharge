@@ -1,21 +1,4 @@
-# FFCharge Data File
-#
-# Format: scheme,position,residue,atom,charge
-#
-# Position: n (n-terminal), n- (n-terminal deprotonated), c (c-terminal), c+ (c-terminal protonated), 5 (5'), 3 (3'), m (middle), (empty for none - water/ion)
-#
-# Scheme Keys:
-#   Protein: amber-ffsb, amber-ff03, charmm
-#   DNA:     amber, charmm
-#   RNA:     amber, charmm
-#   Water:   tip3p, tip3p-fb, spc, spc-e, opc3
-#   Ion:     classic
-
 scheme,position,residue,atom,charge
-
-# Protein: amber-ffsb
-
-# ALA - middle
 amber-ffsb,m,ALA,N,-0.4157000
 amber-ffsb,m,ALA,H,0.2719000
 amber-ffsb,m,ALA,CA,0.0337000
@@ -26,8 +9,6 @@ amber-ffsb,m,ALA,HB2,0.0603000
 amber-ffsb,m,ALA,HB3,0.0603000
 amber-ffsb,m,ALA,C,0.5973000
 amber-ffsb,m,ALA,O,-0.5679000
-
-# ALA - n-terminal
 amber-ffsb,n,ALA,N,0.1414000
 amber-ffsb,n,ALA,H1,0.1997000
 amber-ffsb,n,ALA,H2,0.1997000
@@ -40,8 +21,6 @@ amber-ffsb,n,ALA,HB2,0.0300000
 amber-ffsb,n,ALA,HB3,0.0300000
 amber-ffsb,n,ALA,C,0.6163000
 amber-ffsb,n,ALA,O,-0.5722000
-
-# ALA - c-terminal
 amber-ffsb,c,ALA,N,-0.3821000
 amber-ffsb,c,ALA,H,0.2681000
 amber-ffsb,c,ALA,CA,-0.1747000
@@ -53,8 +32,6 @@ amber-ffsb,c,ALA,HB3,0.0764000
 amber-ffsb,c,ALA,C,0.7731000
 amber-ffsb,c,ALA,O,-0.8055000
 amber-ffsb,c,ALA,OXT,-0.8055000
-
-# ALA - n-terminal deprotonated
 amber-ffsb,n-,ALA,N,-0.6589000
 amber-ffsb,n-,ALA,H1,0.1997000
 amber-ffsb,n-,ALA,H2,0.1997000
@@ -66,8 +43,6 @@ amber-ffsb,n-,ALA,HB2,0.0300000
 amber-ffsb,n-,ALA,HB3,0.0300000
 amber-ffsb,n-,ALA,C,0.6163000
 amber-ffsb,n-,ALA,O,-0.5722000
-
-# ALA - c-terminal protonated
 amber-ffsb,c+,ALA,N,-0.3821000
 amber-ffsb,c+,ALA,H,0.2681000
 amber-ffsb,c+,ALA,CA,-0.1747000
@@ -80,8 +55,6 @@ amber-ffsb,c+,ALA,C,0.7731000
 amber-ffsb,c+,ALA,O,-0.5380000
 amber-ffsb,c+,ALA,OXT,-0.5380000
 amber-ffsb,c+,ALA,HOXT,0.4650000
-
-# ARG - middle
 amber-ffsb,m,ARG,N,-0.3479000
 amber-ffsb,m,ARG,H,0.2747000
 amber-ffsb,m,ARG,CA,-0.2637000
@@ -106,8 +79,6 @@ amber-ffsb,m,ARG,HH21,0.4478000
 amber-ffsb,m,ARG,HH22,0.4478000
 amber-ffsb,m,ARG,C,0.7341000
 amber-ffsb,m,ARG,O,-0.5894000
-
-# ARG - n-terminal
 amber-ffsb,n,ARG,N,0.1305000
 amber-ffsb,n,ARG,H1,0.2083000
 amber-ffsb,n,ARG,H2,0.2083000
@@ -134,8 +105,6 @@ amber-ffsb,n,ARG,HH21,0.4494000
 amber-ffsb,n,ARG,HH22,0.4494000
 amber-ffsb,n,ARG,C,0.7214000
 amber-ffsb,n,ARG,O,-0.6013000
-
-# ARG - c-terminal
 amber-ffsb,c,ARG,N,-0.3481000
 amber-ffsb,c,ARG,H,0.2764000
 amber-ffsb,c,ARG,CA,-0.3068000
@@ -161,8 +130,6 @@ amber-ffsb,c,ARG,HH22,0.4493000
 amber-ffsb,c,ARG,C,0.8557000
 amber-ffsb,c,ARG,O,-0.8266000
 amber-ffsb,c,ARG,OXT,-0.8266000
-
-# ARG - n-terminal deprotonated
 amber-ffsb,n-,ARG,N,-0.6612000
 amber-ffsb,n-,ARG,H1,0.2083000
 amber-ffsb,n-,ARG,H2,0.2083000
@@ -188,8 +155,6 @@ amber-ffsb,n-,ARG,HH21,0.4494000
 amber-ffsb,n-,ARG,HH22,0.4494000
 amber-ffsb,n-,ARG,C,0.7214000
 amber-ffsb,n-,ARG,O,-0.6013000
-
-# ARG - c-terminal protonated
 amber-ffsb,c+,ARG,N,-0.3481000
 amber-ffsb,c+,ARG,H,0.2764000
 amber-ffsb,c+,ARG,CA,-0.3068000
@@ -216,8 +181,6 @@ amber-ffsb,c+,ARG,C,0.8557000
 amber-ffsb,c+,ARG,O,-0.5591000
 amber-ffsb,c+,ARG,OXT,-0.5591000
 amber-ffsb,c+,ARG,HOXT,0.4650000
-
-# ARN - middle
 amber-ffsb,m,ARN,N,-0.4157000
 amber-ffsb,m,ARN,H,0.2719000
 amber-ffsb,m,ARN,CA,0.0044000
@@ -241,8 +204,6 @@ amber-ffsb,m,ARN,NH2,-0.7000000
 amber-ffsb,m,ARN,HH21,0.3700000
 amber-ffsb,m,ARN,C,0.5973000
 amber-ffsb,m,ARN,O,-0.5679000
-
-# ARN - n-terminal
 amber-ffsb,n,ARN,N,0.1305000
 amber-ffsb,n,ARN,H1,0.2083000
 amber-ffsb,n,ARN,H2,0.2083000
@@ -268,8 +229,6 @@ amber-ffsb,n,ARN,NH2,-0.7000000
 amber-ffsb,n,ARN,HH21,0.3700000
 amber-ffsb,n,ARN,C,0.7214000
 amber-ffsb,n,ARN,O,-0.6013000
-
-# ARN - c-terminal
 amber-ffsb,c,ARN,N,-0.3481000
 amber-ffsb,c,ARN,H,0.2764000
 amber-ffsb,c,ARN,CA,-0.3068000
@@ -294,8 +253,6 @@ amber-ffsb,c,ARN,HH21,0.3700000
 amber-ffsb,c,ARN,C,0.8557000
 amber-ffsb,c,ARN,O,-0.8266000
 amber-ffsb,c,ARN,OXT,-0.8266000
-
-# ARN - n-terminal deprotonated
 amber-ffsb,n-,ARN,N,-0.6612000
 amber-ffsb,n-,ARN,H1,0.2083000
 amber-ffsb,n-,ARN,H2,0.2083000
@@ -320,8 +277,6 @@ amber-ffsb,n-,ARN,NH2,-0.7000000
 amber-ffsb,n-,ARN,HH21,0.3700000
 amber-ffsb,n-,ARN,C,0.7214000
 amber-ffsb,n-,ARN,O,-0.6013000
-
-# ARN - c-terminal protonated
 amber-ffsb,c+,ARN,N,-0.3481000
 amber-ffsb,c+,ARN,H,0.2764000
 amber-ffsb,c+,ARN,CA,-0.3068000
@@ -347,8 +302,6 @@ amber-ffsb,c+,ARN,C,0.8557000
 amber-ffsb,c+,ARN,O,-0.5591000
 amber-ffsb,c+,ARN,OXT,-0.5591000
 amber-ffsb,c+,ARN,HOXT,0.4650000
-
-# ASN - middle
 amber-ffsb,m,ASN,N,-0.4157000
 amber-ffsb,m,ASN,H,0.2719000
 amber-ffsb,m,ASN,CA,0.0143000
@@ -363,8 +316,6 @@ amber-ffsb,m,ASN,HD21,0.4196000
 amber-ffsb,m,ASN,HD22,0.4196000
 amber-ffsb,m,ASN,C,0.5973000
 amber-ffsb,m,ASN,O,-0.5679000
-
-# ASN - n-terminal
 amber-ffsb,n,ASN,N,0.1801000
 amber-ffsb,n,ASN,H1,0.1921000
 amber-ffsb,n,ASN,H2,0.1921000
@@ -381,8 +332,6 @@ amber-ffsb,n,ASN,HD21,0.4097000
 amber-ffsb,n,ASN,HD22,0.4097000
 amber-ffsb,n,ASN,C,0.6163000
 amber-ffsb,n,ASN,O,-0.5722000
-
-# ASN - c-terminal
 amber-ffsb,c,ASN,N,-0.3821000
 amber-ffsb,c,ASN,H,0.2681000
 amber-ffsb,c,ASN,CA,-0.2080000
@@ -398,8 +347,6 @@ amber-ffsb,c,ASN,HD22,0.4150000
 amber-ffsb,c,ASN,C,0.8050000
 amber-ffsb,c,ASN,O,-0.8147000
 amber-ffsb,c,ASN,OXT,-0.8147000
-
-# ASN - n-terminal deprotonated
 amber-ffsb,n-,ASN,N,-0.6278000
 amber-ffsb,n-,ASN,H1,0.1921000
 amber-ffsb,n-,ASN,H2,0.1921000
@@ -415,8 +362,6 @@ amber-ffsb,n-,ASN,HD21,0.4097000
 amber-ffsb,n-,ASN,HD22,0.4097000
 amber-ffsb,n-,ASN,C,0.6163000
 amber-ffsb,n-,ASN,O,-0.5722000
-
-# ASN - c-terminal protonated
 amber-ffsb,c+,ASN,N,-0.3821000
 amber-ffsb,c+,ASN,H,0.2681000
 amber-ffsb,c+,ASN,CA,-0.2080000
@@ -433,8 +378,6 @@ amber-ffsb,c+,ASN,C,0.8050000
 amber-ffsb,c+,ASN,O,-0.5472000
 amber-ffsb,c+,ASN,OXT,-0.5472000
 amber-ffsb,c+,ASN,HOXT,0.4650000
-
-# ASP - middle
 amber-ffsb,m,ASP,N,-0.5163000
 amber-ffsb,m,ASP,H,0.2936000
 amber-ffsb,m,ASP,CA,0.0381000
@@ -447,8 +390,6 @@ amber-ffsb,m,ASP,OD1,-0.8014000
 amber-ffsb,m,ASP,OD2,-0.8014000
 amber-ffsb,m,ASP,C,0.5366000
 amber-ffsb,m,ASP,O,-0.5819000
-
-# ASP - n-terminal
 amber-ffsb,n,ASP,N,0.0782000
 amber-ffsb,n,ASP,H1,0.2200000
 amber-ffsb,n,ASP,H2,0.2200000
@@ -463,8 +404,6 @@ amber-ffsb,n,ASP,OD1,-0.8084000
 amber-ffsb,n,ASP,OD2,-0.8084000
 amber-ffsb,n,ASP,C,0.5621000
 amber-ffsb,n,ASP,O,-0.5889000
-
-# ASP - c-terminal
 amber-ffsb,c,ASP,N,-0.5192000
 amber-ffsb,c,ASP,H,0.3055000
 amber-ffsb,c,ASP,CA,-0.1817000
@@ -478,8 +417,6 @@ amber-ffsb,c,ASP,OD2,-0.8162000
 amber-ffsb,c,ASP,C,0.7256000
 amber-ffsb,c,ASP,O,-0.7887000
 amber-ffsb,c,ASP,OXT,-0.7887000
-
-# ASP - n-terminal deprotonated
 amber-ffsb,n-,ASP,N,-0.7018000
 amber-ffsb,n-,ASP,H1,0.2200000
 amber-ffsb,n-,ASP,H2,0.2200000
@@ -493,8 +430,6 @@ amber-ffsb,n-,ASP,OD1,-0.8084000
 amber-ffsb,n-,ASP,OD2,-0.8084000
 amber-ffsb,n-,ASP,C,0.5621000
 amber-ffsb,n-,ASP,O,-0.5889000
-
-# ASP - c-terminal protonated
 amber-ffsb,c+,ASP,N,-0.5192000
 amber-ffsb,c+,ASP,H,0.3055000
 amber-ffsb,c+,ASP,CA,-0.1817000
@@ -509,8 +444,6 @@ amber-ffsb,c+,ASP,C,0.7256000
 amber-ffsb,c+,ASP,O,-0.5212000
 amber-ffsb,c+,ASP,OXT,-0.5212000
 amber-ffsb,c+,ASP,HOXT,0.4650000
-
-# ASH - middle
 amber-ffsb,m,ASH,N,-0.4157000
 amber-ffsb,m,ASH,H,0.2719000
 amber-ffsb,m,ASH,CA,0.0341000
@@ -524,8 +457,6 @@ amber-ffsb,m,ASH,OD2,-0.6376000
 amber-ffsb,m,ASH,HD2,0.4747000
 amber-ffsb,m,ASH,C,0.5973000
 amber-ffsb,m,ASH,O,-0.5679000
-
-# ASH - n-terminal
 amber-ffsb,n,ASH,N,0.0782000
 amber-ffsb,n,ASH,H1,0.2200000
 amber-ffsb,n,ASH,H2,0.2200000
@@ -541,8 +472,6 @@ amber-ffsb,n,ASH,OD2,-0.5803477
 amber-ffsb,n,ASH,HD2,0.4747000
 amber-ffsb,n,ASH,C,0.5621000
 amber-ffsb,n,ASH,O,-0.5889000
-
-# ASH - c-terminal
 amber-ffsb,c,ASH,N,-0.5192000
 amber-ffsb,c,ASH,H,0.3055000
 amber-ffsb,c,ASH,CA,-0.1817000
@@ -557,8 +486,6 @@ amber-ffsb,c,ASH,HD2,0.4747000
 amber-ffsb,c,ASH,C,0.7256000
 amber-ffsb,c,ASH,O,-0.7887000
 amber-ffsb,c,ASH,OXT,-0.7887000
-
-# ASH - n-terminal deprotonated
 amber-ffsb,n-,ASH,N,-0.7018000
 amber-ffsb,n-,ASH,H1,0.2200000
 amber-ffsb,n-,ASH,H2,0.2200000
@@ -573,8 +500,6 @@ amber-ffsb,n-,ASH,OD2,-0.5803477
 amber-ffsb,n-,ASH,HD2,0.4747000
 amber-ffsb,n-,ASH,C,0.5621000
 amber-ffsb,n-,ASH,O,-0.5889000
-
-# ASH - c-terminal protonated
 amber-ffsb,c+,ASH,N,-0.5192000
 amber-ffsb,c+,ASH,H,0.3055000
 amber-ffsb,c+,ASH,CA,-0.1817000
@@ -590,8 +515,6 @@ amber-ffsb,c+,ASH,C,0.7256000
 amber-ffsb,c+,ASH,O,-0.5212000
 amber-ffsb,c+,ASH,OXT,-0.5212000
 amber-ffsb,c+,ASH,HOXT,0.4650000
-
-# CYS - middle
 amber-ffsb,m,CYS,N,-0.4157000
 amber-ffsb,m,CYS,H,0.2719000
 amber-ffsb,m,CYS,CA,0.0213000
@@ -603,8 +526,6 @@ amber-ffsb,m,CYS,SG,-0.3119000
 amber-ffsb,m,CYS,HG,0.1933000
 amber-ffsb,m,CYS,C,0.5973000
 amber-ffsb,m,CYS,O,-0.5679000
-
-# CYS - n-terminal
 amber-ffsb,n,CYS,N,0.1325000
 amber-ffsb,n,CYS,H1,0.2023000
 amber-ffsb,n,CYS,H2,0.2023000
@@ -618,8 +539,6 @@ amber-ffsb,n,CYS,SG,-0.3298000
 amber-ffsb,n,CYS,HG,0.1975000
 amber-ffsb,n,CYS,C,0.6123000
 amber-ffsb,n,CYS,O,-0.5713000
-
-# CYS - c-terminal
 amber-ffsb,c,CYS,N,-0.3821000
 amber-ffsb,c,CYS,H,0.2681000
 amber-ffsb,c,CYS,CA,-0.1635000
@@ -632,8 +551,6 @@ amber-ffsb,c,CYS,HG,0.2068000
 amber-ffsb,c,CYS,C,0.7497000
 amber-ffsb,c,CYS,O,-0.7981000
 amber-ffsb,c,CYS,OXT,-0.7981000
-
-# CYS - n-terminal deprotonated
 amber-ffsb,n-,CYS,N,-0.6652000
 amber-ffsb,n-,CYS,H1,0.2023000
 amber-ffsb,n-,CYS,H2,0.2023000
@@ -646,8 +563,6 @@ amber-ffsb,n-,CYS,SG,-0.3298000
 amber-ffsb,n-,CYS,HG,0.1975000
 amber-ffsb,n-,CYS,C,0.6123000
 amber-ffsb,n-,CYS,O,-0.5713000
-
-# CYS - c-terminal protonated
 amber-ffsb,c+,CYS,N,-0.3821000
 amber-ffsb,c+,CYS,H,0.2681000
 amber-ffsb,c+,CYS,CA,-0.1635000
@@ -661,8 +576,6 @@ amber-ffsb,c+,CYS,C,0.7497000
 amber-ffsb,c+,CYS,O,-0.5306000
 amber-ffsb,c+,CYS,OXT,-0.5306000
 amber-ffsb,c+,CYS,HOXT,0.4650000
-
-# CYM - middle
 amber-ffsb,m,CYM,N,-0.4157000
 amber-ffsb,m,CYM,H,0.2719000
 amber-ffsb,m,CYM,CA,-0.0351000
@@ -673,8 +586,6 @@ amber-ffsb,m,CYM,HB3,0.1122000
 amber-ffsb,m,CYM,SG,-0.8844000
 amber-ffsb,m,CYM,C,0.5973000
 amber-ffsb,m,CYM,O,-0.5679000
-
-# CYM - n-terminal
 amber-ffsb,n,CYM,N,0.1325000
 amber-ffsb,n,CYM,H1,0.2023000
 amber-ffsb,n,CYM,H2,0.2023000
@@ -687,8 +598,6 @@ amber-ffsb,n,CYM,HB3,0.1122000
 amber-ffsb,n,CYM,SG,-0.9973000
 amber-ffsb,n,CYM,C,0.6123000
 amber-ffsb,n,CYM,O,-0.5713000
-
-# CYM - c-terminal
 amber-ffsb,c,CYM,N,-0.3821000
 amber-ffsb,c,CYM,H,0.2681000
 amber-ffsb,c,CYM,CA,-0.1635000
@@ -700,8 +609,6 @@ amber-ffsb,c,CYM,SG,-0.9987000
 amber-ffsb,c,CYM,C,0.7497000
 amber-ffsb,c,CYM,O,-0.7981000
 amber-ffsb,c,CYM,OXT,-0.7981000
-
-# CYM - n-terminal deprotonated
 amber-ffsb,n-,CYM,N,-0.6652000
 amber-ffsb,n-,CYM,H1,0.2023000
 amber-ffsb,n-,CYM,H2,0.2023000
@@ -713,8 +620,6 @@ amber-ffsb,n-,CYM,HB3,0.1122000
 amber-ffsb,n-,CYM,SG,-0.9973000
 amber-ffsb,n-,CYM,C,0.6123000
 amber-ffsb,n-,CYM,O,-0.5713000
-
-# CYM - c-terminal protonated
 amber-ffsb,c+,CYM,N,-0.3821000
 amber-ffsb,c+,CYM,H,0.2681000
 amber-ffsb,c+,CYM,CA,-0.1635000
@@ -727,8 +632,6 @@ amber-ffsb,c+,CYM,C,0.7497000
 amber-ffsb,c+,CYM,O,-0.5306000
 amber-ffsb,c+,CYM,OXT,-0.5306000
 amber-ffsb,c+,CYM,HOXT,0.4650000
-
-# CYX - middle
 amber-ffsb,m,CYX,N,-0.4157000
 amber-ffsb,m,CYX,H,0.2719000
 amber-ffsb,m,CYX,CA,0.0429000
@@ -739,8 +642,6 @@ amber-ffsb,m,CYX,HB3,0.0910000
 amber-ffsb,m,CYX,SG,-0.1081000
 amber-ffsb,m,CYX,C,0.5973000
 amber-ffsb,m,CYX,O,-0.5679000
-
-# CYX - n-terminal
 amber-ffsb,n,CYX,N,0.2069000
 amber-ffsb,n,CYX,H1,0.1815000
 amber-ffsb,n,CYX,H2,0.1815000
@@ -753,8 +654,6 @@ amber-ffsb,n,CYX,HB3,0.0680000
 amber-ffsb,n,CYX,SG,-0.0984000
 amber-ffsb,n,CYX,C,0.6123000
 amber-ffsb,n,CYX,O,-0.5713000
-
-# CYX - c-terminal
 amber-ffsb,c,CYX,N,-0.3821000
 amber-ffsb,c,CYX,H,0.2681000
 amber-ffsb,c,CYX,CA,-0.1318000
@@ -766,8 +665,6 @@ amber-ffsb,c,CYX,SG,-0.0529000
 amber-ffsb,c,CYX,C,0.7618000
 amber-ffsb,c,CYX,O,-0.8041000
 amber-ffsb,c,CYX,OXT,-0.8041000
-
-# CYX - n-terminal deprotonated
 amber-ffsb,n-,CYX,N,-0.6116000
 amber-ffsb,n-,CYX,H1,0.1815000
 amber-ffsb,n-,CYX,H2,0.1815000
@@ -779,8 +676,6 @@ amber-ffsb,n-,CYX,HB3,0.0680000
 amber-ffsb,n-,CYX,SG,-0.0984000
 amber-ffsb,n-,CYX,C,0.6123000
 amber-ffsb,n-,CYX,O,-0.5713000
-
-# CYX - c-terminal protonated
 amber-ffsb,c+,CYX,N,-0.3821000
 amber-ffsb,c+,CYX,H,0.2681000
 amber-ffsb,c+,CYX,CA,-0.1318000
@@ -793,8 +688,6 @@ amber-ffsb,c+,CYX,C,0.7618000
 amber-ffsb,c+,CYX,O,-0.5366000
 amber-ffsb,c+,CYX,OXT,-0.5366000
 amber-ffsb,c+,CYX,HOXT,0.4650000
-
-# GLN - middle
 amber-ffsb,m,GLN,N,-0.4157000
 amber-ffsb,m,GLN,H,0.2719000
 amber-ffsb,m,GLN,CA,-0.0031000
@@ -812,8 +705,6 @@ amber-ffsb,m,GLN,HE21,0.4251000
 amber-ffsb,m,GLN,HE22,0.4251000
 amber-ffsb,m,GLN,C,0.5973000
 amber-ffsb,m,GLN,O,-0.5679000
-
-# GLN - n-terminal
 amber-ffsb,n,GLN,N,0.1493000
 amber-ffsb,n,GLN,H1,0.1996000
 amber-ffsb,n,GLN,H2,0.1996000
@@ -833,8 +724,6 @@ amber-ffsb,n,GLN,HE21,0.4429000
 amber-ffsb,n,GLN,HE22,0.4429000
 amber-ffsb,n,GLN,C,0.6123000
 amber-ffsb,n,GLN,O,-0.5713000
-
-# GLN - c-terminal
 amber-ffsb,c,GLN,N,-0.3821000
 amber-ffsb,c,GLN,H,0.2681000
 amber-ffsb,c,GLN,CA,-0.2248000
@@ -853,8 +742,6 @@ amber-ffsb,c,GLN,HE22,0.4304000
 amber-ffsb,c,GLN,C,0.7775000
 amber-ffsb,c,GLN,O,-0.8042000
 amber-ffsb,c,GLN,OXT,-0.8042000
-
-# GLN - n-terminal deprotonated
 amber-ffsb,n-,GLN,N,-0.6511000
 amber-ffsb,n-,GLN,H1,0.1996000
 amber-ffsb,n-,GLN,H2,0.1996000
@@ -873,8 +760,6 @@ amber-ffsb,n-,GLN,HE21,0.4429000
 amber-ffsb,n-,GLN,HE22,0.4429000
 amber-ffsb,n-,GLN,C,0.6123000
 amber-ffsb,n-,GLN,O,-0.5713000
-
-# GLN - c-terminal protonated
 amber-ffsb,c+,GLN,N,-0.3821000
 amber-ffsb,c+,GLN,H,0.2681000
 amber-ffsb,c+,GLN,CA,-0.2248000
@@ -894,8 +779,6 @@ amber-ffsb,c+,GLN,C,0.7775000
 amber-ffsb,c+,GLN,O,-0.5367000
 amber-ffsb,c+,GLN,OXT,-0.5367000
 amber-ffsb,c+,GLN,HOXT,0.4650000
-
-# GLU - middle
 amber-ffsb,m,GLU,N,-0.5163000
 amber-ffsb,m,GLU,H,0.2936000
 amber-ffsb,m,GLU,CA,0.0397000
@@ -911,8 +794,6 @@ amber-ffsb,m,GLU,OE1,-0.8188000
 amber-ffsb,m,GLU,OE2,-0.8188000
 amber-ffsb,m,GLU,C,0.5366000
 amber-ffsb,m,GLU,O,-0.5819000
-
-# GLU - n-terminal
 amber-ffsb,n,GLU,N,0.0017000
 amber-ffsb,n,GLU,H1,0.2391000
 amber-ffsb,n,GLU,H2,0.2391000
@@ -930,8 +811,6 @@ amber-ffsb,n,GLU,OE1,-0.8189000
 amber-ffsb,n,GLU,OE2,-0.8189000
 amber-ffsb,n,GLU,C,0.5621000
 amber-ffsb,n,GLU,O,-0.5889000
-
-# GLU - c-terminal
 amber-ffsb,c,GLU,N,-0.5192000
 amber-ffsb,c,GLU,H,0.3055000
 amber-ffsb,c,GLU,CA,-0.2059000
@@ -948,8 +827,6 @@ amber-ffsb,c,GLU,OE2,-0.8220000
 amber-ffsb,c,GLU,C,0.7420000
 amber-ffsb,c,GLU,O,-0.7930000
 amber-ffsb,c,GLU,OXT,-0.7930000
-
-# GLU - n-terminal deprotonated
 amber-ffsb,n-,GLU,N,-0.7592000
 amber-ffsb,n-,GLU,H1,0.2391000
 amber-ffsb,n-,GLU,H2,0.2391000
@@ -966,8 +843,6 @@ amber-ffsb,n-,GLU,OE1,-0.8189000
 amber-ffsb,n-,GLU,OE2,-0.8189000
 amber-ffsb,n-,GLU,C,0.5621000
 amber-ffsb,n-,GLU,O,-0.5889000
-
-# GLU - c-terminal protonated
 amber-ffsb,c+,GLU,N,-0.5192000
 amber-ffsb,c+,GLU,H,0.3055000
 amber-ffsb,c+,GLU,CA,-0.2059000
@@ -985,8 +860,6 @@ amber-ffsb,c+,GLU,C,0.7420000
 amber-ffsb,c+,GLU,O,-0.5255000
 amber-ffsb,c+,GLU,OXT,-0.5255000
 amber-ffsb,c+,GLU,HOXT,0.4650000
-
-# GLH - middle
 amber-ffsb,m,GLH,N,-0.4157000
 amber-ffsb,m,GLH,H,0.2719000
 amber-ffsb,m,GLH,CA,0.0145000
@@ -1003,8 +876,6 @@ amber-ffsb,m,GLH,OE2,-0.6511000
 amber-ffsb,m,GLH,HE2,0.4641000
 amber-ffsb,m,GLH,C,0.5973000
 amber-ffsb,m,GLH,O,-0.5679000
-
-# GLH - n-terminal
 amber-ffsb,n,GLH,N,0.0017000
 amber-ffsb,n,GLH,H1,0.2391000
 amber-ffsb,n,GLH,H2,0.2391000
@@ -1023,8 +894,6 @@ amber-ffsb,n,GLH,OE2,-0.6146954
 amber-ffsb,n,GLH,HE2,0.4641000
 amber-ffsb,n,GLH,C,0.5621000
 amber-ffsb,n,GLH,O,-0.5889000
-
-# GLH - c-terminal
 amber-ffsb,c,GLH,N,-0.5192000
 amber-ffsb,c,GLH,H,0.3055000
 amber-ffsb,c,GLH,CA,-0.2059000
@@ -1042,8 +911,6 @@ amber-ffsb,c,GLH,HE2,0.4641000
 amber-ffsb,c,GLH,C,0.7420000
 amber-ffsb,c,GLH,O,-0.7930000
 amber-ffsb,c,GLH,OXT,-0.7930000
-
-# GLH - n-terminal deprotonated
 amber-ffsb,n-,GLH,N,-0.7592000
 amber-ffsb,n-,GLH,H1,0.2391000
 amber-ffsb,n-,GLH,H2,0.2391000
@@ -1061,8 +928,6 @@ amber-ffsb,n-,GLH,OE2,-0.6146954
 amber-ffsb,n-,GLH,HE2,0.4641000
 amber-ffsb,n-,GLH,C,0.5621000
 amber-ffsb,n-,GLH,O,-0.5889000
-
-# GLH - c-terminal protonated
 amber-ffsb,c+,GLH,N,-0.5192000
 amber-ffsb,c+,GLH,H,0.3055000
 amber-ffsb,c+,GLH,CA,-0.2059000
@@ -1081,8 +946,6 @@ amber-ffsb,c+,GLH,C,0.7420000
 amber-ffsb,c+,GLH,O,-0.5255000
 amber-ffsb,c+,GLH,OXT,-0.5255000
 amber-ffsb,c+,GLH,HOXT,0.4650000
-
-# GLY - middle
 amber-ffsb,m,GLY,N,-0.4157000
 amber-ffsb,m,GLY,H,0.2719000
 amber-ffsb,m,GLY,CA,-0.0252000
@@ -1090,8 +953,6 @@ amber-ffsb,m,GLY,HA2,0.0698000
 amber-ffsb,m,GLY,HA3,0.0698000
 amber-ffsb,m,GLY,C,0.5973000
 amber-ffsb,m,GLY,O,-0.5679000
-
-# GLY - n-terminal
 amber-ffsb,n,GLY,N,0.2943000
 amber-ffsb,n,GLY,H1,0.1642000
 amber-ffsb,n,GLY,H2,0.1642000
@@ -1101,8 +962,6 @@ amber-ffsb,n,GLY,HA2,0.0895000
 amber-ffsb,n,GLY,HA3,0.0895000
 amber-ffsb,n,GLY,C,0.6163000
 amber-ffsb,n,GLY,O,-0.5722000
-
-# GLY - c-terminal
 amber-ffsb,c,GLY,N,-0.3821000
 amber-ffsb,c,GLY,H,0.2681000
 amber-ffsb,c,GLY,CA,-0.2493000
@@ -1111,8 +970,6 @@ amber-ffsb,c,GLY,HA3,0.1056000
 amber-ffsb,c,GLY,C,0.7231000
 amber-ffsb,c,GLY,O,-0.7855000
 amber-ffsb,c,GLY,OXT,-0.7855000
-
-# GLY - n-terminal deprotonated
 amber-ffsb,n-,GLY,N,-0.5415000
 amber-ffsb,n-,GLY,H1,0.1642000
 amber-ffsb,n-,GLY,H2,0.1642000
@@ -1121,8 +978,6 @@ amber-ffsb,n-,GLY,HA2,0.0895000
 amber-ffsb,n-,GLY,HA3,0.0895000
 amber-ffsb,n-,GLY,C,0.6163000
 amber-ffsb,n-,GLY,O,-0.5722000
-
-# GLY - c-terminal protonated
 amber-ffsb,c+,GLY,N,-0.3821000
 amber-ffsb,c+,GLY,H,0.2681000
 amber-ffsb,c+,GLY,CA,-0.2493000
@@ -1132,8 +987,6 @@ amber-ffsb,c+,GLY,C,0.7231000
 amber-ffsb,c+,GLY,O,-0.5180000
 amber-ffsb,c+,GLY,OXT,-0.5180000
 amber-ffsb,c+,GLY,HOXT,0.4650000
-
-# HID - middle
 amber-ffsb,m,HID,N,-0.4157000
 amber-ffsb,m,HID,H,0.2719000
 amber-ffsb,m,HID,CA,0.0188000
@@ -1151,8 +1004,6 @@ amber-ffsb,m,HID,HE1,0.1392000
 amber-ffsb,m,HID,NE2,-0.5727000
 amber-ffsb,m,HID,C,0.5973000
 amber-ffsb,m,HID,O,-0.5679000
-
-# HID - n-terminal
 amber-ffsb,n,HID,N,0.1542000
 amber-ffsb,n,HID,H1,0.1963000
 amber-ffsb,n,HID,H2,0.1963000
@@ -1172,8 +1023,6 @@ amber-ffsb,n,HID,HE1,0.1385000
 amber-ffsb,n,HID,NE2,-0.5711000
 amber-ffsb,n,HID,C,0.6123000
 amber-ffsb,n,HID,O,-0.5713000
-
-# HID - c-terminal
 amber-ffsb,c,HID,N,-0.3821000
 amber-ffsb,c,HID,H,0.2681000
 amber-ffsb,c,HID,CA,-0.1739000
@@ -1192,8 +1041,6 @@ amber-ffsb,c,HID,NE2,-0.5629000
 amber-ffsb,c,HID,C,0.7615000
 amber-ffsb,c,HID,O,-0.8016000
 amber-ffsb,c,HID,OXT,-0.8016000
-
-# HID - n-terminal deprotonated
 amber-ffsb,n-,HID,N,-0.6495000
 amber-ffsb,n-,HID,H1,0.1963000
 amber-ffsb,n-,HID,H2,0.1963000
@@ -1212,8 +1059,6 @@ amber-ffsb,n-,HID,HE1,0.1385000
 amber-ffsb,n-,HID,NE2,-0.5711000
 amber-ffsb,n-,HID,C,0.6123000
 amber-ffsb,n-,HID,O,-0.5713000
-
-# HID - c-terminal protonated
 amber-ffsb,c+,HID,N,-0.3821000
 amber-ffsb,c+,HID,H,0.2681000
 amber-ffsb,c+,HID,CA,-0.1739000
@@ -1233,8 +1078,6 @@ amber-ffsb,c+,HID,C,0.7615000
 amber-ffsb,c+,HID,O,-0.5341000
 amber-ffsb,c+,HID,OXT,-0.5341000
 amber-ffsb,c+,HID,HOXT,0.4650000
-
-# HIE - middle
 amber-ffsb,m,HIE,N,-0.4157000
 amber-ffsb,m,HIE,H,0.2719000
 amber-ffsb,m,HIE,CA,-0.0581000
@@ -1252,8 +1095,6 @@ amber-ffsb,m,HIE,NE2,-0.2795000
 amber-ffsb,m,HIE,HE2,0.3339000
 amber-ffsb,m,HIE,C,0.5973000
 amber-ffsb,m,HIE,O,-0.5679000
-
-# HIE - n-terminal
 amber-ffsb,n,HIE,N,0.1472000
 amber-ffsb,n,HIE,H1,0.2016000
 amber-ffsb,n,HIE,H2,0.2016000
@@ -1273,8 +1114,6 @@ amber-ffsb,n,HIE,NE2,-0.2781000
 amber-ffsb,n,HIE,HE2,0.3324000
 amber-ffsb,n,HIE,C,0.6123000
 amber-ffsb,n,HIE,O,-0.5713000
-
-# HIE - c-terminal
 amber-ffsb,c,HIE,N,-0.3821000
 amber-ffsb,c,HIE,H,0.2681000
 amber-ffsb,c,HIE,CA,-0.2699000
@@ -1293,8 +1132,6 @@ amber-ffsb,c,HIE,HE2,0.3319000
 amber-ffsb,c,HIE,C,0.7916000
 amber-ffsb,c,HIE,O,-0.8065000
 amber-ffsb,c,HIE,OXT,-0.8065000
-
-# HIE - n-terminal deprotonated
 amber-ffsb,n-,HIE,N,-0.6512000
 amber-ffsb,n-,HIE,H1,0.2016000
 amber-ffsb,n-,HIE,H2,0.2016000
@@ -1313,8 +1150,6 @@ amber-ffsb,n-,HIE,NE2,-0.2781000
 amber-ffsb,n-,HIE,HE2,0.3324000
 amber-ffsb,n-,HIE,C,0.6123000
 amber-ffsb,n-,HIE,O,-0.5713000
-
-# HIE - c-terminal protonated
 amber-ffsb,c+,HIE,N,-0.3821000
 amber-ffsb,c+,HIE,H,0.2681000
 amber-ffsb,c+,HIE,CA,-0.2699000
@@ -1334,8 +1169,6 @@ amber-ffsb,c+,HIE,C,0.7916000
 amber-ffsb,c+,HIE,O,-0.5390000
 amber-ffsb,c+,HIE,OXT,-0.5390000
 amber-ffsb,c+,HIE,HOXT,0.4650000
-
-# HIP - middle
 amber-ffsb,m,HIP,N,-0.3479000
 amber-ffsb,m,HIP,H,0.2747000
 amber-ffsb,m,HIP,CA,-0.1354000
@@ -1354,8 +1187,6 @@ amber-ffsb,m,HIP,NE2,-0.1718000
 amber-ffsb,m,HIP,HE2,0.3911000
 amber-ffsb,m,HIP,C,0.7341000
 amber-ffsb,m,HIP,O,-0.5894000
-
-# HIP - n-terminal
 amber-ffsb,n,HIP,N,0.2560000
 amber-ffsb,n,HIP,H1,0.1704000
 amber-ffsb,n,HIP,H2,0.1704000
@@ -1376,8 +1207,6 @@ amber-ffsb,n,HIP,NE2,-0.1739000
 amber-ffsb,n,HIP,HE2,0.3921000
 amber-ffsb,n,HIP,C,0.7214000
 amber-ffsb,n,HIP,O,-0.6013000
-
-# HIP - c-terminal
 amber-ffsb,c,HIP,N,-0.3481000
 amber-ffsb,c,HIP,H,0.2764000
 amber-ffsb,c,HIP,CA,-0.1445000
@@ -1397,8 +1226,6 @@ amber-ffsb,c,HIP,HE2,0.3913000
 amber-ffsb,c,HIP,C,0.8032000
 amber-ffsb,c,HIP,O,-0.8177000
 amber-ffsb,c,HIP,OXT,-0.8177000
-
-# HIP - n-terminal deprotonated
 amber-ffsb,n-,HIP,N,-0.5736000
 amber-ffsb,n-,HIP,H1,0.1704000
 amber-ffsb,n-,HIP,H2,0.1704000
@@ -1418,8 +1245,6 @@ amber-ffsb,n-,HIP,NE2,-0.1739000
 amber-ffsb,n-,HIP,HE2,0.3921000
 amber-ffsb,n-,HIP,C,0.7214000
 amber-ffsb,n-,HIP,O,-0.6013000
-
-# HIP - c-terminal protonated
 amber-ffsb,c+,HIP,N,-0.3481000
 amber-ffsb,c+,HIP,H,0.2764000
 amber-ffsb,c+,HIP,CA,-0.1445000
@@ -1440,8 +1265,6 @@ amber-ffsb,c+,HIP,C,0.8032000
 amber-ffsb,c+,HIP,O,-0.5502000
 amber-ffsb,c+,HIP,OXT,-0.5502000
 amber-ffsb,c+,HIP,HOXT,0.4650000
-
-# ILE - middle
 amber-ffsb,m,ILE,N,-0.4157000
 amber-ffsb,m,ILE,H,0.2719000
 amber-ffsb,m,ILE,CA,-0.0597000
@@ -1461,8 +1284,6 @@ amber-ffsb,m,ILE,HD12,0.0186000
 amber-ffsb,m,ILE,HD13,0.0186000
 amber-ffsb,m,ILE,C,0.5973000
 amber-ffsb,m,ILE,O,-0.5679000
-
-# ILE - n-terminal
 amber-ffsb,n,ILE,N,0.0311000
 amber-ffsb,n,ILE,H1,0.2329000
 amber-ffsb,n,ILE,H2,0.2329000
@@ -1484,8 +1305,6 @@ amber-ffsb,n,ILE,HD12,0.0226000
 amber-ffsb,n,ILE,HD13,0.0226000
 amber-ffsb,n,ILE,C,0.6123000
 amber-ffsb,n,ILE,O,-0.5713000
-
-# ILE - c-terminal
 amber-ffsb,c,ILE,N,-0.3821000
 amber-ffsb,c,ILE,H,0.2681000
 amber-ffsb,c,ILE,CA,-0.3100000
@@ -1506,8 +1325,6 @@ amber-ffsb,c,ILE,HD13,0.0196000
 amber-ffsb,c,ILE,C,0.8343000
 amber-ffsb,c,ILE,O,-0.8190000
 amber-ffsb,c,ILE,OXT,-0.8190000
-
-# ILE - n-terminal deprotonated
 amber-ffsb,n-,ILE,N,-0.7360000
 amber-ffsb,n-,ILE,H1,0.2329000
 amber-ffsb,n-,ILE,H2,0.2329000
@@ -1528,8 +1345,6 @@ amber-ffsb,n-,ILE,HD12,0.0226000
 amber-ffsb,n-,ILE,HD13,0.0226000
 amber-ffsb,n-,ILE,C,0.6123000
 amber-ffsb,n-,ILE,O,-0.5713000
-
-# ILE - c-terminal protonated
 amber-ffsb,c+,ILE,N,-0.3821000
 amber-ffsb,c+,ILE,H,0.2681000
 amber-ffsb,c+,ILE,CA,-0.3100000
@@ -1551,8 +1366,6 @@ amber-ffsb,c+,ILE,C,0.8343000
 amber-ffsb,c+,ILE,O,-0.5515000
 amber-ffsb,c+,ILE,OXT,-0.5515000
 amber-ffsb,c+,ILE,HOXT,0.4650000
-
-# LEU - middle
 amber-ffsb,m,LEU,N,-0.4157000
 amber-ffsb,m,LEU,H,0.2719000
 amber-ffsb,m,LEU,CA,-0.0518000
@@ -1572,8 +1385,6 @@ amber-ffsb,m,LEU,HD22,0.1000000
 amber-ffsb,m,LEU,HD23,0.1000000
 amber-ffsb,m,LEU,C,0.5973000
 amber-ffsb,m,LEU,O,-0.5679000
-
-# LEU - n-terminal
 amber-ffsb,n,LEU,N,0.1010000
 amber-ffsb,n,LEU,H1,0.2148000
 amber-ffsb,n,LEU,H2,0.2148000
@@ -1595,8 +1406,6 @@ amber-ffsb,n,LEU,HD22,0.0980000
 amber-ffsb,n,LEU,HD23,0.0980000
 amber-ffsb,n,LEU,C,0.6123000
 amber-ffsb,n,LEU,O,-0.5713000
-
-# LEU - c-terminal
 amber-ffsb,c,LEU,N,-0.3821000
 amber-ffsb,c,LEU,H,0.2681000
 amber-ffsb,c,LEU,CA,-0.2847000
@@ -1617,8 +1426,6 @@ amber-ffsb,c,LEU,HD23,0.1038000
 amber-ffsb,c,LEU,C,0.8326000
 amber-ffsb,c,LEU,O,-0.8199000
 amber-ffsb,c,LEU,OXT,-0.8199000
-
-# LEU - n-terminal deprotonated
 amber-ffsb,n-,LEU,N,-0.6842000
 amber-ffsb,n-,LEU,H1,0.2148000
 amber-ffsb,n-,LEU,H2,0.2148000
@@ -1639,8 +1446,6 @@ amber-ffsb,n-,LEU,HD22,0.0980000
 amber-ffsb,n-,LEU,HD23,0.0980000
 amber-ffsb,n-,LEU,C,0.6123000
 amber-ffsb,n-,LEU,O,-0.5713000
-
-# LEU - c-terminal protonated
 amber-ffsb,c+,LEU,N,-0.3821000
 amber-ffsb,c+,LEU,H,0.2681000
 amber-ffsb,c+,LEU,CA,-0.2847000
@@ -1662,8 +1467,6 @@ amber-ffsb,c+,LEU,C,0.8326000
 amber-ffsb,c+,LEU,O,-0.5524000
 amber-ffsb,c+,LEU,OXT,-0.5524000
 amber-ffsb,c+,LEU,HOXT,0.4650000
-
-# LYS - middle
 amber-ffsb,m,LYS,N,-0.3479000
 amber-ffsb,m,LYS,H,0.2747000
 amber-ffsb,m,LYS,CA,-0.2400000
@@ -1686,8 +1489,6 @@ amber-ffsb,m,LYS,HZ2,0.3400000
 amber-ffsb,m,LYS,HZ3,0.3400000
 amber-ffsb,m,LYS,C,0.7341000
 amber-ffsb,m,LYS,O,-0.5894000
-
-# LYS - n-terminal
 amber-ffsb,n,LYS,N,0.0966000
 amber-ffsb,n,LYS,H1,0.2165000
 amber-ffsb,n,LYS,H2,0.2165000
@@ -1712,8 +1513,6 @@ amber-ffsb,n,LYS,HZ2,0.3382000
 amber-ffsb,n,LYS,HZ3,0.3382000
 amber-ffsb,n,LYS,C,0.7214000
 amber-ffsb,n,LYS,O,-0.6013000
-
-# LYS - c-terminal
 amber-ffsb,c,LYS,N,-0.3481000
 amber-ffsb,c,LYS,H,0.2764000
 amber-ffsb,c,LYS,CA,-0.2903000
@@ -1737,8 +1536,6 @@ amber-ffsb,c,LYS,HZ3,0.3374000
 amber-ffsb,c,LYS,C,0.8488000
 amber-ffsb,c,LYS,O,-0.8252000
 amber-ffsb,c,LYS,OXT,-0.8252000
-
-# LYS - n-terminal deprotonated
 amber-ffsb,n-,LYS,N,-0.6869000
 amber-ffsb,n-,LYS,H1,0.2165000
 amber-ffsb,n-,LYS,H2,0.2165000
@@ -1762,8 +1559,6 @@ amber-ffsb,n-,LYS,HZ2,0.3382000
 amber-ffsb,n-,LYS,HZ3,0.3382000
 amber-ffsb,n-,LYS,C,0.7214000
 amber-ffsb,n-,LYS,O,-0.6013000
-
-# LYS - c-terminal protonated
 amber-ffsb,c+,LYS,N,-0.3481000
 amber-ffsb,c+,LYS,H,0.2764000
 amber-ffsb,c+,LYS,CA,-0.2903000
@@ -1788,8 +1583,6 @@ amber-ffsb,c+,LYS,C,0.8488000
 amber-ffsb,c+,LYS,O,-0.5577000
 amber-ffsb,c+,LYS,OXT,-0.5577000
 amber-ffsb,c+,LYS,HOXT,0.4650000
-
-# LYN - middle
 amber-ffsb,m,LYN,N,-0.4157000
 amber-ffsb,m,LYN,H,0.2719000
 amber-ffsb,m,LYN,CA,-0.0720600
@@ -1811,8 +1604,6 @@ amber-ffsb,m,LYN,HZ1,0.3860400
 amber-ffsb,m,LYN,HZ2,0.3860400
 amber-ffsb,m,LYN,C,0.5973000
 amber-ffsb,m,LYN,O,-0.5679000
-
-# LYN - n-terminal
 amber-ffsb,n,LYN,N,0.0966000
 amber-ffsb,n,LYN,H1,0.2165000
 amber-ffsb,n,LYN,H2,0.2165000
@@ -1836,8 +1627,6 @@ amber-ffsb,n,LYN,HZ1,0.3860400
 amber-ffsb,n,LYN,HZ2,0.3860400
 amber-ffsb,n,LYN,C,0.7214000
 amber-ffsb,n,LYN,O,-0.6013000
-
-# LYN - c-terminal
 amber-ffsb,c,LYN,N,-0.3481000
 amber-ffsb,c,LYN,H,0.2764000
 amber-ffsb,c,LYN,CA,-0.2903000
@@ -1860,8 +1649,6 @@ amber-ffsb,c,LYN,HZ2,0.3860400
 amber-ffsb,c,LYN,C,0.8488000
 amber-ffsb,c,LYN,O,-0.8252000
 amber-ffsb,c,LYN,OXT,-0.8252000
-
-# LYN - n-terminal deprotonated
 amber-ffsb,n-,LYN,N,-0.6869000
 amber-ffsb,n-,LYN,H1,0.2165000
 amber-ffsb,n-,LYN,H2,0.2165000
@@ -1884,8 +1671,6 @@ amber-ffsb,n-,LYN,HZ1,0.3860400
 amber-ffsb,n-,LYN,HZ2,0.3860400
 amber-ffsb,n-,LYN,C,0.7214000
 amber-ffsb,n-,LYN,O,-0.6013000
-
-# LYN - c-terminal protonated
 amber-ffsb,c+,LYN,N,-0.3481000
 amber-ffsb,c+,LYN,H,0.2764000
 amber-ffsb,c+,LYN,CA,-0.2903000
@@ -1909,8 +1694,6 @@ amber-ffsb,c+,LYN,C,0.8488000
 amber-ffsb,c+,LYN,O,-0.5577000
 amber-ffsb,c+,LYN,OXT,-0.5577000
 amber-ffsb,c+,LYN,HOXT,0.4650000
-
-# MET - middle
 amber-ffsb,m,MET,N,-0.4157000
 amber-ffsb,m,MET,H,0.2719000
 amber-ffsb,m,MET,CA,-0.0237000
@@ -1928,8 +1711,6 @@ amber-ffsb,m,MET,HE2,0.0684000
 amber-ffsb,m,MET,HE3,0.0684000
 amber-ffsb,m,MET,C,0.5973000
 amber-ffsb,m,MET,O,-0.5679000
-
-# MET - n-terminal
 amber-ffsb,n,MET,N,0.1592000
 amber-ffsb,n,MET,H1,0.1984000
 amber-ffsb,n,MET,H2,0.1984000
@@ -1949,8 +1730,6 @@ amber-ffsb,n,MET,HE2,0.0597000
 amber-ffsb,n,MET,HE3,0.0597000
 amber-ffsb,n,MET,C,0.6123000
 amber-ffsb,n,MET,O,-0.5713000
-
-# MET - c-terminal
 amber-ffsb,c,MET,N,-0.3821000
 amber-ffsb,c,MET,H,0.2681000
 amber-ffsb,c,MET,CA,-0.2597000
@@ -1969,8 +1748,6 @@ amber-ffsb,c,MET,HE3,0.0625000
 amber-ffsb,c,MET,C,0.8013000
 amber-ffsb,c,MET,O,-0.8105000
 amber-ffsb,c,MET,OXT,-0.8105000
-
-# MET - n-terminal deprotonated
 amber-ffsb,n-,MET,N,-0.6424000
 amber-ffsb,n-,MET,H1,0.1984000
 amber-ffsb,n-,MET,H2,0.1984000
@@ -1989,8 +1766,6 @@ amber-ffsb,n-,MET,HE2,0.0597000
 amber-ffsb,n-,MET,HE3,0.0597000
 amber-ffsb,n-,MET,C,0.6123000
 amber-ffsb,n-,MET,O,-0.5713000
-
-# MET - c-terminal protonated
 amber-ffsb,c+,MET,N,-0.3821000
 amber-ffsb,c+,MET,H,0.2681000
 amber-ffsb,c+,MET,CA,-0.2597000
@@ -2010,8 +1785,6 @@ amber-ffsb,c+,MET,C,0.8013000
 amber-ffsb,c+,MET,O,-0.5430000
 amber-ffsb,c+,MET,OXT,-0.5430000
 amber-ffsb,c+,MET,HOXT,0.4650000
-
-# PHE - middle
 amber-ffsb,m,PHE,N,-0.4157000
 amber-ffsb,m,PHE,H,0.2719000
 amber-ffsb,m,PHE,CA,-0.0024000
@@ -2032,8 +1805,6 @@ amber-ffsb,m,PHE,CZ,-0.1072000
 amber-ffsb,m,PHE,HZ,0.1297000
 amber-ffsb,m,PHE,C,0.5973000
 amber-ffsb,m,PHE,O,-0.5679000
-
-# PHE - n-terminal
 amber-ffsb,n,PHE,N,0.1737000
 amber-ffsb,n,PHE,H1,0.1921000
 amber-ffsb,n,PHE,H2,0.1921000
@@ -2056,8 +1827,6 @@ amber-ffsb,n,PHE,CZ,-0.1208000
 amber-ffsb,n,PHE,HZ,0.1329000
 amber-ffsb,n,PHE,C,0.6123000
 amber-ffsb,n,PHE,O,-0.5713000
-
-# PHE - c-terminal
 amber-ffsb,c,PHE,N,-0.3821000
 amber-ffsb,c,PHE,H,0.2681000
 amber-ffsb,c,PHE,CA,-0.1825000
@@ -2079,8 +1848,6 @@ amber-ffsb,c,PHE,HZ,0.1280000
 amber-ffsb,c,PHE,C,0.7660000
 amber-ffsb,c,PHE,O,-0.8026000
 amber-ffsb,c,PHE,OXT,-0.8026000
-
-# PHE - n-terminal deprotonated
 amber-ffsb,n-,PHE,N,-0.6342000
 amber-ffsb,n-,PHE,H1,0.1921000
 amber-ffsb,n-,PHE,H2,0.1921000
@@ -2102,8 +1869,6 @@ amber-ffsb,n-,PHE,CZ,-0.1208000
 amber-ffsb,n-,PHE,HZ,0.1329000
 amber-ffsb,n-,PHE,C,0.6123000
 amber-ffsb,n-,PHE,O,-0.5713000
-
-# PHE - c-terminal protonated
 amber-ffsb,c+,PHE,N,-0.3821000
 amber-ffsb,c+,PHE,H,0.2681000
 amber-ffsb,c+,PHE,CA,-0.1825000
@@ -2126,8 +1891,6 @@ amber-ffsb,c+,PHE,C,0.7660000
 amber-ffsb,c+,PHE,O,-0.5351000
 amber-ffsb,c+,PHE,OXT,-0.5351000
 amber-ffsb,c+,PHE,HOXT,0.4650000
-
-# PRO - middle
 amber-ffsb,m,PRO,N,-0.2548000
 amber-ffsb,m,PRO,CA,-0.0266000
 amber-ffsb,m,PRO,CB,-0.0070000
@@ -2142,8 +1905,6 @@ amber-ffsb,m,PRO,HD2,0.0391000
 amber-ffsb,m,PRO,HD3,0.0391000
 amber-ffsb,m,PRO,C,0.5896000
 amber-ffsb,m,PRO,O,-0.5748000
-
-# PRO - n-terminal
 amber-ffsb,n,PRO,N,-0.2020000
 amber-ffsb,n,PRO,H2,0.3120000
 amber-ffsb,n,PRO,H3,0.3120000
@@ -2160,8 +1921,6 @@ amber-ffsb,n,PRO,HD2,0.1000000
 amber-ffsb,n,PRO,HD3,0.1000000
 amber-ffsb,n,PRO,C,0.5260000
 amber-ffsb,n,PRO,O,-0.5000000
-
-# PRO - c-terminal
 amber-ffsb,c,PRO,N,-0.2802000
 amber-ffsb,c,PRO,CA,-0.1336000
 amber-ffsb,c,PRO,CB,-0.0543000
@@ -2177,8 +1936,6 @@ amber-ffsb,c,PRO,HD3,0.0331000
 amber-ffsb,c,PRO,C,0.6631000
 amber-ffsb,c,PRO,O,-0.7697000
 amber-ffsb,c,PRO,OXT,-0.7697000
-
-# PRO - n-terminal deprotonated
 amber-ffsb,n-,PRO,N,-0.8900000
 amber-ffsb,n-,PRO,H2,0.3120000
 amber-ffsb,n-,PRO,CA,0.1000000
@@ -2194,8 +1951,6 @@ amber-ffsb,n-,PRO,HD2,0.1000000
 amber-ffsb,n-,PRO,HD3,0.1000000
 amber-ffsb,n-,PRO,C,0.5260000
 amber-ffsb,n-,PRO,O,-0.5000000
-
-# PRO - c-terminal protonated
 amber-ffsb,c+,PRO,N,-0.2802000
 amber-ffsb,c+,PRO,CA,-0.1336000
 amber-ffsb,c+,PRO,CB,-0.0543000
@@ -2212,8 +1967,6 @@ amber-ffsb,c+,PRO,C,0.7087000
 amber-ffsb,c+,PRO,O,-0.5500000
 amber-ffsb,c+,PRO,OXT,-0.5000000
 amber-ffsb,c+,PRO,HOXT,0.4650000
-
-# SER - middle
 amber-ffsb,m,SER,N,-0.4157000
 amber-ffsb,m,SER,H,0.2719000
 amber-ffsb,m,SER,CA,-0.0249000
@@ -2225,8 +1978,6 @@ amber-ffsb,m,SER,OG,-0.6546000
 amber-ffsb,m,SER,HG,0.4275000
 amber-ffsb,m,SER,C,0.5973000
 amber-ffsb,m,SER,O,-0.5679000
-
-# SER - n-terminal
 amber-ffsb,n,SER,N,0.1849000
 amber-ffsb,n,SER,H1,0.1898000
 amber-ffsb,n,SER,H2,0.1898000
@@ -2240,8 +1991,6 @@ amber-ffsb,n,SER,OG,-0.6714000
 amber-ffsb,n,SER,HG,0.4239000
 amber-ffsb,n,SER,C,0.6163000
 amber-ffsb,n,SER,O,-0.5722000
-
-# SER - c-terminal
 amber-ffsb,c,SER,N,-0.3821000
 amber-ffsb,c,SER,H,0.2681000
 amber-ffsb,c,SER,CA,-0.2722000
@@ -2254,8 +2003,6 @@ amber-ffsb,c,SER,HG,0.4474000
 amber-ffsb,c,SER,C,0.8113000
 amber-ffsb,c,SER,O,-0.8132000
 amber-ffsb,c,SER,OXT,-0.8132000
-
-# SER - n-terminal deprotonated
 amber-ffsb,n-,SER,N,-0.6253000
 amber-ffsb,n-,SER,H1,0.1898000
 amber-ffsb,n-,SER,H2,0.1898000
@@ -2268,8 +2015,6 @@ amber-ffsb,n-,SER,OG,-0.6714000
 amber-ffsb,n-,SER,HG,0.4239000
 amber-ffsb,n-,SER,C,0.6163000
 amber-ffsb,n-,SER,O,-0.5722000
-
-# SER - c-terminal protonated
 amber-ffsb,c+,SER,N,-0.3821000
 amber-ffsb,c+,SER,H,0.2681000
 amber-ffsb,c+,SER,CA,-0.2722000
@@ -2283,8 +2028,6 @@ amber-ffsb,c+,SER,C,0.8113000
 amber-ffsb,c+,SER,O,-0.5457000
 amber-ffsb,c+,SER,OXT,-0.5457000
 amber-ffsb,c+,SER,HOXT,0.4650000
-
-# THR - middle
 amber-ffsb,m,THR,N,-0.4157000
 amber-ffsb,m,THR,H,0.2719000
 amber-ffsb,m,THR,CA,-0.0389000
@@ -2299,8 +2042,6 @@ amber-ffsb,m,THR,HG22,0.0642000
 amber-ffsb,m,THR,HG23,0.0642000
 amber-ffsb,m,THR,C,0.5973000
 amber-ffsb,m,THR,O,-0.5679000
-
-# THR - n-terminal
 amber-ffsb,n,THR,N,0.1812000
 amber-ffsb,n,THR,H1,0.1934000
 amber-ffsb,n,THR,H2,0.1934000
@@ -2317,8 +2058,6 @@ amber-ffsb,n,THR,HG22,0.0627000
 amber-ffsb,n,THR,HG23,0.0627000
 amber-ffsb,n,THR,C,0.6163000
 amber-ffsb,n,THR,O,-0.5722000
-
-# THR - c-terminal
 amber-ffsb,c,THR,N,-0.3821000
 amber-ffsb,c,THR,H,0.2681000
 amber-ffsb,c,THR,CA,-0.2420000
@@ -2334,8 +2073,6 @@ amber-ffsb,c,THR,HG23,0.0586000
 amber-ffsb,c,THR,C,0.7810000
 amber-ffsb,c,THR,O,-0.8044000
 amber-ffsb,c,THR,OXT,-0.8044000
-
-# THR - n-terminal deprotonated
 amber-ffsb,n-,THR,N,-0.6254000
 amber-ffsb,n-,THR,H1,0.1934000
 amber-ffsb,n-,THR,H2,0.1934000
@@ -2351,8 +2088,6 @@ amber-ffsb,n-,THR,HG22,0.0627000
 amber-ffsb,n-,THR,HG23,0.0627000
 amber-ffsb,n-,THR,C,0.6163000
 amber-ffsb,n-,THR,O,-0.5722000
-
-# THR - c-terminal protonated
 amber-ffsb,c+,THR,N,-0.3821000
 amber-ffsb,c+,THR,H,0.2681000
 amber-ffsb,c+,THR,CA,-0.2420000
@@ -2369,8 +2104,6 @@ amber-ffsb,c+,THR,C,0.7810000
 amber-ffsb,c+,THR,O,-0.5369000
 amber-ffsb,c+,THR,OXT,-0.5369000
 amber-ffsb,c+,THR,HOXT,0.4650000
-
-# TRP - middle
 amber-ffsb,m,TRP,N,-0.4157000
 amber-ffsb,m,TRP,H,0.2719000
 amber-ffsb,m,TRP,CA,-0.0275000
@@ -2395,8 +2128,6 @@ amber-ffsb,m,TRP,CH2,-0.1134000
 amber-ffsb,m,TRP,HH2,0.1417000
 amber-ffsb,m,TRP,C,0.5973000
 amber-ffsb,m,TRP,O,-0.5679000
-
-# TRP - n-terminal
 amber-ffsb,n,TRP,N,0.1913000
 amber-ffsb,n,TRP,H1,0.1888000
 amber-ffsb,n,TRP,H2,0.1888000
@@ -2423,8 +2154,6 @@ amber-ffsb,n,TRP,CH2,-0.1080000
 amber-ffsb,n,TRP,HH2,0.1411000
 amber-ffsb,n,TRP,C,0.6123000
 amber-ffsb,n,TRP,O,-0.5713000
-
-# TRP - c-terminal
 amber-ffsb,c,TRP,N,-0.3821000
 amber-ffsb,c,TRP,H,0.2681000
 amber-ffsb,c,TRP,CA,-0.2084000
@@ -2450,8 +2179,6 @@ amber-ffsb,c,TRP,HH2,0.1401000
 amber-ffsb,c,TRP,C,0.7658000
 amber-ffsb,c,TRP,O,-0.8011000
 amber-ffsb,c,TRP,OXT,-0.8011000
-
-# TRP - n-terminal deprotonated
 amber-ffsb,n-,TRP,N,-0.6199000
 amber-ffsb,n-,TRP,H1,0.1888000
 amber-ffsb,n-,TRP,H2,0.1888000
@@ -2477,8 +2204,6 @@ amber-ffsb,n-,TRP,CH2,-0.1080000
 amber-ffsb,n-,TRP,HH2,0.1411000
 amber-ffsb,n-,TRP,C,0.6123000
 amber-ffsb,n-,TRP,O,-0.5713000
-
-# TRP - c-terminal protonated
 amber-ffsb,c+,TRP,N,-0.3821000
 amber-ffsb,c+,TRP,H,0.2681000
 amber-ffsb,c+,TRP,CA,-0.2084000
@@ -2505,8 +2230,6 @@ amber-ffsb,c+,TRP,C,0.7658000
 amber-ffsb,c+,TRP,O,-0.5336000
 amber-ffsb,c+,TRP,OXT,-0.5336000
 amber-ffsb,c+,TRP,HOXT,0.4650000
-
-# TYR - middle
 amber-ffsb,m,TYR,N,-0.4157000
 amber-ffsb,m,TYR,H,0.2719000
 amber-ffsb,m,TYR,CA,-0.0014000
@@ -2528,8 +2251,6 @@ amber-ffsb,m,TYR,OH,-0.5579000
 amber-ffsb,m,TYR,HH,0.3992000
 amber-ffsb,m,TYR,C,0.5973000
 amber-ffsb,m,TYR,O,-0.5679000
-
-# TYR - n-terminal
 amber-ffsb,n,TYR,N,0.1940000
 amber-ffsb,n,TYR,H1,0.1873000
 amber-ffsb,n,TYR,H2,0.1873000
@@ -2553,8 +2274,6 @@ amber-ffsb,n,TYR,OH,-0.5578000
 amber-ffsb,n,TYR,HH,0.4001000
 amber-ffsb,n,TYR,C,0.6123000
 amber-ffsb,n,TYR,O,-0.5713000
-
-# TYR - c-terminal
 amber-ffsb,c,TYR,N,-0.3821000
 amber-ffsb,c,TYR,H,0.2681000
 amber-ffsb,c,TYR,CA,-0.2015000
@@ -2577,8 +2296,6 @@ amber-ffsb,c,TYR,HH,0.4017000
 amber-ffsb,c,TYR,C,0.7817000
 amber-ffsb,c,TYR,O,-0.8070000
 amber-ffsb,c,TYR,OXT,-0.8070000
-
-# TYR - n-terminal deprotonated
 amber-ffsb,n-,TYR,N,-0.6187000
 amber-ffsb,n-,TYR,H1,0.1873000
 amber-ffsb,n-,TYR,H2,0.1873000
@@ -2601,8 +2318,6 @@ amber-ffsb,n-,TYR,OH,-0.5578000
 amber-ffsb,n-,TYR,HH,0.4001000
 amber-ffsb,n-,TYR,C,0.6123000
 amber-ffsb,n-,TYR,O,-0.5713000
-
-# TYR - c-terminal protonated
 amber-ffsb,c+,TYR,N,-0.3821000
 amber-ffsb,c+,TYR,H,0.2681000
 amber-ffsb,c+,TYR,CA,-0.2015000
@@ -2626,8 +2341,6 @@ amber-ffsb,c+,TYR,C,0.8817000
 amber-ffsb,c+,TYR,O,-0.7070000
 amber-ffsb,c+,TYR,OXT,-0.4720000
 amber-ffsb,c+,TYR,HOXT,0.4650000
-
-# TYM - middle
 amber-ffsb,m,TYM,N,-0.4157000
 amber-ffsb,m,TYM,H,0.2719000
 amber-ffsb,m,TYM,CA,-0.0014000
@@ -2648,8 +2361,6 @@ amber-ffsb,m,TYM,CZ,0.3226000
 amber-ffsb,m,TYM,OH,-0.9579000
 amber-ffsb,m,TYM,C,0.5973000
 amber-ffsb,m,TYM,O,-0.5679000
-
-# TYM - n-terminal
 amber-ffsb,n,TYM,N,0.1940000
 amber-ffsb,n,TYM,H1,0.1873000
 amber-ffsb,n,TYM,H2,0.1873000
@@ -2672,8 +2383,6 @@ amber-ffsb,n,TYM,CZ,0.3226000
 amber-ffsb,n,TYM,OH,-0.9383000
 amber-ffsb,n,TYM,C,0.6123000
 amber-ffsb,n,TYM,O,-0.5713000
-
-# TYM - c-terminal
 amber-ffsb,c,TYM,N,-0.3821000
 amber-ffsb,c,TYM,H,0.2681000
 amber-ffsb,c,TYM,CA,-0.2015000
@@ -2695,8 +2404,6 @@ amber-ffsb,c,TYM,OH,-0.9475000
 amber-ffsb,c,TYM,C,0.7817000
 amber-ffsb,c,TYM,O,-0.8070000
 amber-ffsb,c,TYM,OXT,-0.8070000
-
-# TYM - n-terminal deprotonated
 amber-ffsb,n-,TYM,N,-0.6187000
 amber-ffsb,n-,TYM,H1,0.1873000
 amber-ffsb,n-,TYM,H2,0.1873000
@@ -2718,8 +2425,6 @@ amber-ffsb,n-,TYM,CZ,0.3226000
 amber-ffsb,n-,TYM,OH,-0.9383000
 amber-ffsb,n-,TYM,C,0.6123000
 amber-ffsb,n-,TYM,O,-0.5713000
-
-# TYM - c-terminal protonated
 amber-ffsb,c+,TYM,N,-0.3821000
 amber-ffsb,c+,TYM,H,0.2681000
 amber-ffsb,c+,TYM,CA,-0.2015000
@@ -2742,8 +2447,6 @@ amber-ffsb,c+,TYM,C,0.7817000
 amber-ffsb,c+,TYM,O,-0.5395000
 amber-ffsb,c+,TYM,OXT,-0.5395000
 amber-ffsb,c+,TYM,HOXT,0.4650000
-
-# VAL - middle
 amber-ffsb,m,VAL,N,-0.4157000
 amber-ffsb,m,VAL,H,0.2719000
 amber-ffsb,m,VAL,CA,-0.0875000
@@ -2760,8 +2463,6 @@ amber-ffsb,m,VAL,HG22,0.0791000
 amber-ffsb,m,VAL,HG23,0.0791000
 amber-ffsb,m,VAL,C,0.5973000
 amber-ffsb,m,VAL,O,-0.5679000
-
-# VAL - n-terminal
 amber-ffsb,n,VAL,N,0.0577000
 amber-ffsb,n,VAL,H1,0.2272000
 amber-ffsb,n,VAL,H2,0.2272000
@@ -2780,8 +2481,6 @@ amber-ffsb,n,VAL,HG22,0.0735000
 amber-ffsb,n,VAL,HG23,0.0735000
 amber-ffsb,n,VAL,C,0.6163000
 amber-ffsb,n,VAL,O,-0.5722000
-
-# VAL - c-terminal
 amber-ffsb,c,VAL,N,-0.3821000
 amber-ffsb,c,VAL,H,0.2681000
 amber-ffsb,c,VAL,CA,-0.3438000
@@ -2799,8 +2498,6 @@ amber-ffsb,c,VAL,HG23,0.0836000
 amber-ffsb,c,VAL,C,0.8350000
 amber-ffsb,c,VAL,O,-0.8173000
 amber-ffsb,c,VAL,OXT,-0.8173000
-
-# VAL - n-terminal deprotonated
 amber-ffsb,n-,VAL,N,-0.7151000
 amber-ffsb,n-,VAL,H1,0.2272000
 amber-ffsb,n-,VAL,H2,0.2272000
@@ -2818,8 +2515,6 @@ amber-ffsb,n-,VAL,HG22,0.0735000
 amber-ffsb,n-,VAL,HG23,0.0735000
 amber-ffsb,n-,VAL,C,0.6163000
 amber-ffsb,n-,VAL,O,-0.5722000
-
-# VAL - c-terminal protonated
 amber-ffsb,c+,VAL,N,-0.3821000
 amber-ffsb,c+,VAL,H,0.2681000
 amber-ffsb,c+,VAL,CA,-0.3438000
@@ -2838,10 +2533,6 @@ amber-ffsb,c+,VAL,C,0.8350000
 amber-ffsb,c+,VAL,O,-0.5498000
 amber-ffsb,c+,VAL,OXT,-0.5498000
 amber-ffsb,c+,VAL,HOXT,0.4650000
-
-# Protein: amber-ff03
-
-# ALA - middle
 amber-ff03,m,ALA,N,-0.4047730
 amber-ff03,m,ALA,H,0.2942760
 amber-ff03,m,ALA,CA,-0.0277330
@@ -2852,8 +2543,6 @@ amber-ff03,m,ALA,HB2,0.0774280
 amber-ff03,m,ALA,HB3,0.0774280
 amber-ff03,m,ALA,C,0.5702240
 amber-ff03,m,ALA,O,-0.5551290
-
-# ALA - n-terminal
 amber-ff03,n,ALA,N,-0.5892660
 amber-ff03,n,ALA,H1,0.4464220
 amber-ff03,n,ALA,H2,0.4464220
@@ -2866,8 +2555,6 @@ amber-ff03,n,ALA,HB2,0.0630560
 amber-ff03,n,ALA,HB3,0.0630560
 amber-ff03,n,ALA,C,0.6766870
 amber-ff03,n,ALA,O,-0.5927640
-
-# ALA - c-terminal
 amber-ff03,c,ALA,N,-0.6222020
 amber-ff03,c,ALA,H,0.3597840
 amber-ff03,c,ALA,CA,-0.0541020
@@ -2879,8 +2566,6 @@ amber-ff03,c,ALA,HB3,0.0696520
 amber-ff03,c,ALA,C,0.6640140
 amber-ff03,c,ALA,O,-0.7470070
 amber-ff03,c,ALA,OXT,-0.7470070
-
-# ALA - n-terminal deprotonated
 amber-ff03,n-,ALA,N,-1.1428440
 amber-ff03,n-,ALA,H1,0.4464220
 amber-ff03,n-,ALA,H2,0.4464220
@@ -2892,8 +2577,6 @@ amber-ff03,n-,ALA,HB2,0.0630560
 amber-ff03,n-,ALA,HB3,0.0630560
 amber-ff03,n-,ALA,C,0.6766870
 amber-ff03,n-,ALA,O,-0.5927640
-
-# ALA - c-terminal protonated
 amber-ff03,c+,ALA,N,-0.6222020
 amber-ff03,c+,ALA,H,0.3597840
 amber-ff03,c+,ALA,CA,-0.0541020
@@ -2906,8 +2589,6 @@ amber-ff03,c+,ALA,C,0.6640140
 amber-ff03,c+,ALA,O,-0.4708370
 amber-ff03,c+,ALA,OXT,-0.4708370
 amber-ff03,c+,ALA,HOXT,0.4476610
-
-# ARG - middle
 amber-ff03,m,ARG,N,-0.3008790
 amber-ff03,m,ARG,H,0.2336930
 amber-ff03,m,ARG,CA,-0.1313810
@@ -2932,8 +2613,6 @@ amber-ff03,m,ARG,HH21,0.3910520
 amber-ff03,m,ARG,HH22,0.3910520
 amber-ff03,m,ARG,C,0.7303080
 amber-ff03,m,ARG,O,-0.5783320
-
-# ARG - n-terminal
 amber-ff03,n,ARG,N,-0.6705150
 amber-ff03,n,ARG,H1,0.4735050
 amber-ff03,n,ARG,H2,0.4735050
@@ -2960,8 +2639,6 @@ amber-ff03,n,ARG,HH21,0.4059270
 amber-ff03,n,ARG,HH22,0.4059270
 amber-ff03,n,ARG,C,0.7702840
 amber-ff03,n,ARG,O,-0.6472340
-
-# ARG - c-terminal
 amber-ff03,c,ARG,N,-0.4953400
 amber-ff03,c,ARG,H,0.3138640
 amber-ff03,c,ARG,CA,-0.1222650
@@ -2987,8 +2664,6 @@ amber-ff03,c,ARG,HH22,0.4062160
 amber-ff03,c,ARG,C,0.6487630
 amber-ff03,c,ARG,O,-0.7393820
 amber-ff03,c,ARG,OXT,-0.7393820
-
-# ARG - n-terminal deprotonated
 amber-ff03,n-,ARG,N,-1.1970100
 amber-ff03,n-,ARG,H1,0.4735050
 amber-ff03,n-,ARG,H2,0.4735050
@@ -3014,8 +2689,6 @@ amber-ff03,n-,ARG,HH21,0.4059270
 amber-ff03,n-,ARG,HH22,0.4059270
 amber-ff03,n-,ARG,C,0.7702840
 amber-ff03,n-,ARG,O,-0.6472340
-
-# ARG - c-terminal protonated
 amber-ff03,c+,ARG,N,-0.4953400
 amber-ff03,c+,ARG,H,0.3138640
 amber-ff03,c+,ARG,CA,-0.1222650
@@ -3042,8 +2715,6 @@ amber-ff03,c+,ARG,C,0.6487630
 amber-ff03,c+,ARG,O,-0.4632120
 amber-ff03,c+,ARG,OXT,-0.4632120
 amber-ff03,c+,ARG,HOXT,0.4476610
-
-# ARN - middle
 amber-ff03,m,ARN,N,-0.3008790
 amber-ff03,m,ARN,H,0.2336930
 amber-ff03,m,ARN,CA,-0.1313810
@@ -3067,8 +2738,6 @@ amber-ff03,m,ARN,NH2,-0.7610580
 amber-ff03,m,ARN,HH21,0.3157680
 amber-ff03,m,ARN,C,0.7303080
 amber-ff03,m,ARN,O,-0.5783320
-
-# ARN - n-terminal
 amber-ff03,n,ARN,N,-0.6705150
 amber-ff03,n,ARN,H1,0.4735050
 amber-ff03,n,ARN,H2,0.4735050
@@ -3094,8 +2763,6 @@ amber-ff03,n,ARN,NH2,-0.7610580
 amber-ff03,n,ARN,HH21,0.3157680
 amber-ff03,n,ARN,C,0.7702840
 amber-ff03,n,ARN,O,-0.6472340
-
-# ARN - c-terminal
 amber-ff03,c,ARN,N,-0.4953400
 amber-ff03,c,ARN,H,0.3138640
 amber-ff03,c,ARN,CA,-0.1222650
@@ -3120,8 +2787,6 @@ amber-ff03,c,ARN,HH21,0.3157680
 amber-ff03,c,ARN,C,0.6487630
 amber-ff03,c,ARN,O,-0.7393820
 amber-ff03,c,ARN,OXT,-0.7393820
-
-# ARN - n-terminal deprotonated
 amber-ff03,n-,ARN,N,-1.1970100
 amber-ff03,n-,ARN,H1,0.4735050
 amber-ff03,n-,ARN,H2,0.4735050
@@ -3146,8 +2811,6 @@ amber-ff03,n-,ARN,NH2,-0.7610580
 amber-ff03,n-,ARN,HH21,0.3157680
 amber-ff03,n-,ARN,C,0.7702840
 amber-ff03,n-,ARN,O,-0.6472340
-
-# ARN - c-terminal protonated
 amber-ff03,c+,ARN,N,-0.4953400
 amber-ff03,c+,ARN,H,0.3138640
 amber-ff03,c+,ARN,CA,-0.1222650
@@ -3173,8 +2836,6 @@ amber-ff03,c+,ARN,C,0.6487630
 amber-ff03,c+,ARN,O,-0.4632125
 amber-ff03,c+,ARN,OXT,-0.4632125
 amber-ff03,c+,ARN,HOXT,0.4476610
-
-# ASN - middle
 amber-ff03,m,ASN,N,-0.4301060
 amber-ff03,m,ASN,H,0.2545430
 amber-ff03,m,ASN,CA,0.0446090
@@ -3189,8 +2850,6 @@ amber-ff03,m,ASN,HD21,0.3550790
 amber-ff03,m,ASN,HD22,0.3550790
 amber-ff03,m,ASN,C,0.6171410
 amber-ff03,m,ASN,O,-0.5239090
-
-# ASN - n-terminal
 amber-ff03,n,ASN,N,-0.6691060
 amber-ff03,n,ASN,H1,0.4730350
 amber-ff03,n,ASN,H2,0.4730350
@@ -3207,8 +2866,6 @@ amber-ff03,n,ASN,HD21,0.3723440
 amber-ff03,n,ASN,HD22,0.3723440
 amber-ff03,n,ASN,C,0.6025540
 amber-ff03,n,ASN,O,-0.5832930
-
-# ASN - c-terminal
 amber-ff03,c,ASN,N,-0.6265300
 amber-ff03,c,ASN,H,0.3432420
 amber-ff03,c,ASN,CA,0.0144050
@@ -3224,8 +2881,6 @@ amber-ff03,c,ASN,HD22,0.3666240
 amber-ff03,c,ASN,C,0.6073810
 amber-ff03,c,ASN,O,-0.7186910
 amber-ff03,c,ASN,OXT,-0.7186910
-
-# ASN - n-terminal deprotonated
 amber-ff03,n-,ASN,N,-1.1960710
 amber-ff03,n-,ASN,H1,0.4730350
 amber-ff03,n-,ASN,H2,0.4730350
@@ -3241,8 +2896,6 @@ amber-ff03,n-,ASN,HD21,0.3723440
 amber-ff03,n-,ASN,HD22,0.3723440
 amber-ff03,n-,ASN,C,0.6025540
 amber-ff03,n-,ASN,O,-0.5832930
-
-# ASN - c-terminal protonated
 amber-ff03,c+,ASN,N,-0.6265300
 amber-ff03,c+,ASN,H,0.3432420
 amber-ff03,c+,ASN,CA,0.0144050
@@ -3259,8 +2912,6 @@ amber-ff03,c+,ASN,C,0.6073810
 amber-ff03,c+,ASN,O,-0.4425215
 amber-ff03,c+,ASN,OXT,-0.4425215
 amber-ff03,c+,ASN,HOXT,0.4476610
-
-# ASP - middle
 amber-ff03,m,ASP,N,-0.5582010
 amber-ff03,m,ASP,H,0.3196760
 amber-ff03,m,ASP,CA,0.0072250
@@ -3273,8 +2924,6 @@ amber-ff03,m,ASP,OD1,-0.7303850
 amber-ff03,m,ASP,OD2,-0.7303850
 amber-ff03,m,ASP,C,0.4431990
 amber-ff03,m,ASP,O,-0.5014450
-
-# ASP - n-terminal
 amber-ff03,n,ASP,N,-0.5888070
 amber-ff03,n,ASP,H1,0.4462690
 amber-ff03,n,ASP,H2,0.4462690
@@ -3289,8 +2938,6 @@ amber-ff03,n,ASP,OD1,-0.7879660
 amber-ff03,n,ASP,OD2,-0.7879660
 amber-ff03,n,ASP,C,0.6020720
 amber-ff03,n,ASP,O,-0.5862060
-
-# ASP - c-terminal
 amber-ff03,c,ASP,N,-0.6494620
 amber-ff03,c,ASP,H,0.4268530
 amber-ff03,c,ASP,CA,-0.3062860
@@ -3304,8 +2951,6 @@ amber-ff03,c,ASP,OD2,-0.8137140
 amber-ff03,c,ASP,C,0.7323500
 amber-ff03,c,ASP,O,-0.7811750
 amber-ff03,c,ASP,OXT,-0.7811750
-
-# ASP - n-terminal deprotonated
 amber-ff03,n-,ASP,N,-1.1425380
 amber-ff03,n-,ASP,H1,0.4462690
 amber-ff03,n-,ASP,H2,0.4462690
@@ -3319,8 +2964,6 @@ amber-ff03,n-,ASP,OD1,-0.7879660
 amber-ff03,n-,ASP,OD2,-0.7879660
 amber-ff03,n-,ASP,C,0.6020720
 amber-ff03,n-,ASP,O,-0.5862060
-
-# ASP - c-terminal protonated
 amber-ff03,c+,ASP,N,-0.6494620
 amber-ff03,c+,ASP,H,0.4268530
 amber-ff03,c+,ASP,CA,-0.3062860
@@ -3335,8 +2978,6 @@ amber-ff03,c+,ASP,C,0.7323500
 amber-ff03,c+,ASP,O,-0.5050055
 amber-ff03,c+,ASP,OXT,-0.5050055
 amber-ff03,c+,ASP,HOXT,0.4476610
-
-# ASH - middle
 amber-ff03,m,ASH,N,-0.3920690
 amber-ff03,m,ASH,H,0.2824130
 amber-ff03,m,ASH,CA,-0.0353170
@@ -3350,8 +2991,6 @@ amber-ff03,m,ASH,OD2,-0.5871630
 amber-ff03,m,ASH,HD2,0.4380350
 amber-ff03,m,ASH,C,0.6204950
 amber-ff03,m,ASH,O,-0.5650450
-
-# ASH - n-terminal
 amber-ff03,n,ASH,N,-0.5888070
 amber-ff03,n,ASH,H1,0.4462690
 amber-ff03,n,ASH,H2,0.4462690
@@ -3367,8 +3006,6 @@ amber-ff03,n,ASH,OD2,-0.5580231
 amber-ff03,n,ASH,HD2,0.4380350
 amber-ff03,n,ASH,C,0.6020720
 amber-ff03,n,ASH,O,-0.5862060
-
-# ASH - c-terminal
 amber-ff03,c,ASH,N,-0.6494620
 amber-ff03,c,ASH,H,0.4268530
 amber-ff03,c,ASH,CA,-0.3062860
@@ -3383,8 +3020,6 @@ amber-ff03,c,ASH,HD2,0.4380350
 amber-ff03,c,ASH,C,0.7323500
 amber-ff03,c,ASH,O,-0.7811750
 amber-ff03,c,ASH,OXT,-0.7811750
-
-# ASH - n-terminal deprotonated
 amber-ff03,n-,ASH,N,-1.1425380
 amber-ff03,n-,ASH,H1,0.4462690
 amber-ff03,n-,ASH,H2,0.4462690
@@ -3399,8 +3034,6 @@ amber-ff03,n-,ASH,OD2,-0.5580231
 amber-ff03,n-,ASH,HD2,0.4380350
 amber-ff03,n-,ASH,C,0.6020720
 amber-ff03,n-,ASH,O,-0.5862060
-
-# ASH - c-terminal protonated
 amber-ff03,c+,ASH,N,-0.6494620
 amber-ff03,c+,ASH,H,0.4268530
 amber-ff03,c+,ASH,CA,-0.3062860
@@ -3416,8 +3049,6 @@ amber-ff03,c+,ASH,C,0.7323500
 amber-ff03,c+,ASH,O,-0.5050055
 amber-ff03,c+,ASH,OXT,-0.5050055
 amber-ff03,c+,ASH,HOXT,0.4476610
-
-# CYS - middle
 amber-ff03,m,CYS,N,-0.3961650
 amber-ff03,m,CYS,H,0.2951870
 amber-ff03,m,CYS,CA,-0.0735010
@@ -3429,8 +3060,6 @@ amber-ff03,m,CYS,SG,-0.2851820
 amber-ff03,m,CYS,HG,0.1892740
 amber-ff03,m,CYS,C,0.6430350
 amber-ff03,m,CYS,O,-0.5848610
-
-# CYS - n-terminal
 amber-ff03,n,CYS,N,-0.6037790
 amber-ff03,n,CYS,H1,0.4512600
 amber-ff03,n,CYS,H2,0.4512600
@@ -3444,8 +3073,6 @@ amber-ff03,n,CYS,SG,-0.2933800
 amber-ff03,n,CYS,HG,0.1907050
 amber-ff03,n,CYS,C,0.7478570
 amber-ff03,n,CYS,O,-0.6229080
-
-# CYS - c-terminal
 amber-ff03,c,CYS,N,-0.5550370
 amber-ff03,c,CYS,H,0.3454830
 amber-ff03,c,CYS,CA,-0.1109290
@@ -3458,8 +3085,6 @@ amber-ff03,c,CYS,HG,0.1924190
 amber-ff03,c,CYS,C,0.6719420
 amber-ff03,c,CYS,O,-0.7509710
 amber-ff03,c,CYS,OXT,-0.7509710
-
-# CYS - n-terminal deprotonated
 amber-ff03,n-,CYS,N,-1.1525190
 amber-ff03,n-,CYS,H1,0.4512600
 amber-ff03,n-,CYS,H2,0.4512600
@@ -3472,8 +3097,6 @@ amber-ff03,n-,CYS,SG,-0.2933800
 amber-ff03,n-,CYS,HG,0.1907050
 amber-ff03,n-,CYS,C,0.7478570
 amber-ff03,n-,CYS,O,-0.6229080
-
-# CYS - c-terminal protonated
 amber-ff03,c+,CYS,N,-0.5550370
 amber-ff03,c+,CYS,H,0.3454830
 amber-ff03,c+,CYS,CA,-0.1109290
@@ -3487,8 +3110,6 @@ amber-ff03,c+,CYS,C,0.6719420
 amber-ff03,c+,CYS,O,-0.4748015
 amber-ff03,c+,CYS,OXT,-0.4748015
 amber-ff03,c+,CYS,HOXT,0.4476610
-
-# CYM - middle
 amber-ff03,m,CYM,N,-0.4157000
 amber-ff03,m,CYM,H,0.2719000
 amber-ff03,m,CYM,CA,-0.0351000
@@ -3499,8 +3120,6 @@ amber-ff03,m,CYM,HB3,0.1122000
 amber-ff03,m,CYM,SG,-0.8844000
 amber-ff03,m,CYM,C,0.5973000
 amber-ff03,m,CYM,O,-0.5679000
-
-# CYM - n-terminal
 amber-ff03,n,CYM,N,-0.6103550
 amber-ff03,n,CYM,H1,0.4534520
 amber-ff03,n,CYM,H2,0.4534520
@@ -3513,8 +3132,6 @@ amber-ff03,n,CYM,HB3,0.1122000
 amber-ff03,n,CYM,SG,-1.0134030
 amber-ff03,n,CYM,C,0.7478570
 amber-ff03,n,CYM,O,-0.6229080
-
-# CYM - c-terminal
 amber-ff03,c,CYM,N,-0.5550370
 amber-ff03,c,CYM,H,0.3454830
 amber-ff03,c,CYM,CA,-0.1109290
@@ -3526,8 +3143,6 @@ amber-ff03,c,CYM,SG,-0.9798230
 amber-ff03,c,CYM,C,0.6719420
 amber-ff03,c,CYM,O,-0.7509710
 amber-ff03,c,CYM,OXT,-0.7509710
-
-# CYM - n-terminal deprotonated
 amber-ff03,n-,CYM,N,-1.1569030
 amber-ff03,n-,CYM,H1,0.4534520
 amber-ff03,n-,CYM,H2,0.4534520
@@ -3539,8 +3154,6 @@ amber-ff03,n-,CYM,HB3,0.1122000
 amber-ff03,n-,CYM,SG,-1.0134030
 amber-ff03,n-,CYM,C,0.7478570
 amber-ff03,n-,CYM,O,-0.6229080
-
-# CYM - c-terminal protonated
 amber-ff03,c+,CYM,N,-0.5550370
 amber-ff03,c+,CYM,H,0.3454830
 amber-ff03,c+,CYM,CA,-0.1109290
@@ -3553,8 +3166,6 @@ amber-ff03,c+,CYM,C,0.6719420
 amber-ff03,c+,CYM,O,-0.4748015
 amber-ff03,c+,CYM,OXT,-0.4748015
 amber-ff03,c+,CYM,HOXT,0.4476610
-
-# CYX - middle
 amber-ff03,m,CYX,N,-0.4359210
 amber-ff03,m,CYX,H,0.2900770
 amber-ff03,m,CYX,CA,-0.0305470
@@ -3565,8 +3176,6 @@ amber-ff03,m,CYX,HB3,0.0789510
 amber-ff03,m,CYX,SG,-0.1322720
 amber-ff03,m,CYX,C,0.6247880
 amber-ff03,m,CYX,O,-0.5731670
-
-# CYX - n-terminal
 amber-ff03,n,CYX,N,-0.6103550
 amber-ff03,n,CYX,H1,0.4534520
 amber-ff03,n,CYX,H2,0.4534520
@@ -3579,8 +3188,6 @@ amber-ff03,n,CYX,HB3,0.0789510
 amber-ff03,n,CYX,SG,-0.1551990
 amber-ff03,n,CYX,C,0.7478570
 amber-ff03,n,CYX,O,-0.6229080
-
-# CYX - c-terminal
 amber-ff03,c,CYX,N,-0.5550370
 amber-ff03,c,CYX,H,0.3454830
 amber-ff03,c,CYX,CA,-0.1109290
@@ -3592,8 +3199,6 @@ amber-ff03,c,CYX,SG,-0.1216190
 amber-ff03,c,CYX,C,0.6719420
 amber-ff03,c,CYX,O,-0.7509710
 amber-ff03,c,CYX,OXT,-0.7509710
-
-# CYX - n-terminal deprotonated
 amber-ff03,n-,CYX,N,-1.1569030
 amber-ff03,n-,CYX,H1,0.4534520
 amber-ff03,n-,CYX,H2,0.4534520
@@ -3605,8 +3210,6 @@ amber-ff03,n-,CYX,HB3,0.0789510
 amber-ff03,n-,CYX,SG,-0.1551990
 amber-ff03,n-,CYX,C,0.7478570
 amber-ff03,n-,CYX,O,-0.6229080
-
-# CYX - c-terminal protonated
 amber-ff03,c+,CYX,N,-0.5550370
 amber-ff03,c+,CYX,H,0.3454830
 amber-ff03,c+,CYX,CA,-0.1109290
@@ -3619,8 +3222,6 @@ amber-ff03,c+,CYX,C,0.6719420
 amber-ff03,c+,CYX,O,-0.4748015
 amber-ff03,c+,CYX,OXT,-0.4748015
 amber-ff03,c+,CYX,HOXT,0.4476610
-
-# GLN - middle
 amber-ff03,m,GLN,N,-0.3873530
 amber-ff03,m,GLN,H,0.3006050
 amber-ff03,m,GLN,CA,0.0374700
@@ -3638,8 +3239,6 @@ amber-ff03,m,GLN,HE21,0.4083120
 amber-ff03,m,GLN,HE22,0.4083120
 amber-ff03,m,GLN,C,0.4185770
 amber-ff03,m,GLN,O,-0.5653100
-
-# GLN - n-terminal
 amber-ff03,n,GLN,N,-0.6037790
 amber-ff03,n,GLN,H1,0.4512600
 amber-ff03,n,GLN,H2,0.4512600
@@ -3659,8 +3258,6 @@ amber-ff03,n,GLN,HE21,0.3973060
 amber-ff03,n,GLN,HE22,0.3973060
 amber-ff03,n,GLN,C,0.6066340
 amber-ff03,n,GLN,O,-0.5844150
-
-# GLN - c-terminal
 amber-ff03,c,GLN,N,-0.5151350
 amber-ff03,c,GLN,H,0.3242990
 amber-ff03,c,GLN,CA,-0.2356300
@@ -3679,8 +3276,6 @@ amber-ff03,c,GLN,HE22,0.3953340
 amber-ff03,c,GLN,C,0.6004480
 amber-ff03,c,GLN,O,-0.7152240
 amber-ff03,c,GLN,OXT,-0.7152240
-
-# GLN - n-terminal deprotonated
 amber-ff03,n-,GLN,N,-1.1525190
 amber-ff03,n-,GLN,H1,0.4512600
 amber-ff03,n-,GLN,H2,0.4512600
@@ -3699,8 +3294,6 @@ amber-ff03,n-,GLN,HE21,0.3973060
 amber-ff03,n-,GLN,HE22,0.3973060
 amber-ff03,n-,GLN,C,0.6066340
 amber-ff03,n-,GLN,O,-0.5844150
-
-# GLN - c-terminal protonated
 amber-ff03,c+,GLN,N,-0.5151350
 amber-ff03,c+,GLN,H,0.3242990
 amber-ff03,c+,GLN,CA,-0.2356300
@@ -3720,8 +3313,6 @@ amber-ff03,c+,GLN,C,0.6004480
 amber-ff03,c+,GLN,O,-0.4390545
 amber-ff03,c+,GLN,OXT,-0.4390545
 amber-ff03,c+,GLN,HOXT,0.4476610
-
-# GLU - middle
 amber-ff03,m,GLU,N,-0.4233920
 amber-ff03,m,GLU,H,0.3068110
 amber-ff03,m,GLU,CA,0.0316330
@@ -3737,8 +3328,6 @@ amber-ff03,m,GLU,OE1,-0.8240350
 amber-ff03,m,GLU,OE2,-0.8240350
 amber-ff03,m,GLU,C,0.4697350
 amber-ff03,m,GLU,O,-0.5925280
-
-# GLU - n-terminal
 amber-ff03,n,GLU,N,-0.4653280
 amber-ff03,n,GLU,H1,0.4051090
 amber-ff03,n,GLU,H2,0.4051090
@@ -3756,8 +3345,6 @@ amber-ff03,n,GLU,OE1,-0.7805450
 amber-ff03,n,GLU,OE2,-0.7805450
 amber-ff03,n,GLU,C,0.5525510
 amber-ff03,n,GLU,O,-0.5988350
-
-# GLU - c-terminal
 amber-ff03,c,GLU,N,-0.7487780
 amber-ff03,c,GLU,H,0.3961250
 amber-ff03,c,GLU,CA,-0.1331590
@@ -3774,8 +3361,6 @@ amber-ff03,c,GLU,OE2,-0.7924630
 amber-ff03,c,GLU,C,0.7311860
 amber-ff03,c,GLU,O,-0.7805930
 amber-ff03,c,GLU,OXT,-0.7805930
-
-# GLU - n-terminal deprotonated
 amber-ff03,n-,GLU,N,-1.0602190
 amber-ff03,n-,GLU,H1,0.4051090
 amber-ff03,n-,GLU,H2,0.4051090
@@ -3792,8 +3377,6 @@ amber-ff03,n-,GLU,OE1,-0.7805450
 amber-ff03,n-,GLU,OE2,-0.7805450
 amber-ff03,n-,GLU,C,0.5525510
 amber-ff03,n-,GLU,O,-0.5988350
-
-# GLU - c-terminal protonated
 amber-ff03,c+,GLU,N,-0.7487780
 amber-ff03,c+,GLU,H,0.3961250
 amber-ff03,c+,GLU,CA,-0.1331590
@@ -3811,8 +3394,6 @@ amber-ff03,c+,GLU,C,0.7311860
 amber-ff03,c+,GLU,O,-0.5044235
 amber-ff03,c+,GLU,OXT,-0.5044235
 amber-ff03,c+,GLU,HOXT,0.4476610
-
-# GLH - middle
 amber-ff03,m,GLH,N,-0.3845360
 amber-ff03,m,GLH,H,0.2639630
 amber-ff03,m,GLH,CA,-0.0608980
@@ -3829,8 +3410,6 @@ amber-ff03,m,GLH,OE2,-0.5887220
 amber-ff03,m,GLH,HE2,0.4476610
 amber-ff03,m,GLH,C,0.5870560
 amber-ff03,m,GLH,O,-0.5637530
-
-# GLH - n-terminal
 amber-ff03,n,GLH,N,-0.4653280
 amber-ff03,n,GLH,H1,0.4051090
 amber-ff03,n,GLH,H2,0.4051090
@@ -3849,8 +3428,6 @@ amber-ff03,n,GLH,OE2,-0.4969145
 amber-ff03,n,GLH,HE2,0.4476610
 amber-ff03,n,GLH,C,0.5525510
 amber-ff03,n,GLH,O,-0.5988350
-
-# GLH - c-terminal
 amber-ff03,c,GLH,N,-0.7487780
 amber-ff03,c,GLH,H,0.3961250
 amber-ff03,c,GLH,CA,-0.1331590
@@ -3868,8 +3445,6 @@ amber-ff03,c,GLH,HE2,0.4476610
 amber-ff03,c,GLH,C,0.7311860
 amber-ff03,c,GLH,O,-0.7805930
 amber-ff03,c,GLH,OXT,-0.7805930
-
-# GLH - n-terminal deprotonated
 amber-ff03,n-,GLH,N,-1.0602190
 amber-ff03,n-,GLH,H1,0.4051090
 amber-ff03,n-,GLH,H2,0.4051090
@@ -3887,8 +3462,6 @@ amber-ff03,n-,GLH,OE2,-0.4969145
 amber-ff03,n-,GLH,HE2,0.4476610
 amber-ff03,n-,GLH,C,0.5525510
 amber-ff03,n-,GLH,O,-0.5988350
-
-# GLH - c-terminal protonated
 amber-ff03,c+,GLH,N,-0.7487780
 amber-ff03,c+,GLH,H,0.3961250
 amber-ff03,c+,GLH,CA,-0.1331590
@@ -3907,8 +3480,6 @@ amber-ff03,c+,GLH,C,0.7311860
 amber-ff03,c+,GLH,O,-0.5044235
 amber-ff03,c+,GLH,OXT,-0.5044235
 amber-ff03,c+,GLH,HOXT,0.4476610
-
-# GLY - middle
 amber-ff03,m,GLY,N,-0.3742820
 amber-ff03,m,GLY,H,0.2539810
 amber-ff03,m,GLY,CA,-0.1288440
@@ -3916,8 +3487,6 @@ amber-ff03,m,GLY,HA2,0.0888590
 amber-ff03,m,GLY,HA3,0.0888590
 amber-ff03,m,GLY,C,0.5805840
 amber-ff03,m,GLY,O,-0.5091570
-
-# GLY - n-terminal
 amber-ff03,n,GLY,N,-0.6007660
 amber-ff03,n,GLY,H1,0.4502550
 amber-ff03,n,GLY,H2,0.4502550
@@ -3927,8 +3496,6 @@ amber-ff03,n,GLY,HA2,0.0368490
 amber-ff03,n,GLY,HA3,0.0368490
 amber-ff03,n,GLY,C,0.6487680
 amber-ff03,n,GLY,O,-0.5993570
-
-# GLY - c-terminal
 amber-ff03,c,GLY,N,-0.5233620
 amber-ff03,c,GLY,H,0.3496220
 amber-ff03,c,GLY,CA,-0.3166590
@@ -3937,8 +3504,6 @@ amber-ff03,c,GLY,HA3,0.1602000
 amber-ff03,c,GLY,C,0.6617970
 amber-ff03,c,GLY,O,-0.7458990
 amber-ff03,c,GLY,OXT,-0.7458990
-
-# GLY - n-terminal deprotonated
 amber-ff03,n-,GLY,N,-1.1505110
 amber-ff03,n-,GLY,H1,0.4502550
 amber-ff03,n-,GLY,H2,0.4502550
@@ -3947,8 +3512,6 @@ amber-ff03,n-,GLY,HA2,0.0368490
 amber-ff03,n-,GLY,HA3,0.0368490
 amber-ff03,n-,GLY,C,0.6487680
 amber-ff03,n-,GLY,O,-0.5993570
-
-# GLY - c-terminal protonated
 amber-ff03,c+,GLY,N,-0.5233620
 amber-ff03,c+,GLY,H,0.3496220
 amber-ff03,c+,GLY,CA,-0.3166590
@@ -3958,8 +3521,6 @@ amber-ff03,c+,GLY,C,0.6617970
 amber-ff03,c+,GLY,O,-0.4697295
 amber-ff03,c+,GLY,OXT,-0.4697295
 amber-ff03,c+,GLY,HOXT,0.4476610
-
-# HID - middle
 amber-ff03,m,HID,N,-0.5067990
 amber-ff03,m,HID,H,0.3510210
 amber-ff03,m,HID,CA,0.1190660
@@ -3977,8 +3538,6 @@ amber-ff03,m,HID,HE1,0.1221820
 amber-ff03,m,HID,NE2,-0.6014820
 amber-ff03,m,HID,C,0.5159470
 amber-ff03,m,HID,O,-0.5998310
-
-# HID - n-terminal
 amber-ff03,n,HID,N,-0.7022020
 amber-ff03,n,HID,H1,0.4840670
 amber-ff03,n,HID,H2,0.4840670
@@ -3998,8 +3557,6 @@ amber-ff03,n,HID,HE1,0.1100990
 amber-ff03,n,HID,NE2,-0.5515850
 amber-ff03,n,HID,C,0.5906510
 amber-ff03,n,HID,O,-0.5798090
-
-# HID - c-terminal
 amber-ff03,c,HID,N,-0.6925100
 amber-ff03,c,HID,H,0.3577840
 amber-ff03,c,HID,CA,0.1134710
@@ -4018,8 +3575,6 @@ amber-ff03,c,HID,NE2,-0.5528870
 amber-ff03,c,HID,C,0.6223310
 amber-ff03,c,HID,O,-0.7261660
 amber-ff03,c,HID,OXT,-0.7261660
-
-# HID - n-terminal deprotonated
 amber-ff03,n-,HID,N,-1.2181350
 amber-ff03,n-,HID,H1,0.4840670
 amber-ff03,n-,HID,H2,0.4840670
@@ -4038,8 +3593,6 @@ amber-ff03,n-,HID,HE1,0.1100990
 amber-ff03,n-,HID,NE2,-0.5515850
 amber-ff03,n-,HID,C,0.5906510
 amber-ff03,n-,HID,O,-0.5798090
-
-# HID - c-terminal protonated
 amber-ff03,c+,HID,N,-0.6925100
 amber-ff03,c+,HID,H,0.3577840
 amber-ff03,c+,HID,CA,0.1134710
@@ -4059,8 +3612,6 @@ amber-ff03,c+,HID,C,0.6223310
 amber-ff03,c+,HID,O,-0.4499965
 amber-ff03,c+,HID,OXT,-0.4499965
 amber-ff03,c+,HID,HOXT,0.4476610
-
-# HIE - middle
 amber-ff03,m,HIE,N,-0.5281200
 amber-ff03,m,HIE,H,0.2816950
 amber-ff03,m,HIE,CA,0.0312490
@@ -4078,8 +3629,6 @@ amber-ff03,m,HIE,NE2,-0.0979840
 amber-ff03,m,HIE,HE2,0.2668650
 amber-ff03,m,HIE,C,0.6624050
 amber-ff03,m,HIE,O,-0.5289660
-
-# HIE - n-terminal
 amber-ff03,n,HIE,N,-0.6977970
 amber-ff03,n,HIE,H1,0.4825990
 amber-ff03,n,HIE,H2,0.4825990
@@ -4099,8 +3648,6 @@ amber-ff03,n,HIE,NE2,-0.0904170
 amber-ff03,n,HIE,HE2,0.2819990
 amber-ff03,n,HIE,C,0.6019060
 amber-ff03,n,HIE,O,-0.5866940
-
-# HIE - c-terminal
 amber-ff03,c,HIE,N,-0.6781070
 amber-ff03,c,HIE,H,0.3786170
 amber-ff03,c,HIE,CA,-0.0457620
@@ -4119,8 +3666,6 @@ amber-ff03,c,HIE,HE2,0.2803640
 amber-ff03,c,HIE,C,0.5852090
 amber-ff03,c,HIE,O,-0.7076050
 amber-ff03,c,HIE,OXT,-0.7076050
-
-# HIE - n-terminal deprotonated
 amber-ff03,n-,HIE,N,-1.2151980
 amber-ff03,n-,HIE,H1,0.4825990
 amber-ff03,n-,HIE,H2,0.4825990
@@ -4139,8 +3684,6 @@ amber-ff03,n-,HIE,NE2,-0.0904170
 amber-ff03,n-,HIE,HE2,0.2819990
 amber-ff03,n-,HIE,C,0.6019060
 amber-ff03,n-,HIE,O,-0.5866940
-
-# HIE - c-terminal protonated
 amber-ff03,c+,HIE,N,-0.6781070
 amber-ff03,c+,HIE,H,0.3786170
 amber-ff03,c+,HIE,CA,-0.0457620
@@ -4160,8 +3703,6 @@ amber-ff03,c+,HIE,C,0.5852090
 amber-ff03,c+,HIE,O,-0.4314355
 amber-ff03,c+,HIE,OXT,-0.4314355
 amber-ff03,c+,HIE,HOXT,0.4476610
-
-# HIP - middle
 amber-ff03,m,HIP,N,-0.4249670
 amber-ff03,m,HIP,H,0.2858730
 amber-ff03,m,HIP,CA,0.3750220
@@ -4180,8 +3721,6 @@ amber-ff03,m,HIP,NE2,-0.1487660
 amber-ff03,m,HIP,HE2,0.3772950
 amber-ff03,m,HIP,C,0.5666460
 amber-ff03,m,HIP,O,-0.5604170
-
-# HIP - n-terminal
 amber-ff03,n,HIP,N,-0.7452110
 amber-ff03,n,HIP,H1,0.4984040
 amber-ff03,n,HIP,H2,0.4984040
@@ -4202,8 +3741,6 @@ amber-ff03,n,HIP,NE2,-0.1193880
 amber-ff03,n,HIP,HE2,0.3635900
 amber-ff03,n,HIP,C,0.7375120
 amber-ff03,n,HIP,O,-0.6210000
-
-# HIP - c-terminal
 amber-ff03,c,HIP,N,-0.4641930
 amber-ff03,c,HIP,H,0.3153510
 amber-ff03,c,HIP,CA,-0.0768710
@@ -4223,8 +3760,6 @@ amber-ff03,c,HIP,HE2,0.3692530
 amber-ff03,c,HIP,C,0.5137570
 amber-ff03,c,HIP,O,-0.6718790
 amber-ff03,c,HIP,OXT,-0.6718790
-
-# HIP - n-terminal deprotonated
 amber-ff03,n-,HIP,N,-1.2468070
 amber-ff03,n-,HIP,H1,0.4984040
 amber-ff03,n-,HIP,H2,0.4984040
@@ -4244,8 +3779,6 @@ amber-ff03,n-,HIP,NE2,-0.1193880
 amber-ff03,n-,HIP,HE2,0.3635900
 amber-ff03,n-,HIP,C,0.7375120
 amber-ff03,n-,HIP,O,-0.6210000
-
-# HIP - c-terminal protonated
 amber-ff03,c+,HIP,N,-0.4641930
 amber-ff03,c+,HIP,H,0.3153510
 amber-ff03,c+,HIP,CA,-0.0768710
@@ -4266,8 +3799,6 @@ amber-ff03,c+,HIP,C,0.5137570
 amber-ff03,c+,HIP,O,-0.3957095
 amber-ff03,c+,HIP,OXT,-0.3957095
 amber-ff03,c+,HIP,HOXT,0.4476610
-
-# ILE - middle
 amber-ff03,m,ILE,N,-0.4510470
 amber-ff03,m,ILE,H,0.3288310
 amber-ff03,m,ILE,CA,-0.1018740
@@ -4287,8 +3818,6 @@ amber-ff03,m,ILE,HD12,0.0237920
 amber-ff03,m,ILE,HD13,0.0237920
 amber-ff03,m,ILE,C,0.5693830
 amber-ff03,m,ILE,O,-0.6195350
-
-# ILE - n-terminal
 amber-ff03,n,ILE,N,-0.6057570
 amber-ff03,n,ILE,H1,0.4519190
 amber-ff03,n,ILE,H2,0.4519190
@@ -4310,8 +3839,6 @@ amber-ff03,n,ILE,HD12,0.0256390
 amber-ff03,n,ILE,HD13,0.0256390
 amber-ff03,n,ILE,C,0.7334450
 amber-ff03,n,ILE,O,-0.6288200
-
-# ILE - c-terminal
 amber-ff03,c,ILE,N,-0.5092700
 amber-ff03,c,ILE,H,0.3145750
 amber-ff03,c,ILE,CA,-0.2273330
@@ -4332,8 +3859,6 @@ amber-ff03,c,ILE,HD13,0.0225160
 amber-ff03,c,ILE,C,0.6710340
 amber-ff03,c,ILE,O,-0.7505170
 amber-ff03,c,ILE,OXT,-0.7505170
-
-# ILE - n-terminal deprotonated
 amber-ff03,n-,ILE,N,-1.1538380
 amber-ff03,n-,ILE,H1,0.4519190
 amber-ff03,n-,ILE,H2,0.4519190
@@ -4354,8 +3879,6 @@ amber-ff03,n-,ILE,HD12,0.0256390
 amber-ff03,n-,ILE,HD13,0.0256390
 amber-ff03,n-,ILE,C,0.7334450
 amber-ff03,n-,ILE,O,-0.6288200
-
-# ILE - c-terminal protonated
 amber-ff03,c+,ILE,N,-0.5092700
 amber-ff03,c+,ILE,H,0.3145750
 amber-ff03,c+,ILE,CA,-0.2273330
@@ -4377,8 +3900,6 @@ amber-ff03,c+,ILE,C,0.6710340
 amber-ff03,c+,ILE,O,-0.4743475
 amber-ff03,c+,ILE,OXT,-0.4743475
 amber-ff03,c+,ILE,HOXT,0.4476610
-
-# LEU - middle
 amber-ff03,m,LEU,N,-0.3551530
 amber-ff03,m,LEU,H,0.2624170
 amber-ff03,m,LEU,CA,-0.1014970
@@ -4398,8 +3919,6 @@ amber-ff03,m,LEU,HD22,0.0223760
 amber-ff03,m,LEU,HD23,0.0223760
 amber-ff03,m,LEU,C,0.5734710
 amber-ff03,m,LEU,O,-0.5578470
-
-# LEU - n-terminal
 amber-ff03,n,LEU,N,-0.6247050
 amber-ff03,n,LEU,H1,0.4582350
 amber-ff03,n,LEU,H2,0.4582350
@@ -4421,8 +3940,6 @@ amber-ff03,n,LEU,HD22,0.0319640
 amber-ff03,n,LEU,HD23,0.0319640
 amber-ff03,n,LEU,C,0.6565830
 amber-ff03,n,LEU,O,-0.5933180
-
-# LEU - c-terminal
 amber-ff03,c,LEU,N,-0.5565950
 amber-ff03,c,LEU,H,0.3386720
 amber-ff03,c,LEU,CA,-0.2298800
@@ -4443,8 +3960,6 @@ amber-ff03,c,LEU,HD23,0.0251880
 amber-ff03,c,LEU,C,0.5984270
 amber-ff03,c,LEU,O,-0.7142140
 amber-ff03,c,LEU,OXT,-0.7142140
-
-# LEU - n-terminal deprotonated
 amber-ff03,n-,LEU,N,-1.1664700
 amber-ff03,n-,LEU,H1,0.4582350
 amber-ff03,n-,LEU,H2,0.4582350
@@ -4465,8 +3980,6 @@ amber-ff03,n-,LEU,HD22,0.0319640
 amber-ff03,n-,LEU,HD23,0.0319640
 amber-ff03,n-,LEU,C,0.6565830
 amber-ff03,n-,LEU,O,-0.5933180
-
-# LEU - c-terminal protonated
 amber-ff03,c+,LEU,N,-0.5565950
 amber-ff03,c+,LEU,H,0.3386720
 amber-ff03,c+,LEU,CA,-0.2298800
@@ -4488,8 +4001,6 @@ amber-ff03,c+,LEU,C,0.5984270
 amber-ff03,c+,LEU,O,-0.4380445
 amber-ff03,c+,LEU,OXT,-0.4380445
 amber-ff03,c+,LEU,HOXT,0.4476610
-
-# LYS - middle
 amber-ff03,m,LYS,N,-0.4358750
 amber-ff03,m,LYS,H,0.2513020
 amber-ff03,m,LYS,CA,-0.0387730
@@ -4512,8 +4023,6 @@ amber-ff03,m,LYS,HZ2,0.2945610
 amber-ff03,m,LYS,HZ3,0.2945610
 amber-ff03,m,LYS,C,0.7251290
 amber-ff03,m,LYS,O,-0.5631570
-
-# LYS - n-terminal
 amber-ff03,n,LYS,N,-0.7437780
 amber-ff03,n,LYS,H1,0.4979260
 amber-ff03,n,LYS,H2,0.4979260
@@ -4538,8 +4047,6 @@ amber-ff03,n,LYS,HZ2,0.2895290
 amber-ff03,n,LYS,HZ3,0.2895290
 amber-ff03,n,LYS,C,0.6336670
 amber-ff03,n,LYS,O,-0.5966450
-
-# LYS - c-terminal
 amber-ff03,c,LYS,N,-0.6295690
 amber-ff03,c,LYS,H,0.3574600
 amber-ff03,c,LYS,CA,-0.0535410
@@ -4563,8 +4070,6 @@ amber-ff03,c,LYS,HZ3,0.2855030
 amber-ff03,c,LYS,C,0.5418180
 amber-ff03,c,LYS,O,-0.6859090
 amber-ff03,c,LYS,OXT,-0.6859090
-
-# LYS - n-terminal deprotonated
 amber-ff03,n-,LYS,N,-1.2458520
 amber-ff03,n-,LYS,H1,0.4979260
 amber-ff03,n-,LYS,H2,0.4979260
@@ -4588,8 +4093,6 @@ amber-ff03,n-,LYS,HZ2,0.2895290
 amber-ff03,n-,LYS,HZ3,0.2895290
 amber-ff03,n-,LYS,C,0.6336670
 amber-ff03,n-,LYS,O,-0.5966450
-
-# LYS - c-terminal protonated
 amber-ff03,c+,LYS,N,-0.6295690
 amber-ff03,c+,LYS,H,0.3574600
 amber-ff03,c+,LYS,CA,-0.0535410
@@ -4614,8 +4117,6 @@ amber-ff03,c+,LYS,C,0.5418180
 amber-ff03,c+,LYS,O,-0.4097395
 amber-ff03,c+,LYS,OXT,-0.4097395
 amber-ff03,c+,LYS,HOXT,0.4476610
-
-# LYN - middle
 amber-ff03,m,LYN,N,-0.4533880
 amber-ff03,m,LYN,H,0.2896950
 amber-ff03,m,LYN,CA,-0.0245000
@@ -4637,8 +4138,6 @@ amber-ff03,m,LYN,HZ1,0.3320530
 amber-ff03,m,LYN,HZ2,0.3320530
 amber-ff03,m,LYN,C,0.6084640
 amber-ff03,m,LYN,O,-0.5632810
-
-# LYN - n-terminal
 amber-ff03,n,LYN,N,-0.7437780
 amber-ff03,n,LYN,H1,0.4979260
 amber-ff03,n,LYN,H2,0.4979260
@@ -4662,8 +4161,6 @@ amber-ff03,n,LYN,HZ1,0.3320530
 amber-ff03,n,LYN,HZ2,0.3320530
 amber-ff03,n,LYN,C,0.6336670
 amber-ff03,n,LYN,O,-0.5966450
-
-# LYN - c-terminal
 amber-ff03,c,LYN,N,-0.6295690
 amber-ff03,c,LYN,H,0.3574600
 amber-ff03,c,LYN,CA,-0.0535410
@@ -4686,8 +4183,6 @@ amber-ff03,c,LYN,HZ2,0.3320530
 amber-ff03,c,LYN,C,0.5418180
 amber-ff03,c,LYN,O,-0.6859090
 amber-ff03,c,LYN,OXT,-0.6859090
-
-# LYN - n-terminal deprotonated
 amber-ff03,n-,LYN,N,-1.2458520
 amber-ff03,n-,LYN,H1,0.4979260
 amber-ff03,n-,LYN,H2,0.4979260
@@ -4710,8 +4205,6 @@ amber-ff03,n-,LYN,HZ1,0.3320530
 amber-ff03,n-,LYN,HZ2,0.3320530
 amber-ff03,n-,LYN,C,0.6336670
 amber-ff03,n-,LYN,O,-0.5966450
-
-# LYN - c-terminal protonated
 amber-ff03,c+,LYN,N,-0.6295690
 amber-ff03,c+,LYN,H,0.3574600
 amber-ff03,c+,LYN,CA,-0.0535410
@@ -4735,8 +4228,6 @@ amber-ff03,c+,LYN,C,0.5418180
 amber-ff03,c+,LYN,O,-0.4097395
 amber-ff03,c+,LYN,OXT,-0.4097395
 amber-ff03,c+,LYN,HOXT,0.4476610
-
-# MET - middle
 amber-ff03,m,MET,N,-0.3949180
 amber-ff03,m,MET,H,0.2805370
 amber-ff03,m,MET,CA,-0.0876810
@@ -4754,8 +4245,6 @@ amber-ff03,m,MET,HE2,0.1283940
 amber-ff03,m,MET,HE3,0.1283940
 amber-ff03,m,MET,C,0.5996840
 amber-ff03,m,MET,O,-0.5664240
-
-# MET - n-terminal
 amber-ff03,n,MET,N,-0.5972130
 amber-ff03,n,MET,H1,0.4490710
 amber-ff03,n,MET,H2,0.4490710
@@ -4775,8 +4264,6 @@ amber-ff03,n,MET,HE2,0.1287540
 amber-ff03,n,MET,HE3,0.1287540
 amber-ff03,n,MET,C,0.6836390
 amber-ff03,n,MET,O,-0.5990420
-
-# MET - c-terminal
 amber-ff03,c,MET,N,-0.5642460
 amber-ff03,c,MET,H,0.3344120
 amber-ff03,c,MET,CA,-0.1598820
@@ -4795,8 +4282,6 @@ amber-ff03,c,MET,HE3,0.1230310
 amber-ff03,c,MET,C,0.6649180
 amber-ff03,c,MET,O,-0.7474590
 amber-ff03,c,MET,OXT,-0.7474590
-
-# MET - n-terminal deprotonated
 amber-ff03,n-,MET,N,-1.1481420
 amber-ff03,n-,MET,H1,0.4490710
 amber-ff03,n-,MET,H2,0.4490710
@@ -4815,8 +4300,6 @@ amber-ff03,n-,MET,HE2,0.1287540
 amber-ff03,n-,MET,HE3,0.1287540
 amber-ff03,n-,MET,C,0.6836390
 amber-ff03,n-,MET,O,-0.5990420
-
-# MET - c-terminal protonated
 amber-ff03,c+,MET,N,-0.5642460
 amber-ff03,c+,MET,H,0.3344120
 amber-ff03,c+,MET,CA,-0.1598820
@@ -4836,8 +4319,6 @@ amber-ff03,c+,MET,C,0.6649180
 amber-ff03,c+,MET,O,-0.4712900
 amber-ff03,c+,MET,OXT,-0.4712900
 amber-ff03,c+,MET,HOXT,0.4476610
-
-# PHE - middle
 amber-ff03,m,PHE,N,-0.3712900
 amber-ff03,m,PHE,H,0.2340530
 amber-ff03,m,PHE,CA,-0.0300570
@@ -4858,8 +4339,6 @@ amber-ff03,m,PHE,CZ,-0.0998240
 amber-ff03,m,PHE,HZ,0.1146790
 amber-ff03,m,PHE,C,0.5479870
 amber-ff03,m,PHE,O,-0.5067950
-
-# PHE - n-terminal
 amber-ff03,n,PHE,N,-0.6294940
 amber-ff03,n,PHE,H1,0.4598310
 amber-ff03,n,PHE,H2,0.4598310
@@ -4882,8 +4361,6 @@ amber-ff03,n,PHE,CZ,-0.1047910
 amber-ff03,n,PHE,HZ,0.1190840
 amber-ff03,n,PHE,C,0.5961180
 amber-ff03,n,PHE,O,-0.5780210
-
-# PHE - c-terminal
 amber-ff03,c,PHE,N,-0.6255620
 amber-ff03,c,PHE,H,0.3498980
 amber-ff03,c,PHE,CA,-0.0881820
@@ -4905,8 +4382,6 @@ amber-ff03,c,PHE,HZ,0.1174810
 amber-ff03,c,PHE,C,0.5955190
 amber-ff03,c,PHE,O,-0.7127600
 amber-ff03,c,PHE,OXT,-0.7127600
-
-# PHE - n-terminal deprotonated
 amber-ff03,n-,PHE,N,-1.1696630
 amber-ff03,n-,PHE,H1,0.4598310
 amber-ff03,n-,PHE,H2,0.4598310
@@ -4928,8 +4403,6 @@ amber-ff03,n-,PHE,CZ,-0.1047910
 amber-ff03,n-,PHE,HZ,0.1190840
 amber-ff03,n-,PHE,C,0.5961180
 amber-ff03,n-,PHE,O,-0.5780210
-
-# PHE - c-terminal protonated
 amber-ff03,c+,PHE,N,-0.6255620
 amber-ff03,c+,PHE,H,0.3498980
 amber-ff03,c+,PHE,CA,-0.0881820
@@ -4952,8 +4425,6 @@ amber-ff03,c+,PHE,C,0.5955190
 amber-ff03,c+,PHE,O,-0.4365910
 amber-ff03,c+,PHE,OXT,-0.4365910
 amber-ff03,c+,PHE,HOXT,0.4476610
-
-# PRO - middle
 amber-ff03,m,PRO,N,-0.0881160
 amber-ff03,m,PRO,CA,-0.0345770
 amber-ff03,m,PRO,CB,-0.0033510
@@ -4968,8 +4439,6 @@ amber-ff03,m,PRO,HD2,0.0439510
 amber-ff03,m,PRO,HD3,0.0439510
 amber-ff03,m,PRO,C,0.3337200
 amber-ff03,m,PRO,O,-0.4345590
-
-# PRO - n-terminal
 amber-ff03,n,PRO,N,-0.4217390
 amber-ff03,n,PRO,H2,0.4718570
 amber-ff03,n,PRO,H3,0.4718570
@@ -4986,8 +4455,6 @@ amber-ff03,n,PRO,HD2,0.0399010
 amber-ff03,n,PRO,HD3,0.0399010
 amber-ff03,n,PRO,C,0.6804700
 amber-ff03,n,PRO,O,-0.5992260
-
-# PRO - c-terminal
 amber-ff03,c,PRO,N,-0.2687420
 amber-ff03,c,PRO,CA,-0.3854420
 amber-ff03,c,PRO,CB,0.0657730
@@ -5003,8 +4470,6 @@ amber-ff03,c,PRO,HD3,0.0347170
 amber-ff03,c,PRO,C,0.6433210
 amber-ff03,c,PRO,O,-0.7366610
 amber-ff03,c,PRO,OXT,-0.7366610
-
-# PRO - n-terminal deprotonated
 amber-ff03,n-,PRO,N,-0.9498820
 amber-ff03,n-,PRO,H2,0.4718570
 amber-ff03,n-,PRO,CA,0.2519860
@@ -5020,8 +4485,6 @@ amber-ff03,n-,PRO,HD2,0.0399010
 amber-ff03,n-,PRO,HD3,0.0399010
 amber-ff03,n-,PRO,C,0.6804700
 amber-ff03,n-,PRO,O,-0.5992260
-
-# PRO - c-terminal protonated
 amber-ff03,c+,PRO,N,-0.2687420
 amber-ff03,c+,PRO,CA,-0.3854420
 amber-ff03,c+,PRO,CB,0.0657730
@@ -5038,8 +4501,6 @@ amber-ff03,c+,PRO,C,0.6433210
 amber-ff03,c+,PRO,O,-0.4604920
 amber-ff03,c+,PRO,OXT,-0.4604920
 amber-ff03,c+,PRO,HOXT,0.4476610
-
-# SER - middle
 amber-ff03,m,SER,N,-0.5414300
 amber-ff03,m,SER,H,0.3454150
 amber-ff03,m,SER,CA,0.1181400
@@ -5051,8 +4512,6 @@ amber-ff03,m,SER,OG,-0.6403120
 amber-ff03,m,SER,HG,0.4462550
 amber-ff03,m,SER,C,0.4834240
 amber-ff03,m,SER,O,-0.5808290
-
-# SER - n-terminal
 amber-ff03,n,SER,N,-0.6644030
 amber-ff03,n,SER,H1,0.4714680
 amber-ff03,n,SER,H2,0.4714680
@@ -5066,8 +4525,6 @@ amber-ff03,n,SER,OG,-0.5938050
 amber-ff03,n,SER,HG,0.4074920
 amber-ff03,n,SER,C,0.5924800
 amber-ff03,n,SER,O,-0.5781620
-
-# SER - c-terminal
 amber-ff03,c,SER,N,-0.6762810
 amber-ff03,c,SER,H,0.3692390
 amber-ff03,c,SER,CA,-0.0723850
@@ -5080,8 +4537,6 @@ amber-ff03,c,SER,HG,0.4027420
 amber-ff03,c,SER,C,0.5943670
 amber-ff03,c,SER,O,-0.7121840
 amber-ff03,c,SER,OXT,-0.7121840
-
-# SER - n-terminal deprotonated
 amber-ff03,n-,SER,N,-1.1929380
 amber-ff03,n-,SER,H1,0.4714680
 amber-ff03,n-,SER,H2,0.4714680
@@ -5094,8 +4549,6 @@ amber-ff03,n-,SER,OG,-0.5938050
 amber-ff03,n-,SER,HG,0.4074920
 amber-ff03,n-,SER,C,0.5924800
 amber-ff03,n-,SER,O,-0.5781620
-
-# SER - c-terminal protonated
 amber-ff03,c+,SER,N,-0.6762810
 amber-ff03,c+,SER,H,0.3692390
 amber-ff03,c+,SER,CA,-0.0723850
@@ -5109,8 +4562,6 @@ amber-ff03,c+,SER,C,0.5943670
 amber-ff03,c+,SER,O,-0.4360150
 amber-ff03,c+,SER,OXT,-0.4360150
 amber-ff03,c+,SER,HOXT,0.4476610
-
-# THR - middle
 amber-ff03,m,THR,N,-0.2453820
 amber-ff03,m,THR,H,0.2553390
 amber-ff03,m,THR,CA,-0.2712490
@@ -5125,8 +4576,6 @@ amber-ff03,m,THR,HG22,0.0600190
 amber-ff03,m,THR,HG23,0.0600190
 amber-ff03,m,THR,C,0.5598780
 amber-ff03,m,THR,O,-0.5520200
-
-# THR - n-terminal
 amber-ff03,n,THR,N,-0.5702350
 amber-ff03,n,THR,H1,0.4400780
 amber-ff03,n,THR,H2,0.4400780
@@ -5143,8 +4592,6 @@ amber-ff03,n,THR,HG22,0.0538330
 amber-ff03,n,THR,HG23,0.0538330
 amber-ff03,n,THR,C,0.7099680
 amber-ff03,n,THR,O,-0.6117970
-
-# THR - c-terminal
 amber-ff03,c,THR,N,-0.3516680
 amber-ff03,c,THR,H,0.2993200
 amber-ff03,c,THR,CA,-0.5005690
@@ -5160,8 +4607,6 @@ amber-ff03,c,THR,HG23,0.0512580
 amber-ff03,c,THR,C,0.6816690
 amber-ff03,c,THR,O,-0.7558350
 amber-ff03,c,THR,OXT,-0.7558350
-
-# THR - n-terminal deprotonated
 amber-ff03,n-,THR,N,-1.1301590
 amber-ff03,n-,THR,H1,0.4400780
 amber-ff03,n-,THR,H2,0.4400780
@@ -5177,8 +4622,6 @@ amber-ff03,n-,THR,HG22,0.0538330
 amber-ff03,n-,THR,HG23,0.0538330
 amber-ff03,n-,THR,C,0.7099680
 amber-ff03,n-,THR,O,-0.6117970
-
-# THR - c-terminal protonated
 amber-ff03,c+,THR,N,-0.3516680
 amber-ff03,c+,THR,H,0.2993200
 amber-ff03,c+,THR,CA,-0.5005690
@@ -5195,8 +4638,6 @@ amber-ff03,c+,THR,C,0.6816690
 amber-ff03,c+,THR,O,-0.4796650
 amber-ff03,c+,THR,OXT,-0.4796650
 amber-ff03,c+,THR,HOXT,0.4476610
-
-# TRP - middle
 amber-ff03,m,TRP,N,-0.4275790
 amber-ff03,m,TRP,H,0.2417160
 amber-ff03,m,TRP,CA,-0.0200820
@@ -5221,8 +4662,6 @@ amber-ff03,m,TRP,CH2,-0.1330220
 amber-ff03,m,TRP,HH2,0.1194670
 amber-ff03,m,TRP,C,0.5841290
 amber-ff03,m,TRP,O,-0.4947300
-
-# TRP - n-terminal
 amber-ff03,n,TRP,N,-0.6219790
 amber-ff03,n,TRP,H1,0.4573260
 amber-ff03,n,TRP,H2,0.4573260
@@ -5249,8 +4688,6 @@ amber-ff03,n,TRP,CH2,-0.1390290
 amber-ff03,n,TRP,HH2,0.1231180
 amber-ff03,n,TRP,C,0.6264600
 amber-ff03,n,TRP,O,-0.5705570
-
-# TRP - c-terminal
 amber-ff03,c,TRP,N,-0.6299740
 amber-ff03,c,TRP,H,0.3412280
 amber-ff03,c,TRP,CA,-0.0442500
@@ -5276,8 +4713,6 @@ amber-ff03,c,TRP,HH2,0.1224740
 amber-ff03,c,TRP,C,0.6155690
 amber-ff03,c,TRP,O,-0.7227850
 amber-ff03,c,TRP,OXT,-0.7227850
-
-# TRP - n-terminal deprotonated
 amber-ff03,n-,TRP,N,-1.1646530
 amber-ff03,n-,TRP,H1,0.4573260
 amber-ff03,n-,TRP,H2,0.4573260
@@ -5303,8 +4738,6 @@ amber-ff03,n-,TRP,CH2,-0.1390290
 amber-ff03,n-,TRP,HH2,0.1231180
 amber-ff03,n-,TRP,C,0.6264600
 amber-ff03,n-,TRP,O,-0.5705570
-
-# TRP - c-terminal protonated
 amber-ff03,c+,TRP,N,-0.6299740
 amber-ff03,c+,TRP,H,0.3412280
 amber-ff03,c+,TRP,CA,-0.0442500
@@ -5331,8 +4764,6 @@ amber-ff03,c+,TRP,C,0.6155690
 amber-ff03,c+,TRP,O,-0.4466160
 amber-ff03,c+,TRP,OXT,-0.4466160
 amber-ff03,c+,TRP,HOXT,0.4476610
-
-# TYR - middle
 amber-ff03,m,TYR,N,-0.4875600
 amber-ff03,m,TYR,H,0.2635210
 amber-ff03,m,TYR,CA,0.0096140
@@ -5354,8 +4785,6 @@ amber-ff03,m,TYR,OH,-0.4212330
 amber-ff03,m,TYR,HH,0.3296910
 amber-ff03,m,TYR,C,0.6222900
 amber-ff03,m,TYR,O,-0.5266070
-
-# TYR - n-terminal
 amber-ff03,n,TYR,N,-0.5928490
 amber-ff03,n,TYR,H1,0.4476160
 amber-ff03,n,TYR,H2,0.4476160
@@ -5379,8 +4808,6 @@ amber-ff03,n,TYR,OH,-0.4753870
 amber-ff03,n,TYR,HH,0.3707820
 amber-ff03,n,TYR,C,0.6208930
 amber-ff03,n,TYR,O,-0.5743010
-
-# TYR - c-terminal
 amber-ff03,c,TYR,N,-0.6756280
 amber-ff03,c,TYR,H,0.3504480
 amber-ff03,c,TYR,CA,-0.0127280
@@ -5403,8 +4830,6 @@ amber-ff03,c,TYR,HH,0.3700160
 amber-ff03,c,TYR,C,0.6655550
 amber-ff03,c,TYR,O,-0.7477780
 amber-ff03,c,TYR,OXT,-0.7477780
-
-# TYR - n-terminal deprotonated
 amber-ff03,n-,TYR,N,-1.1452330
 amber-ff03,n-,TYR,H1,0.4476160
 amber-ff03,n-,TYR,H2,0.4476160
@@ -5427,8 +4852,6 @@ amber-ff03,n-,TYR,OH,-0.4753870
 amber-ff03,n-,TYR,HH,0.3707820
 amber-ff03,n-,TYR,C,0.6208930
 amber-ff03,n-,TYR,O,-0.5743010
-
-# TYR - c-terminal protonated
 amber-ff03,c+,TYR,N,-0.6756280
 amber-ff03,c+,TYR,H,0.3504480
 amber-ff03,c+,TYR,CA,-0.0127280
@@ -5452,8 +4875,6 @@ amber-ff03,c+,TYR,C,0.6655550
 amber-ff03,c+,TYR,O,-0.4716090
 amber-ff03,c+,TYR,OXT,-0.4716090
 amber-ff03,c+,TYR,HOXT,0.4476610
-
-# TYM - middle
 amber-ff03,m,TYM,N,-0.4875600
 amber-ff03,m,TYM,H,0.2635210
 amber-ff03,m,TYM,CA,0.0096140
@@ -5474,8 +4895,6 @@ amber-ff03,m,TYM,CZ,0.2062770
 amber-ff03,m,TYM,OH,-0.8675110
 amber-ff03,m,TYM,C,0.6222900
 amber-ff03,m,TYM,O,-0.5266070
-
-# TYM - n-terminal
 amber-ff03,n,TYM,N,-0.5928490
 amber-ff03,n,TYM,H1,0.4476160
 amber-ff03,n,TYM,H2,0.4476160
@@ -5498,8 +4917,6 @@ amber-ff03,n,TYM,CZ,0.2062770
 amber-ff03,n,TYM,OH,-0.8912630
 amber-ff03,n,TYM,C,0.6208930
 amber-ff03,n,TYM,O,-0.5743010
-
-# TYM - c-terminal
 amber-ff03,c,TYM,N,-0.6756280
 amber-ff03,c,TYM,H,0.3504480
 amber-ff03,c,TYM,CA,-0.0127280
@@ -5521,8 +4938,6 @@ amber-ff03,c,TYM,OH,-0.8697170
 amber-ff03,c,TYM,C,0.6655550
 amber-ff03,c,TYM,O,-0.7477780
 amber-ff03,c,TYM,OXT,-0.7477780
-
-# TYM - n-terminal deprotonated
 amber-ff03,n-,TYM,N,-1.1452330
 amber-ff03,n-,TYM,H1,0.4476160
 amber-ff03,n-,TYM,H2,0.4476160
@@ -5544,8 +4959,6 @@ amber-ff03,n-,TYM,CZ,0.2062770
 amber-ff03,n-,TYM,OH,-0.8912630
 amber-ff03,n-,TYM,C,0.6208930
 amber-ff03,n-,TYM,O,-0.5743010
-
-# TYM - c-terminal protonated
 amber-ff03,c+,TYM,N,-0.6756280
 amber-ff03,c+,TYM,H,0.3504480
 amber-ff03,c+,TYM,CA,-0.0127280
@@ -5568,8 +4981,6 @@ amber-ff03,c+,TYM,C,0.6655550
 amber-ff03,c+,TYM,O,-0.4716085
 amber-ff03,c+,TYM,OXT,-0.4716085
 amber-ff03,c+,TYM,HOXT,0.4476610
-
-# VAL - middle
 amber-ff03,m,VAL,N,-0.4500870
 amber-ff03,m,VAL,H,0.4400480
 amber-ff03,m,VAL,CA,-0.0518580
@@ -5586,8 +4997,6 @@ amber-ff03,m,VAL,HG22,-0.0089850
 amber-ff03,m,VAL,HG23,-0.0089850
 amber-ff03,m,VAL,C,0.4473590
 amber-ff03,m,VAL,O,-0.4046290
-
-# VAL - n-terminal
 amber-ff03,n,VAL,N,-0.7374500
 amber-ff03,n,VAL,H1,0.4958170
 amber-ff03,n,VAL,H2,0.4958170
@@ -5606,8 +5015,6 @@ amber-ff03,n,VAL,HG22,0.0431240
 amber-ff03,n,VAL,HG23,0.0431240
 amber-ff03,n,VAL,C,0.8906410
 amber-ff03,n,VAL,O,-0.6215110
-
-# VAL - c-terminal
 amber-ff03,c,VAL,N,-0.2170540
 amber-ff03,c,VAL,H,0.2431220
 amber-ff03,c,VAL,CA,-0.3741200
@@ -5625,8 +5032,6 @@ amber-ff03,c,VAL,HG23,0.0294280
 amber-ff03,c,VAL,C,0.5256160
 amber-ff03,c,VAL,O,-0.6778080
 amber-ff03,c,VAL,OXT,-0.6778080
-
-# VAL - n-terminal deprotonated
 amber-ff03,n-,VAL,N,-1.2416330
 amber-ff03,n-,VAL,H1,0.4958170
 amber-ff03,n-,VAL,H2,0.4958170
@@ -5644,8 +5049,6 @@ amber-ff03,n-,VAL,HG22,0.0431240
 amber-ff03,n-,VAL,HG23,0.0431240
 amber-ff03,n-,VAL,C,0.8906410
 amber-ff03,n-,VAL,O,-0.6215110
-
-# VAL - c-terminal protonated
 amber-ff03,c+,VAL,N,-0.2170540
 amber-ff03,c+,VAL,H,0.2431220
 amber-ff03,c+,VAL,CA,-0.3741200
@@ -5664,10 +5067,6 @@ amber-ff03,c+,VAL,C,0.5256160
 amber-ff03,c+,VAL,O,-0.4016385
 amber-ff03,c+,VAL,OXT,-0.4016385
 amber-ff03,c+,VAL,HOXT,0.4476610
-
-# Protein: charmm
-
-# ALA - middle
 charmm,m,ALA,N,-0.4700000
 charmm,m,ALA,H,0.3100000
 charmm,m,ALA,CA,0.0700000
@@ -5678,8 +5077,6 @@ charmm,m,ALA,HB2,0.0900000
 charmm,m,ALA,HB3,0.0900000
 charmm,m,ALA,C,0.5100000
 charmm,m,ALA,O,-0.5100000
-
-# ALA - n-terminal
 charmm,n,ALA,N,-0.3000000
 charmm,n,ALA,H1,0.3300000
 charmm,n,ALA,H2,0.3300000
@@ -5692,8 +5089,6 @@ charmm,n,ALA,HB2,0.0900000
 charmm,n,ALA,HB3,0.0900000
 charmm,n,ALA,C,0.5100000
 charmm,n,ALA,O,-0.5100000
-
-# ALA - c-terminal
 charmm,c,ALA,N,-0.4700000
 charmm,c,ALA,H,0.3100000
 charmm,c,ALA,CA,0.0700000
@@ -5705,8 +5100,6 @@ charmm,c,ALA,HB3,0.0900000
 charmm,c,ALA,C,0.3400000
 charmm,c,ALA,O,-0.6700000
 charmm,c,ALA,OXT,-0.6700000
-
-# ALA - n-terminal deprotonated
 charmm,n-,ALA,N,-0.9600000
 charmm,n-,ALA,H1,0.3400000
 charmm,n-,ALA,H2,0.3400000
@@ -5718,8 +5111,6 @@ charmm,n-,ALA,HB2,0.0900000
 charmm,n-,ALA,HB3,0.0900000
 charmm,n-,ALA,C,0.5100000
 charmm,n-,ALA,O,-0.5100000
-
-# ALA - c-terminal protonated
 charmm,c+,ALA,N,-0.4700000
 charmm,c+,ALA,H,0.3100000
 charmm,c+,ALA,CA,0.0700000
@@ -5732,8 +5123,6 @@ charmm,c+,ALA,C,0.7200000
 charmm,c+,ALA,O,-0.5500000
 charmm,c+,ALA,OXT,-0.6100000
 charmm,c+,ALA,HOXT,0.4400000
-
-# ARG - middle
 charmm,m,ARG,N,-0.4700000
 charmm,m,ARG,H,0.3100000
 charmm,m,ARG,CA,0.0700000
@@ -5758,8 +5147,6 @@ charmm,m,ARG,HH21,0.4600000
 charmm,m,ARG,HH22,0.4600000
 charmm,m,ARG,C,0.5100000
 charmm,m,ARG,O,-0.5100000
-
-# ARG - n-terminal
 charmm,n,ARG,N,-0.3000000
 charmm,n,ARG,H1,0.3300000
 charmm,n,ARG,H2,0.3300000
@@ -5786,8 +5173,6 @@ charmm,n,ARG,HH21,0.4600000
 charmm,n,ARG,HH22,0.4600000
 charmm,n,ARG,C,0.5100000
 charmm,n,ARG,O,-0.5100000
-
-# ARG - c-terminal
 charmm,c,ARG,N,-0.4700000
 charmm,c,ARG,H,0.3100000
 charmm,c,ARG,CA,0.0700000
@@ -5813,8 +5198,6 @@ charmm,c,ARG,HH22,0.4600000
 charmm,c,ARG,C,0.3400000
 charmm,c,ARG,O,-0.6700000
 charmm,c,ARG,OXT,-0.6700000
-
-# ARG - n-terminal deprotonated
 charmm,n-,ARG,N,-0.9600000
 charmm,n-,ARG,H1,0.3400000
 charmm,n-,ARG,H2,0.3400000
@@ -5840,8 +5223,6 @@ charmm,n-,ARG,HH21,0.4600000
 charmm,n-,ARG,HH22,0.4600000
 charmm,n-,ARG,C,0.5100000
 charmm,n-,ARG,O,-0.5100000
-
-# ARG - c-terminal protonated
 charmm,c+,ARG,N,-0.4700000
 charmm,c+,ARG,H,0.3100000
 charmm,c+,ARG,CA,0.0700000
@@ -5868,8 +5249,6 @@ charmm,c+,ARG,C,0.7200000
 charmm,c+,ARG,O,-0.5500000
 charmm,c+,ARG,OXT,-0.6100000
 charmm,c+,ARG,HOXT,0.4400000
-
-# ARN - middle
 charmm,m,ARN,N,-0.4700000
 charmm,m,ARN,H,0.3100000
 charmm,m,ARN,CA,0.0700000
@@ -5893,8 +5272,6 @@ charmm,m,ARN,NH2,-0.7500000
 charmm,m,ARN,HH21,0.3500000
 charmm,m,ARN,C,0.5100000
 charmm,m,ARN,O,-0.5100000
-
-# ARN - n-terminal
 charmm,n,ARN,N,-0.3000000
 charmm,n,ARN,H1,0.3300000
 charmm,n,ARN,H2,0.3300000
@@ -5920,8 +5297,6 @@ charmm,n,ARN,NH2,-0.7500000
 charmm,n,ARN,HH21,0.3500000
 charmm,n,ARN,C,0.5100000
 charmm,n,ARN,O,-0.5100000
-
-# ARN - c-terminal
 charmm,c,ARN,N,-0.4700000
 charmm,c,ARN,H,0.3100000
 charmm,c,ARN,CA,0.0700000
@@ -5946,8 +5321,6 @@ charmm,c,ARN,HH21,0.3500000
 charmm,c,ARN,C,0.3400000
 charmm,c,ARN,O,-0.6700000
 charmm,c,ARN,OXT,-0.6700000
-
-# ARN - n-terminal deprotonated
 charmm,n-,ARN,N,-0.9600000
 charmm,n-,ARN,H1,0.3400000
 charmm,n-,ARN,H2,0.3400000
@@ -5972,8 +5345,6 @@ charmm,n-,ARN,NH2,-0.7500000
 charmm,n-,ARN,HH21,0.3500000
 charmm,n-,ARN,C,0.5100000
 charmm,n-,ARN,O,-0.5100000
-
-# ARN - c-terminal protonated
 charmm,c+,ARN,N,-0.4700000
 charmm,c+,ARN,H,0.3100000
 charmm,c+,ARN,CA,0.0700000
@@ -5999,8 +5370,6 @@ charmm,c+,ARN,C,0.7200000
 charmm,c+,ARN,O,-0.5500000
 charmm,c+,ARN,OXT,-0.6100000
 charmm,c+,ARN,HOXT,0.4400000
-
-# ASN - middle
 charmm,m,ASN,N,-0.4700000
 charmm,m,ASN,H,0.3100000
 charmm,m,ASN,CA,0.0700000
@@ -6015,8 +5384,6 @@ charmm,m,ASN,HD21,0.3200000
 charmm,m,ASN,HD22,0.3000000
 charmm,m,ASN,C,0.5100000
 charmm,m,ASN,O,-0.5100000
-
-# ASN - n-terminal
 charmm,n,ASN,N,-0.3000000
 charmm,n,ASN,H1,0.3300000
 charmm,n,ASN,H2,0.3300000
@@ -6033,8 +5400,6 @@ charmm,n,ASN,HD21,0.3200000
 charmm,n,ASN,HD22,0.3000000
 charmm,n,ASN,C,0.5100000
 charmm,n,ASN,O,-0.5100000
-
-# ASN - c-terminal
 charmm,c,ASN,N,-0.4700000
 charmm,c,ASN,H,0.3100000
 charmm,c,ASN,CA,0.0700000
@@ -6050,8 +5415,6 @@ charmm,c,ASN,HD22,0.3000000
 charmm,c,ASN,C,0.3400000
 charmm,c,ASN,O,-0.6700000
 charmm,c,ASN,OXT,-0.6700000
-
-# ASN - n-terminal deprotonated
 charmm,n-,ASN,N,-0.9600000
 charmm,n-,ASN,H1,0.3400000
 charmm,n-,ASN,H2,0.3400000
@@ -6067,8 +5430,6 @@ charmm,n-,ASN,HD21,0.3200000
 charmm,n-,ASN,HD22,0.3000000
 charmm,n-,ASN,C,0.5100000
 charmm,n-,ASN,O,-0.5100000
-
-# ASN - c-terminal protonated
 charmm,c+,ASN,N,-0.4700000
 charmm,c+,ASN,H,0.3100000
 charmm,c+,ASN,CA,0.0700000
@@ -6085,8 +5446,6 @@ charmm,c+,ASN,C,0.7200000
 charmm,c+,ASN,O,-0.5500000
 charmm,c+,ASN,OXT,-0.6100000
 charmm,c+,ASN,HOXT,0.4400000
-
-# ASP - middle
 charmm,m,ASP,N,-0.4700000
 charmm,m,ASP,H,0.3100000
 charmm,m,ASP,CA,0.0700000
@@ -6099,8 +5458,6 @@ charmm,m,ASP,OD1,-0.7600000
 charmm,m,ASP,OD2,-0.7600000
 charmm,m,ASP,C,0.5100000
 charmm,m,ASP,O,-0.5100000
-
-# ASP - n-terminal
 charmm,n,ASP,N,-0.3000000
 charmm,n,ASP,H1,0.3300000
 charmm,n,ASP,H2,0.3300000
@@ -6115,8 +5472,6 @@ charmm,n,ASP,OD1,-0.7600000
 charmm,n,ASP,OD2,-0.7600000
 charmm,n,ASP,C,0.5100000
 charmm,n,ASP,O,-0.5100000
-
-# ASP - c-terminal
 charmm,c,ASP,N,-0.4700000
 charmm,c,ASP,H,0.3100000
 charmm,c,ASP,CA,0.0700000
@@ -6130,8 +5485,6 @@ charmm,c,ASP,OD2,-0.7600000
 charmm,c,ASP,C,0.3400000
 charmm,c,ASP,O,-0.6700000
 charmm,c,ASP,OXT,-0.6700000
-
-# ASP - n-terminal deprotonated
 charmm,n-,ASP,N,-0.9600000
 charmm,n-,ASP,H1,0.3400000
 charmm,n-,ASP,H2,0.3400000
@@ -6145,8 +5498,6 @@ charmm,n-,ASP,OD1,-0.7600000
 charmm,n-,ASP,OD2,-0.7600000
 charmm,n-,ASP,C,0.5100000
 charmm,n-,ASP,O,-0.5100000
-
-# ASP - c-terminal protonated
 charmm,c+,ASP,N,-0.4700000
 charmm,c+,ASP,H,0.3100000
 charmm,c+,ASP,CA,0.0700000
@@ -6161,8 +5512,6 @@ charmm,c+,ASP,C,0.7200000
 charmm,c+,ASP,O,-0.5500000
 charmm,c+,ASP,OXT,-0.6100000
 charmm,c+,ASP,HOXT,0.4400000
-
-# ASH - middle
 charmm,m,ASH,N,-0.4700000
 charmm,m,ASH,H,0.3100000
 charmm,m,ASH,CA,0.0700000
@@ -6176,8 +5525,6 @@ charmm,m,ASH,OD2,-0.6100000
 charmm,m,ASH,HD2,0.4400000
 charmm,m,ASH,C,0.5100000
 charmm,m,ASH,O,-0.5100000
-
-# ASH - n-terminal
 charmm,n,ASH,N,-0.3000000
 charmm,n,ASH,H1,0.3300000
 charmm,n,ASH,H2,0.3300000
@@ -6193,8 +5540,6 @@ charmm,n,ASH,OD2,-0.6100000
 charmm,n,ASH,HD2,0.4400000
 charmm,n,ASH,C,0.5100000
 charmm,n,ASH,O,-0.5100000
-
-# ASH - c-terminal
 charmm,c,ASH,N,-0.4700000
 charmm,c,ASH,H,0.3100000
 charmm,c,ASH,CA,0.0700000
@@ -6209,8 +5554,6 @@ charmm,c,ASH,HD2,0.4400000
 charmm,c,ASH,C,0.3400000
 charmm,c,ASH,O,-0.6700000
 charmm,c,ASH,OXT,-0.6700000
-
-# ASH - n-terminal deprotonated
 charmm,n-,ASH,N,-0.9600000
 charmm,n-,ASH,H1,0.3400000
 charmm,n-,ASH,H2,0.3400000
@@ -6225,8 +5568,6 @@ charmm,n-,ASH,OD2,-0.6100000
 charmm,n-,ASH,HD2,0.4400000
 charmm,n-,ASH,C,0.5100000
 charmm,n-,ASH,O,-0.5100000
-
-# ASH - c-terminal protonated
 charmm,c+,ASH,N,-0.4700000
 charmm,c+,ASH,H,0.3100000
 charmm,c+,ASH,CA,0.0700000
@@ -6242,8 +5583,6 @@ charmm,c+,ASH,C,0.7200000
 charmm,c+,ASH,O,-0.5500000
 charmm,c+,ASH,OXT,-0.6100000
 charmm,c+,ASH,HOXT,0.4400000
-
-# CYS - middle
 charmm,m,CYS,N,-0.4700000
 charmm,m,CYS,H,0.3100000
 charmm,m,CYS,CA,0.0700000
@@ -6255,8 +5594,6 @@ charmm,m,CYS,SG,-0.2300000
 charmm,m,CYS,HG,0.1600000
 charmm,m,CYS,C,0.5100000
 charmm,m,CYS,O,-0.5100000
-
-# CYS - n-terminal
 charmm,n,CYS,N,-0.3000000
 charmm,n,CYS,H1,0.3300000
 charmm,n,CYS,H2,0.3300000
@@ -6270,8 +5607,6 @@ charmm,n,CYS,SG,-0.2300000
 charmm,n,CYS,HG,0.1600000
 charmm,n,CYS,C,0.5100000
 charmm,n,CYS,O,-0.5100000
-
-# CYS - c-terminal
 charmm,c,CYS,N,-0.4700000
 charmm,c,CYS,H,0.3100000
 charmm,c,CYS,CA,0.0700000
@@ -6284,8 +5619,6 @@ charmm,c,CYS,HG,0.1600000
 charmm,c,CYS,C,0.3400000
 charmm,c,CYS,O,-0.6700000
 charmm,c,CYS,OXT,-0.6700000
-
-# CYS - n-terminal deprotonated
 charmm,n-,CYS,N,-0.9600000
 charmm,n-,CYS,H1,0.3400000
 charmm,n-,CYS,H2,0.3400000
@@ -6298,8 +5631,6 @@ charmm,n-,CYS,SG,-0.2300000
 charmm,n-,CYS,HG,0.1600000
 charmm,n-,CYS,C,0.5100000
 charmm,n-,CYS,O,-0.5100000
-
-# CYS - c-terminal protonated
 charmm,c+,CYS,N,-0.4700000
 charmm,c+,CYS,H,0.3100000
 charmm,c+,CYS,CA,0.0700000
@@ -6313,8 +5644,6 @@ charmm,c+,CYS,C,0.7200000
 charmm,c+,CYS,O,-0.5500000
 charmm,c+,CYS,OXT,-0.6100000
 charmm,c+,CYS,HOXT,0.4400000
-
-# CYM - middle
 charmm,m,CYM,N,-0.4700000
 charmm,m,CYM,H,0.3100000
 charmm,m,CYM,CA,0.0700000
@@ -6325,8 +5654,6 @@ charmm,m,CYM,HB3,0.0900000
 charmm,m,CYM,SG,-0.8000000
 charmm,m,CYM,C,0.5100000
 charmm,m,CYM,O,-0.5100000
-
-# CYM - n-terminal
 charmm,n,CYM,N,-0.3000000
 charmm,n,CYM,H1,0.3300000
 charmm,n,CYM,H2,0.3300000
@@ -6339,8 +5666,6 @@ charmm,n,CYM,HB3,0.0900000
 charmm,n,CYM,SG,-0.8000000
 charmm,n,CYM,C,0.5100000
 charmm,n,CYM,O,-0.5100000
-
-# CYM - c-terminal
 charmm,c,CYM,N,-0.4700000
 charmm,c,CYM,H,0.3100000
 charmm,c,CYM,CA,0.0700000
@@ -6352,8 +5677,6 @@ charmm,c,CYM,SG,-0.8000000
 charmm,c,CYM,C,0.3400000
 charmm,c,CYM,O,-0.6700000
 charmm,c,CYM,OXT,-0.6700000
-
-# CYM - n-terminal deprotonated
 charmm,n-,CYM,N,-0.9600000
 charmm,n-,CYM,H1,0.3400000
 charmm,n-,CYM,H2,0.3400000
@@ -6365,8 +5688,6 @@ charmm,n-,CYM,HB3,0.0900000
 charmm,n-,CYM,SG,-0.8000000
 charmm,n-,CYM,C,0.5100000
 charmm,n-,CYM,O,-0.5100000
-
-# CYM - c-terminal protonated
 charmm,c+,CYM,N,-0.4700000
 charmm,c+,CYM,H,0.3100000
 charmm,c+,CYM,CA,0.0700000
@@ -6379,8 +5700,6 @@ charmm,c+,CYM,C,0.7200000
 charmm,c+,CYM,O,-0.5500000
 charmm,c+,CYM,OXT,-0.6100000
 charmm,c+,CYM,HOXT,0.4400000
-
-# CYX - middle
 charmm,m,CYX,N,-0.4700000
 charmm,m,CYX,H,0.3100000
 charmm,m,CYX,CA,0.0700000
@@ -6391,8 +5710,6 @@ charmm,m,CYX,HB3,0.0900000
 charmm,m,CYX,SG,-0.0800000
 charmm,m,CYX,C,0.5100000
 charmm,m,CYX,O,-0.5100000
-
-# CYX - n-terminal
 charmm,n,CYX,N,-0.3000000
 charmm,n,CYX,H1,0.3300000
 charmm,n,CYX,H2,0.3300000
@@ -6405,8 +5722,6 @@ charmm,n,CYX,HB3,0.0900000
 charmm,n,CYX,SG,-0.0800000
 charmm,n,CYX,C,0.5100000
 charmm,n,CYX,O,-0.5100000
-
-# CYX - c-terminal
 charmm,c,CYX,N,-0.4700000
 charmm,c,CYX,H,0.3100000
 charmm,c,CYX,CA,0.0700000
@@ -6418,8 +5733,6 @@ charmm,c,CYX,SG,-0.0800000
 charmm,c,CYX,C,0.3400000
 charmm,c,CYX,O,-0.6700000
 charmm,c,CYX,OXT,-0.6700000
-
-# CYX - n-terminal deprotonated
 charmm,n-,CYX,N,-0.9600000
 charmm,n-,CYX,H1,0.3400000
 charmm,n-,CYX,H2,0.3400000
@@ -6431,8 +5744,6 @@ charmm,n-,CYX,HB3,0.0900000
 charmm,n-,CYX,SG,-0.0800000
 charmm,n-,CYX,C,0.5100000
 charmm,n-,CYX,O,-0.5100000
-
-# CYX - c-terminal protonated
 charmm,c+,CYX,N,-0.4700000
 charmm,c+,CYX,H,0.3100000
 charmm,c+,CYX,CA,0.0700000
@@ -6445,8 +5756,6 @@ charmm,c+,CYX,C,0.7200000
 charmm,c+,CYX,O,-0.5500000
 charmm,c+,CYX,OXT,-0.6100000
 charmm,c+,CYX,HOXT,0.4400000
-
-# GLN - middle
 charmm,m,GLN,N,-0.4700000
 charmm,m,GLN,H,0.3100000
 charmm,m,GLN,CA,0.0700000
@@ -6464,8 +5773,6 @@ charmm,m,GLN,HE21,0.3200000
 charmm,m,GLN,HE22,0.3000000
 charmm,m,GLN,C,0.5100000
 charmm,m,GLN,O,-0.5100000
-
-# GLN - n-terminal
 charmm,n,GLN,N,-0.3000000
 charmm,n,GLN,H1,0.3300000
 charmm,n,GLN,H2,0.3300000
@@ -6485,8 +5792,6 @@ charmm,n,GLN,HE21,0.3200000
 charmm,n,GLN,HE22,0.3000000
 charmm,n,GLN,C,0.5100000
 charmm,n,GLN,O,-0.5100000
-
-# GLN - c-terminal
 charmm,c,GLN,N,-0.4700000
 charmm,c,GLN,H,0.3100000
 charmm,c,GLN,CA,0.0700000
@@ -6505,8 +5810,6 @@ charmm,c,GLN,HE22,0.3000000
 charmm,c,GLN,C,0.3400000
 charmm,c,GLN,O,-0.6700000
 charmm,c,GLN,OXT,-0.6700000
-
-# GLN - n-terminal deprotonated
 charmm,n-,GLN,N,-0.9600000
 charmm,n-,GLN,H1,0.3400000
 charmm,n-,GLN,H2,0.3400000
@@ -6525,8 +5828,6 @@ charmm,n-,GLN,HE21,0.3200000
 charmm,n-,GLN,HE22,0.3000000
 charmm,n-,GLN,C,0.5100000
 charmm,n-,GLN,O,-0.5100000
-
-# GLN - c-terminal protonated
 charmm,c+,GLN,N,-0.4700000
 charmm,c+,GLN,H,0.3100000
 charmm,c+,GLN,CA,0.0700000
@@ -6546,8 +5847,6 @@ charmm,c+,GLN,C,0.7200000
 charmm,c+,GLN,O,-0.5500000
 charmm,c+,GLN,OXT,-0.6100000
 charmm,c+,GLN,HOXT,0.4400000
-
-# GLU - middle
 charmm,m,GLU,N,-0.4700000
 charmm,m,GLU,H,0.3100000
 charmm,m,GLU,CA,0.0700000
@@ -6563,8 +5862,6 @@ charmm,m,GLU,OE1,-0.7600000
 charmm,m,GLU,OE2,-0.7600000
 charmm,m,GLU,C,0.5100000
 charmm,m,GLU,O,-0.5100000
-
-# GLU - n-terminal
 charmm,n,GLU,N,-0.3000000
 charmm,n,GLU,H1,0.3300000
 charmm,n,GLU,H2,0.3300000
@@ -6582,8 +5879,6 @@ charmm,n,GLU,OE1,-0.7600000
 charmm,n,GLU,OE2,-0.7600000
 charmm,n,GLU,C,0.5100000
 charmm,n,GLU,O,-0.5100000
-
-# GLU - c-terminal
 charmm,c,GLU,N,-0.4700000
 charmm,c,GLU,H,0.3100000
 charmm,c,GLU,CA,0.0700000
@@ -6600,8 +5895,6 @@ charmm,c,GLU,OE2,-0.7600000
 charmm,c,GLU,C,0.3400000
 charmm,c,GLU,O,-0.6700000
 charmm,c,GLU,OXT,-0.6700000
-
-# GLU - n-terminal deprotonated
 charmm,n-,GLU,N,-0.9600000
 charmm,n-,GLU,H1,0.3400000
 charmm,n-,GLU,H2,0.3400000
@@ -6618,8 +5911,6 @@ charmm,n-,GLU,OE1,-0.7600000
 charmm,n-,GLU,OE2,-0.7600000
 charmm,n-,GLU,C,0.5100000
 charmm,n-,GLU,O,-0.5100000
-
-# GLU - c-terminal protonated
 charmm,c+,GLU,N,-0.4700000
 charmm,c+,GLU,H,0.3100000
 charmm,c+,GLU,CA,0.0700000
@@ -6637,8 +5928,6 @@ charmm,c+,GLU,C,0.7200000
 charmm,c+,GLU,O,-0.5500000
 charmm,c+,GLU,OXT,-0.6100000
 charmm,c+,GLU,HOXT,0.4400000
-
-# GLH - middle
 charmm,m,GLH,N,-0.4700000
 charmm,m,GLH,H,0.3100000
 charmm,m,GLH,CA,0.0700000
@@ -6655,8 +5944,6 @@ charmm,m,GLH,OE2,-0.6100000
 charmm,m,GLH,HE2,0.4400000
 charmm,m,GLH,C,0.5100000
 charmm,m,GLH,O,-0.5100000
-
-# GLH - n-terminal
 charmm,n,GLH,N,-0.3000000
 charmm,n,GLH,H1,0.3300000
 charmm,n,GLH,H2,0.3300000
@@ -6675,8 +5962,6 @@ charmm,n,GLH,OE2,-0.6100000
 charmm,n,GLH,HE2,0.4400000
 charmm,n,GLH,C,0.5100000
 charmm,n,GLH,O,-0.5100000
-
-# GLH - c-terminal
 charmm,c,GLH,N,-0.4700000
 charmm,c,GLH,H,0.3100000
 charmm,c,GLH,CA,0.0700000
@@ -6694,8 +5979,6 @@ charmm,c,GLH,HE2,0.4400000
 charmm,c,GLH,C,0.3400000
 charmm,c,GLH,O,-0.6700000
 charmm,c,GLH,OXT,-0.6700000
-
-# GLH - n-terminal deprotonated
 charmm,n-,GLH,N,-0.9600000
 charmm,n-,GLH,H1,0.3400000
 charmm,n-,GLH,H2,0.3400000
@@ -6713,8 +5996,6 @@ charmm,n-,GLH,OE2,-0.6100000
 charmm,n-,GLH,HE2,0.4400000
 charmm,n-,GLH,C,0.5100000
 charmm,n-,GLH,O,-0.5100000
-
-# GLH - c-terminal protonated
 charmm,c+,GLH,N,-0.4700000
 charmm,c+,GLH,H,0.3100000
 charmm,c+,GLH,CA,0.0700000
@@ -6733,8 +6014,6 @@ charmm,c+,GLH,C,0.7200000
 charmm,c+,GLH,O,-0.5500000
 charmm,c+,GLH,OXT,-0.6100000
 charmm,c+,GLH,HOXT,0.4400000
-
-# GLY - middle
 charmm,m,GLY,N,-0.4700000
 charmm,m,GLY,H,0.3100000
 charmm,m,GLY,CA,-0.0200000
@@ -6742,8 +6021,6 @@ charmm,m,GLY,HA2,0.0900000
 charmm,m,GLY,HA3,0.0900000
 charmm,m,GLY,C,0.5100000
 charmm,m,GLY,O,-0.5100000
-
-# GLY - n-terminal
 charmm,n,GLY,N,-0.3000000
 charmm,n,GLY,H1,0.3300000
 charmm,n,GLY,H2,0.3300000
@@ -6753,8 +6030,6 @@ charmm,n,GLY,HA2,0.0900000
 charmm,n,GLY,HA3,0.0900000
 charmm,n,GLY,C,0.5100000
 charmm,n,GLY,O,-0.5100000
-
-# GLY - c-terminal
 charmm,c,GLY,N,-0.4700000
 charmm,c,GLY,H,0.3100000
 charmm,c,GLY,CA,-0.0200000
@@ -6763,8 +6038,6 @@ charmm,c,GLY,HA3,0.0900000
 charmm,c,GLY,C,0.3400000
 charmm,c,GLY,O,-0.6700000
 charmm,c,GLY,OXT,-0.6700000
-
-# GLY - n-terminal deprotonated
 charmm,n-,GLY,N,-0.9600000
 charmm,n-,GLY,H1,0.3400000
 charmm,n-,GLY,H2,0.3400000
@@ -6773,8 +6046,6 @@ charmm,n-,GLY,HA2,0.0900000
 charmm,n-,GLY,HA3,0.0900000
 charmm,n-,GLY,C,0.5100000
 charmm,n-,GLY,O,-0.5100000
-
-# GLY - c-terminal protonated
 charmm,c+,GLY,N,-0.4700000
 charmm,c+,GLY,H,0.3100000
 charmm,c+,GLY,CA,-0.0200000
@@ -6784,8 +6055,6 @@ charmm,c+,GLY,C,0.7200000
 charmm,c+,GLY,O,-0.5500000
 charmm,c+,GLY,OXT,-0.6100000
 charmm,c+,GLY,HOXT,0.4400000
-
-# HID - middle
 charmm,m,HID,N,-0.4700000
 charmm,m,HID,H,0.3100000
 charmm,m,HID,CA,0.0700000
@@ -6803,8 +6072,6 @@ charmm,m,HID,CD2,0.2200000
 charmm,m,HID,HD2,0.1000000
 charmm,m,HID,C,0.5100000
 charmm,m,HID,O,-0.5100000
-
-# HID - n-terminal
 charmm,n,HID,N,-0.3000000
 charmm,n,HID,H1,0.3300000
 charmm,n,HID,H2,0.3300000
@@ -6824,8 +6091,6 @@ charmm,n,HID,CD2,0.2200000
 charmm,n,HID,HD2,0.1000000
 charmm,n,HID,C,0.5100000
 charmm,n,HID,O,-0.5100000
-
-# HID - c-terminal
 charmm,c,HID,N,-0.4700000
 charmm,c,HID,H,0.3100000
 charmm,c,HID,CA,0.0700000
@@ -6844,8 +6109,6 @@ charmm,c,HID,HD2,0.1000000
 charmm,c,HID,C,0.3400000
 charmm,c,HID,O,-0.6700000
 charmm,c,HID,OXT,-0.6700000
-
-# HID - n-terminal deprotonated
 charmm,n-,HID,N,-0.9600000
 charmm,n-,HID,H1,0.3400000
 charmm,n-,HID,H2,0.3400000
@@ -6864,8 +6127,6 @@ charmm,n-,HID,CD2,0.2200000
 charmm,n-,HID,HD2,0.1000000
 charmm,n-,HID,C,0.5100000
 charmm,n-,HID,O,-0.5100000
-
-# HID - c-terminal protonated
 charmm,c+,HID,N,-0.4700000
 charmm,c+,HID,H,0.3100000
 charmm,c+,HID,CA,0.0700000
@@ -6885,8 +6146,6 @@ charmm,c+,HID,C,0.7200000
 charmm,c+,HID,O,-0.5500000
 charmm,c+,HID,OXT,-0.6100000
 charmm,c+,HID,HOXT,0.4400000
-
-# HIE - middle
 charmm,m,HIE,N,-0.4700000
 charmm,m,HIE,H,0.3100000
 charmm,m,HIE,CA,0.0700000
@@ -6904,8 +6163,6 @@ charmm,m,HIE,CD2,-0.0500000
 charmm,m,HIE,HD2,0.0900000
 charmm,m,HIE,C,0.5100000
 charmm,m,HIE,O,-0.5100000
-
-# HIE - n-terminal
 charmm,n,HIE,N,-0.3000000
 charmm,n,HIE,H1,0.3300000
 charmm,n,HIE,H2,0.3300000
@@ -6925,8 +6182,6 @@ charmm,n,HIE,CD2,-0.0500000
 charmm,n,HIE,HD2,0.0900000
 charmm,n,HIE,C,0.5100000
 charmm,n,HIE,O,-0.5100000
-
-# HIE - c-terminal
 charmm,c,HIE,N,-0.4700000
 charmm,c,HIE,H,0.3100000
 charmm,c,HIE,CA,0.0700000
@@ -6945,8 +6200,6 @@ charmm,c,HIE,HD2,0.0900000
 charmm,c,HIE,C,0.3400000
 charmm,c,HIE,O,-0.6700000
 charmm,c,HIE,OXT,-0.6700000
-
-# HIE - n-terminal deprotonated
 charmm,n-,HIE,N,-0.9600000
 charmm,n-,HIE,H1,0.3400000
 charmm,n-,HIE,H2,0.3400000
@@ -6965,8 +6218,6 @@ charmm,n-,HIE,CD2,-0.0500000
 charmm,n-,HIE,HD2,0.0900000
 charmm,n-,HIE,C,0.5100000
 charmm,n-,HIE,O,-0.5100000
-
-# HIE - c-terminal protonated
 charmm,c+,HIE,N,-0.4700000
 charmm,c+,HIE,H,0.3100000
 charmm,c+,HIE,CA,0.0700000
@@ -6986,8 +6237,6 @@ charmm,c+,HIE,C,0.7200000
 charmm,c+,HIE,O,-0.5500000
 charmm,c+,HIE,OXT,-0.6100000
 charmm,c+,HIE,HOXT,0.4400000
-
-# HIP - middle
 charmm,m,HIP,N,-0.4700000
 charmm,m,HIP,H,0.3100000
 charmm,m,HIP,CA,0.0700000
@@ -7006,8 +6255,6 @@ charmm,m,HIP,NE2,-0.5100000
 charmm,m,HIP,HE2,0.4400000
 charmm,m,HIP,C,0.5100000
 charmm,m,HIP,O,-0.5100000
-
-# HIP - n-terminal
 charmm,n,HIP,N,-0.3000000
 charmm,n,HIP,H1,0.3300000
 charmm,n,HIP,H2,0.3300000
@@ -7028,8 +6275,6 @@ charmm,n,HIP,NE2,-0.5100000
 charmm,n,HIP,HE2,0.4400000
 charmm,n,HIP,C,0.5100000
 charmm,n,HIP,O,-0.5100000
-
-# HIP - c-terminal
 charmm,c,HIP,N,-0.4700000
 charmm,c,HIP,H,0.3100000
 charmm,c,HIP,CA,0.0700000
@@ -7049,8 +6294,6 @@ charmm,c,HIP,HE2,0.4400000
 charmm,c,HIP,C,0.3400000
 charmm,c,HIP,O,-0.6700000
 charmm,c,HIP,OXT,-0.6700000
-
-# HIP - n-terminal deprotonated
 charmm,n-,HIP,N,-0.9600000
 charmm,n-,HIP,H1,0.3400000
 charmm,n-,HIP,H2,0.3400000
@@ -7070,8 +6313,6 @@ charmm,n-,HIP,NE2,-0.5100000
 charmm,n-,HIP,HE2,0.4400000
 charmm,n-,HIP,C,0.5100000
 charmm,n-,HIP,O,-0.5100000
-
-# HIP - c-terminal protonated
 charmm,c+,HIP,N,-0.4700000
 charmm,c+,HIP,H,0.3100000
 charmm,c+,HIP,CA,0.0700000
@@ -7092,8 +6333,6 @@ charmm,c+,HIP,C,0.7200000
 charmm,c+,HIP,O,-0.5500000
 charmm,c+,HIP,OXT,-0.6100000
 charmm,c+,HIP,HOXT,0.4400000
-
-# ILE - middle
 charmm,m,ILE,N,-0.4700000
 charmm,m,ILE,H,0.3100000
 charmm,m,ILE,CA,0.0700000
@@ -7113,8 +6352,6 @@ charmm,m,ILE,HD12,0.0900000
 charmm,m,ILE,HD13,0.0900000
 charmm,m,ILE,C,0.5100000
 charmm,m,ILE,O,-0.5100000
-
-# ILE - n-terminal
 charmm,n,ILE,N,-0.3000000
 charmm,n,ILE,H1,0.3300000
 charmm,n,ILE,H2,0.3300000
@@ -7136,8 +6373,6 @@ charmm,n,ILE,HD12,0.0900000
 charmm,n,ILE,HD13,0.0900000
 charmm,n,ILE,C,0.5100000
 charmm,n,ILE,O,-0.5100000
-
-# ILE - c-terminal
 charmm,c,ILE,N,-0.4700000
 charmm,c,ILE,H,0.3100000
 charmm,c,ILE,CA,0.0700000
@@ -7158,8 +6393,6 @@ charmm,c,ILE,HD13,0.0900000
 charmm,c,ILE,C,0.3400000
 charmm,c,ILE,O,-0.6700000
 charmm,c,ILE,OXT,-0.6700000
-
-# ILE - n-terminal deprotonated
 charmm,n-,ILE,N,-0.9600000
 charmm,n-,ILE,H1,0.3400000
 charmm,n-,ILE,H2,0.3400000
@@ -7180,8 +6413,6 @@ charmm,n-,ILE,HD12,0.0900000
 charmm,n-,ILE,HD13,0.0900000
 charmm,n-,ILE,C,0.5100000
 charmm,n-,ILE,O,-0.5100000
-
-# ILE - c-terminal protonated
 charmm,c+,ILE,N,-0.4700000
 charmm,c+,ILE,H,0.3100000
 charmm,c+,ILE,CA,0.0700000
@@ -7203,8 +6434,6 @@ charmm,c+,ILE,C,0.7200000
 charmm,c+,ILE,O,-0.5500000
 charmm,c+,ILE,OXT,-0.6100000
 charmm,c+,ILE,HOXT,0.4400000
-
-# LEU - middle
 charmm,m,LEU,N,-0.4700000
 charmm,m,LEU,H,0.3100000
 charmm,m,LEU,CA,0.0700000
@@ -7224,8 +6453,6 @@ charmm,m,LEU,HD22,0.0900000
 charmm,m,LEU,HD23,0.0900000
 charmm,m,LEU,C,0.5100000
 charmm,m,LEU,O,-0.5100000
-
-# LEU - n-terminal
 charmm,n,LEU,N,-0.3000000
 charmm,n,LEU,H1,0.3300000
 charmm,n,LEU,H2,0.3300000
@@ -7247,8 +6474,6 @@ charmm,n,LEU,HD22,0.0900000
 charmm,n,LEU,HD23,0.0900000
 charmm,n,LEU,C,0.5100000
 charmm,n,LEU,O,-0.5100000
-
-# LEU - c-terminal
 charmm,c,LEU,N,-0.4700000
 charmm,c,LEU,H,0.3100000
 charmm,c,LEU,CA,0.0700000
@@ -7269,8 +6494,6 @@ charmm,c,LEU,HD23,0.0900000
 charmm,c,LEU,C,0.3400000
 charmm,c,LEU,O,-0.6700000
 charmm,c,LEU,OXT,-0.6700000
-
-# LEU - n-terminal deprotonated
 charmm,n-,LEU,N,-0.9600000
 charmm,n-,LEU,H1,0.3400000
 charmm,n-,LEU,H2,0.3400000
@@ -7291,8 +6514,6 @@ charmm,n-,LEU,HD22,0.0900000
 charmm,n-,LEU,HD23,0.0900000
 charmm,n-,LEU,C,0.5100000
 charmm,n-,LEU,O,-0.5100000
-
-# LEU - c-terminal protonated
 charmm,c+,LEU,N,-0.4700000
 charmm,c+,LEU,H,0.3100000
 charmm,c+,LEU,CA,0.0700000
@@ -7314,8 +6535,6 @@ charmm,c+,LEU,C,0.7200000
 charmm,c+,LEU,O,-0.5500000
 charmm,c+,LEU,OXT,-0.6100000
 charmm,c+,LEU,HOXT,0.4400000
-
-# LYS - middle
 charmm,m,LYS,N,-0.4700000
 charmm,m,LYS,H,0.3100000
 charmm,m,LYS,CA,0.0700000
@@ -7338,8 +6557,6 @@ charmm,m,LYS,HZ2,0.3300000
 charmm,m,LYS,HZ3,0.3300000
 charmm,m,LYS,C,0.5100000
 charmm,m,LYS,O,-0.5100000
-
-# LYS - n-terminal
 charmm,n,LYS,N,-0.3000000
 charmm,n,LYS,H1,0.3300000
 charmm,n,LYS,H2,0.3300000
@@ -7364,8 +6581,6 @@ charmm,n,LYS,HZ2,0.3300000
 charmm,n,LYS,HZ3,0.3300000
 charmm,n,LYS,C,0.5100000
 charmm,n,LYS,O,-0.5100000
-
-# LYS - c-terminal
 charmm,c,LYS,N,-0.4700000
 charmm,c,LYS,H,0.3100000
 charmm,c,LYS,CA,0.0700000
@@ -7389,8 +6604,6 @@ charmm,c,LYS,HZ3,0.3300000
 charmm,c,LYS,C,0.3400000
 charmm,c,LYS,O,-0.6700000
 charmm,c,LYS,OXT,-0.6700000
-
-# LYS - n-terminal deprotonated
 charmm,n-,LYS,N,-0.9600000
 charmm,n-,LYS,H1,0.3400000
 charmm,n-,LYS,H2,0.3400000
@@ -7414,8 +6627,6 @@ charmm,n-,LYS,HZ2,0.3300000
 charmm,n-,LYS,HZ3,0.3300000
 charmm,n-,LYS,C,0.5100000
 charmm,n-,LYS,O,-0.5100000
-
-# LYS - c-terminal protonated
 charmm,c+,LYS,N,-0.4700000
 charmm,c+,LYS,H,0.3100000
 charmm,c+,LYS,CA,0.0700000
@@ -7440,8 +6651,6 @@ charmm,c+,LYS,C,0.7200000
 charmm,c+,LYS,O,-0.5500000
 charmm,c+,LYS,OXT,-0.6100000
 charmm,c+,LYS,HOXT,0.4400000
-
-# LYN - middle
 charmm,m,LYN,N,-0.4700000
 charmm,m,LYN,H,0.3100000
 charmm,m,LYN,CA,0.0700000
@@ -7463,8 +6672,6 @@ charmm,m,LYN,HZ1,0.3400000
 charmm,m,LYN,HZ2,0.3400000
 charmm,m,LYN,C,0.5100000
 charmm,m,LYN,O,-0.5100000
-
-# LYN - n-terminal
 charmm,n,LYN,N,-0.3000000
 charmm,n,LYN,H1,0.3300000
 charmm,n,LYN,H2,0.3300000
@@ -7488,8 +6695,6 @@ charmm,n,LYN,HZ1,0.3400000
 charmm,n,LYN,HZ2,0.3400000
 charmm,n,LYN,C,0.5100000
 charmm,n,LYN,O,-0.5100000
-
-# LYN - c-terminal
 charmm,c,LYN,N,-0.4700000
 charmm,c,LYN,H,0.3100000
 charmm,c,LYN,CA,0.0700000
@@ -7512,8 +6717,6 @@ charmm,c,LYN,HZ2,0.3400000
 charmm,c,LYN,C,0.3400000
 charmm,c,LYN,O,-0.6700000
 charmm,c,LYN,OXT,-0.6700000
-
-# LYN - n-terminal deprotonated
 charmm,n-,LYN,N,-0.9600000
 charmm,n-,LYN,H1,0.3400000
 charmm,n-,LYN,H2,0.3400000
@@ -7536,8 +6739,6 @@ charmm,n-,LYN,HZ1,0.3400000
 charmm,n-,LYN,HZ2,0.3400000
 charmm,n-,LYN,C,0.5100000
 charmm,n-,LYN,O,-0.5100000
-
-# LYN - c-terminal protonated
 charmm,c+,LYN,N,-0.4700000
 charmm,c+,LYN,H,0.3100000
 charmm,c+,LYN,CA,0.0700000
@@ -7561,8 +6762,6 @@ charmm,c+,LYN,C,0.7200000
 charmm,c+,LYN,O,-0.5500000
 charmm,c+,LYN,OXT,-0.6100000
 charmm,c+,LYN,HOXT,0.4400000
-
-# MET - middle
 charmm,m,MET,N,-0.4700000
 charmm,m,MET,H,0.3100000
 charmm,m,MET,CA,0.0700000
@@ -7580,8 +6779,6 @@ charmm,m,MET,HE2,0.0900000
 charmm,m,MET,HE3,0.0900000
 charmm,m,MET,C,0.5100000
 charmm,m,MET,O,-0.5100000
-
-# MET - n-terminal
 charmm,n,MET,N,-0.3000000
 charmm,n,MET,H1,0.3300000
 charmm,n,MET,H2,0.3300000
@@ -7601,8 +6798,6 @@ charmm,n,MET,HE2,0.0900000
 charmm,n,MET,HE3,0.0900000
 charmm,n,MET,C,0.5100000
 charmm,n,MET,O,-0.5100000
-
-# MET - c-terminal
 charmm,c,MET,N,-0.4700000
 charmm,c,MET,H,0.3100000
 charmm,c,MET,CA,0.0700000
@@ -7621,8 +6816,6 @@ charmm,c,MET,HE3,0.0900000
 charmm,c,MET,C,0.3400000
 charmm,c,MET,O,-0.6700000
 charmm,c,MET,OXT,-0.6700000
-
-# MET - n-terminal deprotonated
 charmm,n-,MET,N,-0.9600000
 charmm,n-,MET,H1,0.3400000
 charmm,n-,MET,H2,0.3400000
@@ -7641,8 +6834,6 @@ charmm,n-,MET,HE2,0.0900000
 charmm,n-,MET,HE3,0.0900000
 charmm,n-,MET,C,0.5100000
 charmm,n-,MET,O,-0.5100000
-
-# MET - c-terminal protonated
 charmm,c+,MET,N,-0.4700000
 charmm,c+,MET,H,0.3100000
 charmm,c+,MET,CA,0.0700000
@@ -7662,8 +6853,6 @@ charmm,c+,MET,C,0.7200000
 charmm,c+,MET,O,-0.5500000
 charmm,c+,MET,OXT,-0.6100000
 charmm,c+,MET,HOXT,0.4400000
-
-# PHE - middle
 charmm,m,PHE,N,-0.4700000
 charmm,m,PHE,H,0.3100000
 charmm,m,PHE,CA,0.0700000
@@ -7684,8 +6873,6 @@ charmm,m,PHE,CZ,-0.1150000
 charmm,m,PHE,HZ,0.1150000
 charmm,m,PHE,C,0.5100000
 charmm,m,PHE,O,-0.5100000
-
-# PHE - n-terminal
 charmm,n,PHE,N,-0.3000000
 charmm,n,PHE,H1,0.3300000
 charmm,n,PHE,H2,0.3300000
@@ -7708,8 +6895,6 @@ charmm,n,PHE,CZ,-0.1150000
 charmm,n,PHE,HZ,0.1150000
 charmm,n,PHE,C,0.5100000
 charmm,n,PHE,O,-0.5100000
-
-# PHE - c-terminal
 charmm,c,PHE,N,-0.4700000
 charmm,c,PHE,H,0.3100000
 charmm,c,PHE,CA,0.0700000
@@ -7731,8 +6916,6 @@ charmm,c,PHE,HZ,0.1150000
 charmm,c,PHE,C,0.3400000
 charmm,c,PHE,O,-0.6700000
 charmm,c,PHE,OXT,-0.6700000
-
-# PHE - n-terminal deprotonated
 charmm,n-,PHE,N,-0.9600000
 charmm,n-,PHE,H1,0.3400000
 charmm,n-,PHE,H2,0.3400000
@@ -7754,8 +6937,6 @@ charmm,n-,PHE,CZ,-0.1150000
 charmm,n-,PHE,HZ,0.1150000
 charmm,n-,PHE,C,0.5100000
 charmm,n-,PHE,O,-0.5100000
-
-# PHE - c-terminal protonated
 charmm,c+,PHE,N,-0.4700000
 charmm,c+,PHE,H,0.3100000
 charmm,c+,PHE,CA,0.0700000
@@ -7778,8 +6959,6 @@ charmm,c+,PHE,C,0.7200000
 charmm,c+,PHE,O,-0.5500000
 charmm,c+,PHE,OXT,-0.6100000
 charmm,c+,PHE,HOXT,0.4400000
-
-# PRO - middle
 charmm,m,PRO,N,-0.2900000
 charmm,m,PRO,CA,0.0200000
 charmm,m,PRO,CB,-0.1800000
@@ -7794,8 +6973,6 @@ charmm,m,PRO,HD2,0.0900000
 charmm,m,PRO,HD3,0.0900000
 charmm,m,PRO,C,0.5100000
 charmm,m,PRO,O,-0.5100000
-
-# PRO - n-terminal
 charmm,n,PRO,N,-0.0700000
 charmm,n,PRO,H2,0.2400000
 charmm,n,PRO,H3,0.2400000
@@ -7812,8 +6989,6 @@ charmm,n,PRO,HD2,0.0900000
 charmm,n,PRO,HD3,0.0900000
 charmm,n,PRO,C,0.5100000
 charmm,n,PRO,O,-0.5100000
-
-# PRO - c-terminal
 charmm,c,PRO,N,-0.2900000
 charmm,c,PRO,CA,0.0200000
 charmm,c,PRO,CB,-0.1800000
@@ -7829,8 +7004,6 @@ charmm,c,PRO,HD3,0.0900000
 charmm,c,PRO,C,0.3400000
 charmm,c,PRO,O,-0.6700000
 charmm,c,PRO,OXT,-0.6700000
-
-# PRO - n-terminal deprotonated
 charmm,n-,PRO,N,-0.7700000
 charmm,n-,PRO,H2,0.2500000
 charmm,n-,PRO,CA,0.1400000
@@ -7846,8 +7019,6 @@ charmm,n-,PRO,HD2,0.0800000
 charmm,n-,PRO,HD3,0.0800000
 charmm,n-,PRO,C,0.5100000
 charmm,n-,PRO,O,-0.5100000
-
-# PRO - c-terminal protonated
 charmm,c+,PRO,N,-0.2900000
 charmm,c+,PRO,CA,0.0200000
 charmm,c+,PRO,CB,-0.1800000
@@ -7864,8 +7035,6 @@ charmm,c+,PRO,C,0.7200000
 charmm,c+,PRO,O,-0.5500000
 charmm,c+,PRO,OXT,-0.6100000
 charmm,c+,PRO,HOXT,0.4400000
-
-# SER - middle
 charmm,m,SER,N,-0.4700000
 charmm,m,SER,H,0.3100000
 charmm,m,SER,CA,0.0700000
@@ -7877,8 +7046,6 @@ charmm,m,SER,OG,-0.6600000
 charmm,m,SER,HG,0.4300000
 charmm,m,SER,C,0.5100000
 charmm,m,SER,O,-0.5100000
-
-# SER - n-terminal
 charmm,n,SER,N,-0.3000000
 charmm,n,SER,H1,0.3300000
 charmm,n,SER,H2,0.3300000
@@ -7892,8 +7059,6 @@ charmm,n,SER,OG,-0.6600000
 charmm,n,SER,HG,0.4300000
 charmm,n,SER,C,0.5100000
 charmm,n,SER,O,-0.5100000
-
-# SER - c-terminal
 charmm,c,SER,N,-0.4700000
 charmm,c,SER,H,0.3100000
 charmm,c,SER,CA,0.0700000
@@ -7906,8 +7071,6 @@ charmm,c,SER,HG,0.4300000
 charmm,c,SER,C,0.3400000
 charmm,c,SER,O,-0.6700000
 charmm,c,SER,OXT,-0.6700000
-
-# SER - n-terminal deprotonated
 charmm,n-,SER,N,-0.9600000
 charmm,n-,SER,H1,0.3400000
 charmm,n-,SER,H2,0.3400000
@@ -7920,8 +7083,6 @@ charmm,n-,SER,OG,-0.6600000
 charmm,n-,SER,HG,0.4300000
 charmm,n-,SER,C,0.5100000
 charmm,n-,SER,O,-0.5100000
-
-# SER - c-terminal protonated
 charmm,c+,SER,N,-0.4700000
 charmm,c+,SER,H,0.3100000
 charmm,c+,SER,CA,0.0700000
@@ -7935,8 +7096,6 @@ charmm,c+,SER,C,0.7200000
 charmm,c+,SER,O,-0.5500000
 charmm,c+,SER,OXT,-0.6100000
 charmm,c+,SER,HOXT,0.4400000
-
-# THR - middle
 charmm,m,THR,N,-0.4700000
 charmm,m,THR,H,0.3100000
 charmm,m,THR,CA,0.0700000
@@ -7951,8 +7110,6 @@ charmm,m,THR,HG22,0.0900000
 charmm,m,THR,HG23,0.0900000
 charmm,m,THR,C,0.5100000
 charmm,m,THR,O,-0.5100000
-
-# THR - n-terminal
 charmm,n,THR,N,-0.3000000
 charmm,n,THR,H1,0.3300000
 charmm,n,THR,H2,0.3300000
@@ -7969,8 +7126,6 @@ charmm,n,THR,HG22,0.0900000
 charmm,n,THR,HG23,0.0900000
 charmm,n,THR,C,0.5100000
 charmm,n,THR,O,-0.5100000
-
-# THR - c-terminal
 charmm,c,THR,N,-0.4700000
 charmm,c,THR,H,0.3100000
 charmm,c,THR,CA,0.0700000
@@ -7986,8 +7141,6 @@ charmm,c,THR,HG23,0.0900000
 charmm,c,THR,C,0.3400000
 charmm,c,THR,O,-0.6700000
 charmm,c,THR,OXT,-0.6700000
-
-# THR - n-terminal deprotonated
 charmm,n-,THR,N,-0.9600000
 charmm,n-,THR,H1,0.3400000
 charmm,n-,THR,H2,0.3400000
@@ -8003,8 +7156,6 @@ charmm,n-,THR,HG22,0.0900000
 charmm,n-,THR,HG23,0.0900000
 charmm,n-,THR,C,0.5100000
 charmm,n-,THR,O,-0.5100000
-
-# THR - c-terminal protonated
 charmm,c+,THR,N,-0.4700000
 charmm,c+,THR,H,0.3100000
 charmm,c+,THR,CA,0.0700000
@@ -8021,8 +7172,6 @@ charmm,c+,THR,C,0.7200000
 charmm,c+,THR,O,-0.5500000
 charmm,c+,THR,OXT,-0.6100000
 charmm,c+,THR,HOXT,0.4400000
-
-# TRP - middle
 charmm,m,TRP,N,-0.4700000
 charmm,m,TRP,H,0.3100000
 charmm,m,TRP,CA,0.0700000
@@ -8047,8 +7196,6 @@ charmm,m,TRP,CH2,-0.1400000
 charmm,m,TRP,HH2,0.1400000
 charmm,m,TRP,C,0.5100000
 charmm,m,TRP,O,-0.5100000
-
-# TRP - n-terminal
 charmm,n,TRP,N,-0.3000000
 charmm,n,TRP,H1,0.3300000
 charmm,n,TRP,H2,0.3300000
@@ -8075,8 +7222,6 @@ charmm,n,TRP,CH2,-0.1400000
 charmm,n,TRP,HH2,0.1400000
 charmm,n,TRP,C,0.5100000
 charmm,n,TRP,O,-0.5100000
-
-# TRP - c-terminal
 charmm,c,TRP,N,-0.4700000
 charmm,c,TRP,H,0.3100000
 charmm,c,TRP,CA,0.0700000
@@ -8102,8 +7247,6 @@ charmm,c,TRP,HH2,0.1400000
 charmm,c,TRP,C,0.3400000
 charmm,c,TRP,O,-0.6700000
 charmm,c,TRP,OXT,-0.6700000
-
-# TRP - n-terminal deprotonated
 charmm,n-,TRP,N,-0.9600000
 charmm,n-,TRP,H1,0.3400000
 charmm,n-,TRP,H2,0.3400000
@@ -8129,8 +7272,6 @@ charmm,n-,TRP,CH2,-0.1400000
 charmm,n-,TRP,HH2,0.1400000
 charmm,n-,TRP,C,0.5100000
 charmm,n-,TRP,O,-0.5100000
-
-# TRP - c-terminal protonated
 charmm,c+,TRP,N,-0.4700000
 charmm,c+,TRP,H,0.3100000
 charmm,c+,TRP,CA,0.0700000
@@ -8157,8 +7298,6 @@ charmm,c+,TRP,C,0.7200000
 charmm,c+,TRP,O,-0.5500000
 charmm,c+,TRP,OXT,-0.6100000
 charmm,c+,TRP,HOXT,0.4400000
-
-# TYR - middle
 charmm,m,TYR,N,-0.4700000
 charmm,m,TYR,H,0.3100000
 charmm,m,TYR,CA,0.0700000
@@ -8180,8 +7319,6 @@ charmm,m,TYR,OH,-0.5400000
 charmm,m,TYR,HH,0.4300000
 charmm,m,TYR,C,0.5100000
 charmm,m,TYR,O,-0.5100000
-
-# TYR - n-terminal
 charmm,n,TYR,N,-0.3000000
 charmm,n,TYR,H1,0.3300000
 charmm,n,TYR,H2,0.3300000
@@ -8205,8 +7342,6 @@ charmm,n,TYR,OH,-0.5400000
 charmm,n,TYR,HH,0.4300000
 charmm,n,TYR,C,0.5100000
 charmm,n,TYR,O,-0.5100000
-
-# TYR - c-terminal
 charmm,c,TYR,N,-0.4700000
 charmm,c,TYR,H,0.3100000
 charmm,c,TYR,CA,0.0700000
@@ -8229,8 +7364,6 @@ charmm,c,TYR,HH,0.4300000
 charmm,c,TYR,C,0.3400000
 charmm,c,TYR,O,-0.6700000
 charmm,c,TYR,OXT,-0.6700000
-
-# TYR - n-terminal deprotonated
 charmm,n-,TYR,N,-0.9600000
 charmm,n-,TYR,H1,0.3400000
 charmm,n-,TYR,H2,0.3400000
@@ -8253,8 +7386,6 @@ charmm,n-,TYR,OH,-0.5400000
 charmm,n-,TYR,HH,0.4300000
 charmm,n-,TYR,C,0.5100000
 charmm,n-,TYR,O,-0.5100000
-
-# TYR - c-terminal protonated
 charmm,c+,TYR,N,-0.4700000
 charmm,c+,TYR,H,0.3100000
 charmm,c+,TYR,CA,0.0700000
@@ -8278,8 +7409,6 @@ charmm,c+,TYR,C,0.7200000
 charmm,c+,TYR,O,-0.5500000
 charmm,c+,TYR,OXT,-0.6100000
 charmm,c+,TYR,HOXT,0.4400000
-
-# TYM - middle
 charmm,m,TYM,N,-0.4700000
 charmm,m,TYM,H,0.3100000
 charmm,m,TYM,CA,0.0700000
@@ -8300,8 +7429,6 @@ charmm,m,TYM,CZ,0.1100000
 charmm,m,TYM,OH,-0.9200000
 charmm,m,TYM,C,0.5100000
 charmm,m,TYM,O,-0.5100000
-
-# TYM - n-terminal
 charmm,n,TYM,N,-0.3000000
 charmm,n,TYM,H1,0.3300000
 charmm,n,TYM,H2,0.3300000
@@ -8324,8 +7451,6 @@ charmm,n,TYM,CZ,0.1100000
 charmm,n,TYM,OH,-0.9200000
 charmm,n,TYM,C,0.5100000
 charmm,n,TYM,O,-0.5100000
-
-# TYM - c-terminal
 charmm,c,TYM,N,-0.4700000
 charmm,c,TYM,H,0.3100000
 charmm,c,TYM,CA,0.0700000
@@ -8347,8 +7472,6 @@ charmm,c,TYM,OH,-0.9200000
 charmm,c,TYM,C,0.3400000
 charmm,c,TYM,O,-0.6700000
 charmm,c,TYM,OXT,-0.6700000
-
-# TYM - n-terminal deprotonated
 charmm,n-,TYM,N,-0.9600000
 charmm,n-,TYM,H1,0.3400000
 charmm,n-,TYM,H2,0.3400000
@@ -8370,8 +7493,6 @@ charmm,n-,TYM,CZ,0.1100000
 charmm,n-,TYM,OH,-0.9200000
 charmm,n-,TYM,C,0.5100000
 charmm,n-,TYM,O,-0.5100000
-
-# TYM - c-terminal protonated
 charmm,c+,TYM,N,-0.4700000
 charmm,c+,TYM,H,0.3100000
 charmm,c+,TYM,CA,0.0700000
@@ -8394,8 +7515,6 @@ charmm,c+,TYM,C,0.7200000
 charmm,c+,TYM,O,-0.5500000
 charmm,c+,TYM,OXT,-0.6100000
 charmm,c+,TYM,HOXT,0.4400000
-
-# VAL - middle
 charmm,m,VAL,N,-0.4700000
 charmm,m,VAL,H,0.3100000
 charmm,m,VAL,CA,0.0700000
@@ -8412,8 +7531,6 @@ charmm,m,VAL,HG22,0.0900000
 charmm,m,VAL,HG23,0.0900000
 charmm,m,VAL,C,0.5100000
 charmm,m,VAL,O,-0.5100000
-
-# VAL - n-terminal
 charmm,n,VAL,N,-0.3000000
 charmm,n,VAL,H1,0.3300000
 charmm,n,VAL,H2,0.3300000
@@ -8432,8 +7549,6 @@ charmm,n,VAL,HG22,0.0900000
 charmm,n,VAL,HG23,0.0900000
 charmm,n,VAL,C,0.5100000
 charmm,n,VAL,O,-0.5100000
-
-# VAL - c-terminal
 charmm,c,VAL,N,-0.4700000
 charmm,c,VAL,H,0.3100000
 charmm,c,VAL,CA,0.0700000
@@ -8451,8 +7566,6 @@ charmm,c,VAL,HG23,0.0900000
 charmm,c,VAL,C,0.3400000
 charmm,c,VAL,O,-0.6700000
 charmm,c,VAL,OXT,-0.6700000
-
-# VAL - n-terminal deprotonated
 charmm,n-,VAL,N,-0.9600000
 charmm,n-,VAL,H1,0.3400000
 charmm,n-,VAL,H2,0.3400000
@@ -8470,8 +7583,6 @@ charmm,n-,VAL,HG22,0.0900000
 charmm,n-,VAL,HG23,0.0900000
 charmm,n-,VAL,C,0.5100000
 charmm,n-,VAL,O,-0.5100000
-
-# VAL - c-terminal protonated
 charmm,c+,VAL,N,-0.4700000
 charmm,c+,VAL,H,0.3100000
 charmm,c+,VAL,CA,0.0700000
@@ -8490,10 +7601,6 @@ charmm,c+,VAL,C,0.7200000
 charmm,c+,VAL,O,-0.5500000
 charmm,c+,VAL,OXT,-0.6100000
 charmm,c+,VAL,HOXT,0.4400000
-
-# DNA: amber
-
-# DA - middle
 amber,m,DA,P,1.1659000
 amber,m,DA,OP1,-0.7761000
 amber,m,DA,OP2,-0.7761000
@@ -8526,8 +7633,6 @@ amber,m,DA,H8,0.1877000
 amber,m,DA,H61,0.4167000
 amber,m,DA,H62,0.4167000
 amber,m,DA,H2,0.0598000
-
-# DA - 5'-terminal
 amber,5,DA,O5',-0.6318000
 amber,5,DA,C5',-0.0069000
 amber,5,DA,C4',0.1629000
@@ -8558,8 +7663,6 @@ amber,5,DA,H8,0.1877000
 amber,5,DA,H61,0.4167000
 amber,5,DA,H62,0.4167000
 amber,5,DA,H2,0.0598000
-
-# DA - 3'-terminal
 amber,3,DA,P,1.1659000
 amber,3,DA,OP1,-0.7761000
 amber,3,DA,OP2,-0.7761000
@@ -8593,8 +7696,6 @@ amber,3,DA,H8,0.1877000
 amber,3,DA,H61,0.4167000
 amber,3,DA,H62,0.4167000
 amber,3,DA,H2,0.0598000
-
-# DT - middle
 amber,m,DT,P,1.1659000
 amber,m,DT,OP1,-0.7761000
 amber,m,DT,OP2,-0.7761000
@@ -8627,8 +7728,6 @@ amber,m,DT,H71,0.0770000
 amber,m,DT,H72,0.0770000
 amber,m,DT,H73,0.0770000
 amber,m,DT,H6,0.2607000
-
-# DT - 5'-terminal
 amber,5,DT,O5',-0.6318000
 amber,5,DT,C5',-0.0069000
 amber,5,DT,C4',0.1629000
@@ -8659,8 +7758,6 @@ amber,5,DT,H71,0.0770000
 amber,5,DT,H72,0.0770000
 amber,5,DT,H73,0.0770000
 amber,5,DT,H6,0.2607000
-
-# DT - 3'-terminal
 amber,3,DT,P,1.1659000
 amber,3,DT,OP1,-0.7761000
 amber,3,DT,OP2,-0.7761000
@@ -8694,8 +7791,6 @@ amber,3,DT,H71,0.0770000
 amber,3,DT,H72,0.0770000
 amber,3,DT,H73,0.0770000
 amber,3,DT,H6,0.2607000
-
-# DG - middle
 amber,m,DG,P,1.1659000
 amber,m,DG,OP1,-0.7761000
 amber,m,DG,OP2,-0.7761000
@@ -8729,8 +7824,6 @@ amber,m,DG,H8,0.1997000
 amber,m,DG,H1,0.3520000
 amber,m,DG,H21,0.4235000
 amber,m,DG,H22,0.4235000
-
-# DG - 5'-terminal
 amber,5,DG,O5',-0.6318000
 amber,5,DG,C5',-0.0069000
 amber,5,DG,C4',0.1629000
@@ -8762,8 +7855,6 @@ amber,5,DG,H8,0.1997000
 amber,5,DG,H1,0.3520000
 amber,5,DG,H21,0.4235000
 amber,5,DG,H22,0.4235000
-
-# DG - 3'-terminal
 amber,3,DG,P,1.1659000
 amber,3,DG,OP1,-0.7761000
 amber,3,DG,OP2,-0.7761000
@@ -8798,8 +7889,6 @@ amber,3,DG,H8,0.1997000
 amber,3,DG,H1,0.3520000
 amber,3,DG,H21,0.4235000
 amber,3,DG,H22,0.4235000
-
-# DC - middle
 amber,m,DC,P,1.1659000
 amber,m,DC,OP1,-0.7761000
 amber,m,DC,OP2,-0.7761000
@@ -8830,8 +7919,6 @@ amber,m,DC,H41,0.4314000
 amber,m,DC,H42,0.4314000
 amber,m,DC,H5,0.1863000
 amber,m,DC,H6,0.2293000
-
-# DC - 5'-terminal
 amber,5,DC,O5',-0.6318000
 amber,5,DC,C5',-0.0069000
 amber,5,DC,C4',0.1629000
@@ -8860,8 +7947,6 @@ amber,5,DC,H41,0.4314000
 amber,5,DC,H42,0.4314000
 amber,5,DC,H5,0.1863000
 amber,5,DC,H6,0.2293000
-
-# DC - 3'-terminal
 amber,3,DC,P,1.1659000
 amber,3,DC,OP1,-0.7761000
 amber,3,DC,OP2,-0.7761000
@@ -8893,8 +7978,6 @@ amber,3,DC,H41,0.4314000
 amber,3,DC,H42,0.4314000
 amber,3,DC,H5,0.1863000
 amber,3,DC,H6,0.2293000
-
-# DI - middle
 amber,m,DI,P,1.1659000
 amber,m,DI,OP1,-0.7761000
 amber,m,DI,OP2,-0.7761000
@@ -8926,8 +8009,6 @@ amber,m,DI,H1',0.1746000
 amber,m,DI,H8,0.1997000
 amber,m,DI,H1,0.3520000
 amber,m,DI,H2,0.0598000
-
-# DI - 5'-terminal
 amber,5,DI,O5',-0.6318000
 amber,5,DI,C5',-0.0069000
 amber,5,DI,C4',0.1629000
@@ -8957,8 +8038,6 @@ amber,5,DI,HO5',0.4422000
 amber,5,DI,H8,0.1997000
 amber,5,DI,H1,0.3520000
 amber,5,DI,H2,0.0598000
-
-# DI - 3'-terminal
 amber,3,DI,P,1.1659000
 amber,3,DI,OP1,-0.7761000
 amber,3,DI,OP2,-0.7761000
@@ -8991,10 +8070,6 @@ amber,3,DI,HO3',0.4396000
 amber,3,DI,H8,0.1997000
 amber,3,DI,H1,0.3520000
 amber,3,DI,H2,0.0598000
-
-# DNA: charmm
-
-# DA - middle
 charmm,m,DA,P,1.5000000
 charmm,m,DA,OP1,-0.7800000
 charmm,m,DA,OP2,-0.7800000
@@ -9027,8 +8102,6 @@ charmm,m,DA,H8,0.1200000
 charmm,m,DA,H61,0.3800000
 charmm,m,DA,H62,0.3800000
 charmm,m,DA,H2,0.1300000
-
-# DA - 5'-terminal
 charmm,5,DA,O5',-0.6600000
 charmm,5,DA,C5',0.0500000
 charmm,5,DA,C4',0.1600000
@@ -9059,8 +8132,6 @@ charmm,5,DA,H8,0.1200000
 charmm,5,DA,H61,0.3800000
 charmm,5,DA,H62,0.3800000
 charmm,5,DA,H2,0.1300000
-
-# DA - 3'-terminal
 charmm,3,DA,P,1.5000000
 charmm,3,DA,OP1,-0.7800000
 charmm,3,DA,OP2,-0.7800000
@@ -9094,8 +8165,6 @@ charmm,3,DA,H8,0.1200000
 charmm,3,DA,H61,0.3800000
 charmm,3,DA,H62,0.3800000
 charmm,3,DA,H2,0.1300000
-
-# DT - middle
 charmm,m,DT,P,1.5000000
 charmm,m,DT,OP1,-0.7800000
 charmm,m,DT,OP2,-0.7800000
@@ -9128,8 +8197,6 @@ charmm,m,DT,H71,0.0700000
 charmm,m,DT,H72,0.0700000
 charmm,m,DT,H73,0.0700000
 charmm,m,DT,H6,0.1700000
-
-# DT - 5'-terminal
 charmm,5,DT,O5',-0.6600000
 charmm,5,DT,C5',0.0500000
 charmm,5,DT,C4',0.1600000
@@ -9160,8 +8227,6 @@ charmm,5,DT,H71,0.0700000
 charmm,5,DT,H72,0.0700000
 charmm,5,DT,H73,0.0700000
 charmm,5,DT,H6,0.1700000
-
-# DT - 3'-terminal
 charmm,3,DT,P,1.5000000
 charmm,3,DT,OP1,-0.7800000
 charmm,3,DT,OP2,-0.7800000
@@ -9195,8 +8260,6 @@ charmm,3,DT,H71,0.0700000
 charmm,3,DT,H72,0.0700000
 charmm,3,DT,H73,0.0700000
 charmm,3,DT,H6,0.1700000
-
-# DG - middle
 charmm,m,DG,P,1.5000000
 charmm,m,DG,OP1,-0.7800000
 charmm,m,DG,OP2,-0.7800000
@@ -9230,8 +8293,6 @@ charmm,m,DG,H8,0.1600000
 charmm,m,DG,H1,0.2600000
 charmm,m,DG,H21,0.3200000
 charmm,m,DG,H22,0.3500000
-
-# DG - 5'-terminal
 charmm,5,DG,O5',-0.6600000
 charmm,5,DG,C5',0.0500000
 charmm,5,DG,C4',0.1600000
@@ -9263,8 +8324,6 @@ charmm,5,DG,H8,0.1600000
 charmm,5,DG,H1,0.2600000
 charmm,5,DG,H21,0.3200000
 charmm,5,DG,H22,0.3500000
-
-# DG - 3'-terminal
 charmm,3,DG,P,1.5000000
 charmm,3,DG,OP1,-0.7800000
 charmm,3,DG,OP2,-0.7800000
@@ -9299,8 +8358,6 @@ charmm,3,DG,H8,0.1600000
 charmm,3,DG,H1,0.2600000
 charmm,3,DG,H21,0.3200000
 charmm,3,DG,H22,0.3500000
-
-# DC - middle
 charmm,m,DC,P,1.5000000
 charmm,m,DC,OP1,-0.7800000
 charmm,m,DC,OP2,-0.7800000
@@ -9331,8 +8388,6 @@ charmm,m,DC,H41,0.3700000
 charmm,m,DC,H42,0.3300000
 charmm,m,DC,H5,0.0700000
 charmm,m,DC,H6,0.1700000
-
-# DC - 5'-terminal
 charmm,5,DC,O5',-0.6600000
 charmm,5,DC,C5',0.0500000
 charmm,5,DC,C4',0.1600000
@@ -9361,8 +8416,6 @@ charmm,5,DC,H41,0.3700000
 charmm,5,DC,H42,0.3300000
 charmm,5,DC,H5,0.0700000
 charmm,5,DC,H6,0.1700000
-
-# DC - 3'-terminal
 charmm,3,DC,P,1.5000000
 charmm,3,DC,OP1,-0.7800000
 charmm,3,DC,OP2,-0.7800000
@@ -9394,8 +8447,6 @@ charmm,3,DC,H41,0.3700000
 charmm,3,DC,H42,0.3300000
 charmm,3,DC,H5,0.0700000
 charmm,3,DC,H6,0.1700000
-
-# DI - middle
 charmm,m,DI,P,1.5000000
 charmm,m,DI,OP1,-0.7800000
 charmm,m,DI,OP2,-0.7800000
@@ -9427,8 +8478,6 @@ charmm,m,DI,H1',0.0900000
 charmm,m,DI,H8,0.1500000
 charmm,m,DI,H1,0.2500000
 charmm,m,DI,H2,0.1000000
-
-# DI - 5'-terminal
 charmm,5,DI,O5',-0.6600000
 charmm,5,DI,C5',0.0500000
 charmm,5,DI,C4',0.1600000
@@ -9458,8 +8507,6 @@ charmm,5,DI,HO5',0.4300000
 charmm,5,DI,H8,0.1500000
 charmm,5,DI,H1,0.2500000
 charmm,5,DI,H2,0.1000000
-
-# DI - 3'-terminal
 charmm,3,DI,P,1.5000000
 charmm,3,DI,OP1,-0.7800000
 charmm,3,DI,OP2,-0.7800000
@@ -9492,10 +8539,6 @@ charmm,3,DI,HO3',0.4300000
 charmm,3,DI,H8,0.1500000
 charmm,3,DI,H1,0.2500000
 charmm,3,DI,H2,0.1000000
-
-# RNA: amber
-
-# A - middle
 amber,m,A,P,1.1662000
 amber,m,A,OP1,-0.7760000
 amber,m,A,OP2,-0.7760000
@@ -9529,8 +8572,6 @@ amber,m,A,H8,0.1553000
 amber,m,A,H61,0.4115000
 amber,m,A,H62,0.4115000
 amber,m,A,H2,0.0473000
-
-# A - 5'-terminal
 amber,5,A,O5',-0.6223000
 amber,5,A,C5',0.0558000
 amber,5,A,C4',0.1065000
@@ -9562,8 +8603,6 @@ amber,5,A,H8,0.1553000
 amber,5,A,H61,0.4115000
 amber,5,A,H62,0.4115000
 amber,5,A,H2,0.0473000
-
-# A - 3'-terminal
 amber,3,A,P,1.1662000
 amber,3,A,OP1,-0.7760000
 amber,3,A,OP2,-0.7760000
@@ -9598,8 +8637,6 @@ amber,3,A,H8,0.1553000
 amber,3,A,H61,0.4115000
 amber,3,A,H62,0.4115000
 amber,3,A,H2,0.0473000
-
-# U - middle
 amber,m,U,P,1.1662000
 amber,m,U,OP1,-0.7760000
 amber,m,U,OP2,-0.7760000
@@ -9630,8 +8667,6 @@ amber,m,U,H1',0.1824000
 amber,m,U,H3,0.3154000
 amber,m,U,H5,0.1811000
 amber,m,U,H6,0.2188000
-
-# U - 5'-terminal
 amber,5,U,O5',-0.6223000
 amber,5,U,C5',0.0558000
 amber,5,U,C4',0.1065000
@@ -9660,8 +8695,6 @@ amber,5,U,HO5',0.4295000
 amber,5,U,H3,0.3154000
 amber,5,U,H5,0.1811000
 amber,5,U,H6,0.2188000
-
-# U - 3'-terminal
 amber,3,U,P,1.1662000
 amber,3,U,OP1,-0.7760000
 amber,3,U,OP2,-0.7760000
@@ -9693,8 +8726,6 @@ amber,3,U,HO3',0.4376000
 amber,3,U,H3,0.3154000
 amber,3,U,H5,0.1811000
 amber,3,U,H6,0.2188000
-
-# G - middle
 amber,m,G,P,1.1662000
 amber,m,G,OP1,-0.7760000
 amber,m,G,OP2,-0.7760000
@@ -9729,8 +8760,6 @@ amber,m,G,H8,0.1640000
 amber,m,G,H1,0.3424000
 amber,m,G,H21,0.4364000
 amber,m,G,H22,0.4364000
-
-# G - 5'-terminal
 amber,5,G,O5',-0.6223000
 amber,5,G,C5',0.0558000
 amber,5,G,C4',0.1065000
@@ -9763,8 +8792,6 @@ amber,5,G,H8,0.1640000
 amber,5,G,H1,0.3424000
 amber,5,G,H21,0.4364000
 amber,5,G,H22,0.4364000
-
-# G - 3'-terminal
 amber,3,G,P,1.1662000
 amber,3,G,OP1,-0.7760000
 amber,3,G,OP2,-0.7760000
@@ -9800,8 +8827,6 @@ amber,3,G,H8,0.1640000
 amber,3,G,H1,0.3424000
 amber,3,G,H21,0.4364000
 amber,3,G,H22,0.4364000
-
-# C - middle
 amber,m,C,P,1.1662000
 amber,m,C,OP1,-0.7760000
 amber,m,C,OP2,-0.7760000
@@ -9833,8 +8858,6 @@ amber,m,C,H41,0.4234000
 amber,m,C,H42,0.4234000
 amber,m,C,H5,0.1928000
 amber,m,C,H6,0.1958000
-
-# C - 5'-terminal
 amber,5,C,O5',-0.6223000
 amber,5,C,C5',0.0558000
 amber,5,C,C4',0.1065000
@@ -9864,8 +8887,6 @@ amber,5,C,H41,0.4234000
 amber,5,C,H42,0.4234000
 amber,5,C,H5,0.1928000
 amber,5,C,H6,0.1958000
-
-# C - 3'-terminal
 amber,3,C,P,1.1662000
 amber,3,C,OP1,-0.7760000
 amber,3,C,OP2,-0.7760000
@@ -9898,8 +8919,6 @@ amber,3,C,H41,0.4234000
 amber,3,C,H42,0.4234000
 amber,3,C,H5,0.1928000
 amber,3,C,H6,0.1958000
-
-# I - middle
 amber,m,I,P,1.1662000
 amber,m,I,OP1,-0.7760000
 amber,m,I,OP2,-0.7760000
@@ -9932,8 +8951,6 @@ amber,m,I,H1',0.2006000
 amber,m,I,H8,0.1640000
 amber,m,I,H1,0.3424000
 amber,m,I,H2,0.0473000
-
-# I - 5'-terminal
 amber,5,I,O5',-0.6223000
 amber,5,I,C5',0.0558000
 amber,5,I,C4',0.1065000
@@ -9964,8 +8981,6 @@ amber,5,I,HO5',0.4295000
 amber,5,I,H8,0.1640000
 amber,5,I,H1,0.3424000
 amber,5,I,H2,0.0473000
-
-# I - 3'-terminal
 amber,3,I,P,1.1662000
 amber,3,I,OP1,-0.7760000
 amber,3,I,OP2,-0.7760000
@@ -9999,10 +9014,6 @@ amber,3,I,HO3',0.4376000
 amber,3,I,H8,0.1640000
 amber,3,I,H1,0.3424000
 amber,3,I,H2,0.0473000
-
-# RNA: charmm
-
-# A - middle
 charmm,m,A,P,1.5000000
 charmm,m,A,OP1,-0.7800000
 charmm,m,A,OP2,-0.7800000
@@ -10036,8 +9047,6 @@ charmm,m,A,H8,0.1200000
 charmm,m,A,H61,0.3800000
 charmm,m,A,H62,0.3800000
 charmm,m,A,H2,0.1300000
-
-# A - 5'-terminal
 charmm,5,A,O5',-0.6600000
 charmm,5,A,C5',0.0500000
 charmm,5,A,C4',0.1600000
@@ -10069,8 +9078,6 @@ charmm,5,A,H8,0.1200000
 charmm,5,A,H61,0.3800000
 charmm,5,A,H62,0.3800000
 charmm,5,A,H2,0.1300000
-
-# A - 3'-terminal
 charmm,3,A,P,1.5000000
 charmm,3,A,OP1,-0.7800000
 charmm,3,A,OP2,-0.7800000
@@ -10105,8 +9112,6 @@ charmm,3,A,H8,0.1200000
 charmm,3,A,H61,0.3800000
 charmm,3,A,H62,0.3800000
 charmm,3,A,H2,0.1300000
-
-# U - middle
 charmm,m,U,P,1.5000000
 charmm,m,U,OP1,-0.7800000
 charmm,m,U,OP2,-0.7800000
@@ -10137,8 +9142,6 @@ charmm,m,U,H1',0.0900000
 charmm,m,U,H3,0.3600000
 charmm,m,U,H5,0.1000000
 charmm,m,U,H6,0.1400000
-
-# U - 5'-terminal
 charmm,5,U,O5',-0.6600000
 charmm,5,U,C5',0.0500000
 charmm,5,U,C4',0.1600000
@@ -10167,8 +9170,6 @@ charmm,5,U,HO5',0.4300000
 charmm,5,U,H3,0.3600000
 charmm,5,U,H5,0.1000000
 charmm,5,U,H6,0.1400000
-
-# U - 3'-terminal
 charmm,3,U,P,1.5000000
 charmm,3,U,OP1,-0.7800000
 charmm,3,U,OP2,-0.7800000
@@ -10200,8 +9201,6 @@ charmm,3,U,HO3',0.4300000
 charmm,3,U,H3,0.3600000
 charmm,3,U,H5,0.1000000
 charmm,3,U,H6,0.1400000
-
-# G - middle
 charmm,m,G,P,1.5000000
 charmm,m,G,OP1,-0.7800000
 charmm,m,G,OP2,-0.7800000
@@ -10236,8 +9235,6 @@ charmm,m,G,H8,0.1600000
 charmm,m,G,H1,0.2600000
 charmm,m,G,H21,0.3200000
 charmm,m,G,H22,0.3500000
-
-# G - 5'-terminal
 charmm,5,G,O5',-0.6600000
 charmm,5,G,C5',0.0500000
 charmm,5,G,C4',0.1600000
@@ -10270,8 +9267,6 @@ charmm,5,G,H8,0.1600000
 charmm,5,G,H1,0.2600000
 charmm,5,G,H21,0.3200000
 charmm,5,G,H22,0.3500000
-
-# G - 3'-terminal
 charmm,3,G,P,1.5000000
 charmm,3,G,OP1,-0.7800000
 charmm,3,G,OP2,-0.7800000
@@ -10307,8 +9302,6 @@ charmm,3,G,H8,0.1600000
 charmm,3,G,H1,0.2600000
 charmm,3,G,H21,0.3200000
 charmm,3,G,H22,0.3500000
-
-# C - middle
 charmm,m,C,P,1.5000000
 charmm,m,C,OP1,-0.7800000
 charmm,m,C,OP2,-0.7800000
@@ -10340,8 +9333,6 @@ charmm,m,C,H41,0.3700000
 charmm,m,C,H42,0.3300000
 charmm,m,C,H5,0.0700000
 charmm,m,C,H6,0.1700000
-
-# C - 5'-terminal
 charmm,5,C,O5',-0.6600000
 charmm,5,C,C5',0.0500000
 charmm,5,C,C4',0.1600000
@@ -10371,8 +9362,6 @@ charmm,5,C,H41,0.3700000
 charmm,5,C,H42,0.3300000
 charmm,5,C,H5,0.0700000
 charmm,5,C,H6,0.1700000
-
-# C - 3'-terminal
 charmm,3,C,P,1.5000000
 charmm,3,C,OP1,-0.7800000
 charmm,3,C,OP2,-0.7800000
@@ -10405,8 +9394,6 @@ charmm,3,C,H41,0.3700000
 charmm,3,C,H42,0.3300000
 charmm,3,C,H5,0.0700000
 charmm,3,C,H6,0.1700000
-
-# I - middle
 charmm,m,I,P,1.5000000
 charmm,m,I,OP1,-0.7800000
 charmm,m,I,OP2,-0.7800000
@@ -10439,8 +9426,6 @@ charmm,m,I,H1',0.0900000
 charmm,m,I,H8,0.1500000
 charmm,m,I,H1,0.2500000
 charmm,m,I,H2,0.1000000
-
-# I - 5'-terminal
 charmm,5,I,O5',-0.6600000
 charmm,5,I,C5',0.0500000
 charmm,5,I,C4',0.1600000
@@ -10471,8 +9456,6 @@ charmm,5,I,HO5',0.4300000
 charmm,5,I,H8,0.1500000
 charmm,5,I,H1,0.2500000
 charmm,5,I,H2,0.1000000
-
-# I - 3'-terminal
 charmm,3,I,P,1.5000000
 charmm,3,I,OP1,-0.7800000
 charmm,3,I,OP2,-0.7800000
@@ -10506,56 +9489,34 @@ charmm,3,I,HO3',0.4300000
 charmm,3,I,H8,0.1500000
 charmm,3,I,H1,0.2500000
 charmm,3,I,H2,0.1000000
-
-# Water: tip3p, tip3p-fb, spc, spc-e, opc3
-
-# HOH - tip3p
 tip3p,,HOH,O,-0.8340000
 tip3p,,HOH,H1,0.4170000
 tip3p,,HOH,H2,0.4170000
-
-# HOH - tip3p-fb
 tip3p-fb,,HOH,O,-0.848448690103
 tip3p-fb,,HOH,H1,0.4242243450515
 tip3p-fb,,HOH,H2,0.4242243450515
-
-# HOH - spc
 spc,,HOH,O,-0.8200000
 spc,,HOH,H1,0.4100000
 spc,,HOH,H2,0.4100000
-
-# HOH - spc-e
 spc-e,,HOH,O,-0.8476000
 spc-e,,HOH,H1,0.4238000
 spc-e,,HOH,H2,0.4238000
-
-# HOH - opc3
 opc3,,HOH,O,-0.8951700
 opc3,,HOH,H1,0.4475850
 opc3,,HOH,H2,0.4475850
-
-# Ion: classic
-
-# +1 Cations - Alkali Metals
 classic,,LI,LI,1.0000000
 classic,,NA,NA,1.0000000
 classic,,K,K,1.0000000
 classic,,RB,RB,1.0000000
 classic,,CS,CS,1.0000000
-
-# +1 Cations - Other
 classic,,AG,AG,1.0000000
 classic,,AU,AU,1.0000000
 classic,,CU1,CU,1.0000000
 classic,,TL,TL,1.0000000
-
-# +2 Cations - Alkaline Earth Metals
 classic,,MG,MG,2.0000000
 classic,,CA,CA,2.0000000
 classic,,SR,SR,2.0000000
 classic,,BA,BA,2.0000000
-
-# +2 Cations - Transition Metals
 classic,,MN,MN,2.0000000
 classic,,FE2,FE,2.0000000
 classic,,CO,CO,2.0000000
@@ -10564,20 +9525,14 @@ classic,,CU,CU,2.0000000
 classic,,ZN,ZN,2.0000000
 classic,,PD,PD,2.0000000
 classic,,PT,PT,2.0000000
-
-# +2 Cations - Other
 classic,,CD,CD,2.0000000
 classic,,HG,HG,2.0000000
 classic,,PB,PB,2.0000000
 classic,,EU,EU,2.0000000
-
-# +3 Cations - Main Group
 classic,,AL,AL,3.0000000
 classic,,GA,GA,3.0000000
 classic,,IN,IN,3.0000000
 classic,,SB,SB,3.0000000
-
-# +3 Cations - Transition Metals
 classic,,V,V,3.0000000
 classic,,CR,CR,3.0000000
 classic,,MN3,MN,3.0000000
@@ -10589,8 +9544,6 @@ classic,,RH3,RH,3.0000000
 classic,,OS,OS,3.0000000
 classic,,IR3,IR,3.0000000
 classic,,AU3,AU,3.0000000
-
-# +3 Cations - Lanthanides
 classic,,LA,LA,3.0000000
 classic,,CE,CE,3.0000000
 classic,,PR,PR,3.0000000
@@ -10605,20 +9558,14 @@ classic,,ER3,ER,3.0000000
 classic,,LU,LU,3.0000000
 classic,,YB,YB,3.0000000
 classic,,YT3,Y,3.0000000
-
-# +4 Cations
 classic,,ZR,ZR,4.0000000
 classic,,PT4,PT,4.0000000
 classic,,IR,IR,4.0000000
 classic,,OS4,OS,4.0000000
 classic,,TH,TH,4.0000000
 classic,,4MO,MO,4.0000000
-
-# +6 Cations
 classic,,W,W,6.0000000
 classic,,6MO,MO,6.0000000
-
-# -1 Anions - Halides
 classic,,F,F,-1.0000000
 classic,,CL,CL,-1.0000000
 classic,,BR,BR,-1.0000000
