@@ -16,3 +16,7 @@ pub struct WaterCharges {
     /// Charge on Hydrogen 2.
     pub h2: f32,
 }
+
+mod generated {
+    include!(concat!(env!("OUT_DIR"), "/codegen.rs"));
+}
