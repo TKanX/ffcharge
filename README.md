@@ -19,7 +19,7 @@ Add FFCharge to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-ffcharge = "0.2.0"
+ffcharge = "0.2.1"
 ```
 
 ## Quick Start
