@@ -13,7 +13,7 @@ keywords = [
     "force-fields",
     "no-std",
 ]
-categories = ["science", "science::bioinformatics", "simulation"]
+categories = ["science::computational-chemistry::molecular-simulation"]
 readme = "README.md"
 
 [dependencies]
